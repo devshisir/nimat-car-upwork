@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28.595" height="25.552" viewBox="0 0 28.595 25.552">
+  <g id="Group_196" data-name="Group 196" transform="translate(-24.324 -536.161)">
+    <g id="Group_30" data-name="Group 30" transform="translate(25.074 536.911)">
+      <path id="Path_39" data-name="Path 39" d="M794.62,394.713h-8.847c-2.371,0-3.432-1.483-3.432-2.952V372.786a2.9,2.9,0,0,1,.694-2.022,2.368,2.368,0,0,1,1.764-.73H799.69a2.5,2.5,0,0,1,2.645,2.646v4.748a.75.75,0,0,1-1.5,0v-4.748a1.027,1.027,0,0,0-1.145-1.146H784.8c-.636,0-.958.421-.958,1.251v18.974c0,.341.139,1.452,1.932,1.452h8.847a.75.75,0,0,1,0,1.5Z" transform="translate(-783.091 -370.785)" fill="#4f4f51"/>
+      <g id="Group_29" data-name="Group 29" transform="translate(3.843 4.405)">
+        <path id="Line_5" data-name="Line 5" d="M11.048.75H0A.75.75,0,0,1-.75,0,.75.75,0,0,1,0-.75H11.048A.75.75,0,0,1,11.8,0,.75.75,0,0,1,11.048.75Z" fill="#4f4f51"/>
+        <path id="Line_6" data-name="Line 6" d="M5.164.75H0A.75.75,0,0,1-.75,0,.75.75,0,0,1,0-.75H5.164a.75.75,0,0,1,.75.75A.75.75,0,0,1,5.164.75Z" transform="translate(0 5.764)" fill="#4f4f51"/>
+        <path id="Line_7" data-name="Line 7" d="M3.723.75H0A.75.75,0,0,1-.75,0,.75.75,0,0,1,0-.75H3.723a.75.75,0,0,1,.75.75A.75.75,0,0,1,3.723.75Z" transform="translate(0 11.529)" fill="#4f4f51"/>
+      </g>
+    </g>
+    <g id="Group_195" data-name="Group 195">
+      <path id="Rectangle_1_-_Outline" data-name="Rectangle 1 - Outline" d="M.866-1.25h11.12A2.2,2.2,0,0,1,14.1,1.024v12.47a2.2,2.2,0,0,1-2.116,2.274H.866A2.2,2.2,0,0,1-1.25,13.494V1.024A2.2,2.2,0,0,1,.866-1.25Zm11.12,15.683a.883.883,0,0,0,.811-.939V1.024a.883.883,0,0,0-.811-.939H.866a.883.883,0,0,0-.811.939v12.47a.883.883,0,0,0,.811.939Z" transform="translate(38.817 545.945)" fill="#4f4f51"/>
+      <path id="Rectangle_2_-_Outline" data-name="Rectangle 2 - Outline" d="M-.6-1.15H10.077a.574.574,0,0,1,.551.593V3.077a.574.574,0,0,1-.551.593H-.6a.574.574,0,0,1-.551-.593V-.557A.574.574,0,0,1-.6-1.15ZM9.526.036H-.048V2.484H9.526Z" transform="translate(40.504 547.661)" fill="#4f4f51"/>
+      <path id="Rectangle_3_-_Outline" data-name="Rectangle 3 - Outline" d="M-.6-1.15H2.049A.551.551,0,0,1,2.6-.6V2.106a.551.551,0,0,1-.55.55H-.6a.551.551,0,0,1-.55-.55V-.6A.551.551,0,0,1-.6-1.15ZM1.5-.05H-.05V1.556H1.5Z" transform="translate(40.504 552.954)" fill="#4f4f51"/>
+      <path id="Rectangle_4_-_Outline" data-name="Rectangle 4 - Outline" d="M-.6-1.15H2.049A.551.551,0,0,1,2.6-.6V2.106a.551.551,0,0,1-.55.55H-.6a.551.551,0,0,1-.55-.55V-.6A.551.551,0,0,1-.6-1.15ZM1.5-.05H-.05V1.556H1.5Z" transform="translate(44.519 552.954)" fill="#4f4f51"/>
+      <path id="Rectangle_5_-_Outline" data-name="Rectangle 5 - Outline" d="M-.6-1.15H2.049a.556.556,0,0,1,.55.56V6.316a.556.556,0,0,1-.55.56H-.6a.556.556,0,0,1-.55-.56V-.59A.556.556,0,0,1-.6-1.15ZM1.5-.029H-.05V5.756H1.5Z" transform="translate(48.533 552.954)" fill="#4f4f51"/>
+      <path id="Rectangle_6_-_Outline" data-name="Rectangle 6 - Outline" d="M-.6-1.15H2.049A.551.551,0,0,1,2.6-.6V2.106a.551.551,0,0,1-.55.55H-.6a.551.551,0,0,1-.55-.55V-.6A.551.551,0,0,1-.6-1.15ZM1.5-.05H-.05V1.556H1.5Z" transform="translate(40.504 557.173)" fill="#4f4f51"/>
+      <path id="Rectangle_7_-_Outline" data-name="Rectangle 7 - Outline" d="M-.6-1.15H2.049A.551.551,0,0,1,2.6-.6V2.106a.551.551,0,0,1-.55.55H-.6a.551.551,0,0,1-.55-.55V-.6A.551.551,0,0,1-.6-1.15ZM1.5-.05H-.05V1.556H1.5Z" transform="translate(44.519 557.173)" fill="#4f4f51"/>
+    </g>
+  </g>
+</svg>

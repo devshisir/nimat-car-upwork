@@ -1,8 +1,31 @@
+@font-face {
+    font-family: mainfont_light;
+    src: url('../fonts/Gilroy-Light.woff');
+}
+
+@font-face {
+    font-family: mainfont_reqular;
+    src: url('../fonts/Gilroy-Regular.woff');
+}
+
+@font-face {
+    font-family: mainfont_medium;
+    src: url('../fonts/Gilroy-Medium.woff');
+}
+
+@font-face {
+    font-family: mainfont_semi;
+    src: url('../fonts/Gilroy-Semibold.woff');
+}
+
+@font-face {
+    font-family: mainfont_bold;
+    src: url('../fonts/Gilroy-Bold.woff');
+}
+
 @import 'import/reset.scss';
 @import 'import/_color.scss';
-
-
-
-/*------------------------
-main code start here 
--------------------------*/
+// layout file import
+@import './_layout';
+// all global component import
+@import './components/_sidebar';
