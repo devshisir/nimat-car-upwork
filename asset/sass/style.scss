@@ -28,4 +28,15 @@
 // layout file import
 @import './_layout';
 // all global component import
+@import './components/_global';
+@import './components/_button';
 @import './components/_sidebar';
+@import './components/_header';
+@import './components/_breadCome';
+@import './components/_masterTable';
+@import './components/_pagination';
+
+
+
+// responsive file import
+@import './_responsive';

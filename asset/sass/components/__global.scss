@@ -1,0 +1,98 @@
+::placeholder {
+    color: #D5D5D5 !important;
+    opacity: 1;
+}
+
+::-webkit-input-placeholder {
+    color: #D5D5D5 !important;
+}
+
+::-ms-input-placeholder {
+    color: #D5D5D5 !important;
+}
+
+::-moz-input-placeholder {
+    color: #D5D5D5 !important;
+}
+
+::-o-input-placeholder {
+    color: #D5D5D5 !important;
+}
+
+.text-success {
+    color: #6AB123 !important;
+}
+
+.form-control {
+    border: 1px solid #D5D5D5;
+    font-size: 15px;
+    color: $bodyColor !important;
+    height: 38px;
+    font-family: mainfont_medium !important;
+
+    &:focus {
+        box-shadow: none;
+        outline: none;
+        border-color: #D5D5D5;
+    }
+}
+
+.form-select {
+    border: 1px solid #D5D5D5;
+    font-size: 15px;
+    color: $bodyColor !important;
+    height: 38px;
+    font-family: mainfont_medium !important;
+
+    &:focus {
+        box-shadow: none;
+        outline: none;
+        border-color: #D5D5D5;
+    }
+}
+
+.card {
+    background-color: transparent;
+    border: none;
+
+    .card-header,
+    .card-body,
+    .card-footer {
+        border: none;
+        background-color: transparent;
+        padding: 0px;
+    }
+
+    .card-header {
+        padding: 15px 20px;
+        border-bottom: 1px solid $boredrColor;
+
+        .cardTopTitle {
+            margin-bottom: 20px;
+
+            h4 {
+                font-size: 16px;
+            }
+        }
+
+        .cardHeaderAction {
+            .btn {
+                width: 180px;
+                text-align: center;
+
+                i {
+                    font-size: 14px;
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+
+    .card-body {
+        padding: 20px 0px;
+    }
+
+    .card-footer {
+        padding: 15px 0px;
+    }
+}

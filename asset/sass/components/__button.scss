@@ -1,0 +1,17 @@
+.btn {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    height: 42px;
+    border-radius: 5px;
+}
+
+.btn-secondary {
+    background-color: #C1C0C0;
+    font-size: 15px;
+
+    &:hover {
+        background-color: $brand;
+        color: #fff;
+    }
+}

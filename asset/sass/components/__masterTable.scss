@@ -1,0 +1,96 @@
+.masterTable {
+    .table {
+        border-color: $boredrColor;
+        margin: 0;
+        min-width: max-content;
+    }
+
+    .table,
+    thead,
+    tbody {
+        font-family: mainfont_medium;
+    }
+
+    thead {
+        vertical-align: baseline;
+
+        tr {
+            &:first-child td {
+                padding-left: 20px;
+            }
+
+            &:last-child td {
+                padding-right: 20px;
+            }
+        }
+
+        td {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-size: 14px;
+            color: $bodyColor;
+
+            span {
+                margin-bottom: 10px;
+                display: block;
+            }
+        }
+    }
+
+    tbody {
+        vertical-align: middle;
+
+        tr {
+            td {
+                &:first-child {
+                    padding-left: 20px;
+                }
+
+                &:last-child td {
+                    padding-right: 20px;
+                }
+            }
+        }
+
+        td {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            font-size: 14px;
+            color: $bodyColor;
+
+        }
+
+        .carImage {
+            img {
+                height: 40px;
+            }
+        }
+
+        .tableActions {
+            display: flex;
+            justify-content: center;
+            column-gap: 0px;
+
+            a {
+                height: 35px;
+                width: 35px;
+                text-align: center;
+                line-height: 35px;
+
+                svg {
+                    path {
+                        transition: 0.4s;
+                    }
+                }
+
+                &:hover {
+                    svg {
+                        path {
+                            fill: red;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

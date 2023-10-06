@@ -1,5 +1,5 @@
 .sidebar {
-    padding: 50px 20px;
+    padding: 50px 0px;
 
     .top_primary_link {
         ul {
@@ -7,9 +7,10 @@
                 a {
                     display: flex;
                     align-items: center;
+                    padding: 10px 20px;
 
                     .icon {
-                        min-width: 33px;
+                        min-width: 36px;
                     }
 
                     .menu_content {
@@ -25,21 +26,69 @@
         margin-top: 25px;
 
         .label_menu {
+            padding: 0px 20px;
+
             h4 {
                 font-size: 14px;
                 color: $brand;
                 margin-bottom: 13px;
             }
         }
+    }
 
-        ul {
-            li {
-                a {
+    .sidebarMenuWrapper {
+        .sidebarMenuLink {
+            list-style: none;
+
+            a {
+                display: flex;
+                align-items: center;
+                padding: 10px 20px;
+                min-height: 50px;
+                color: $bodyColor;
+
+                .icon {
+                    min-width: 39px;
+
+                    svg path {
+                        transition: 0.4s;
+                    }
+                }
+
+                .menu_content {
+                    position: relative;
+                    top: 2px;
+                    transition: 0.4s;
+                }
+
+                &:hover {
+                    .icon {
+                        svg path {
+                            fill: red;
+                        }
+                    }
+
+                    .menu_content {
+                        color: $brand;
+                    }
+                }
+            }
+        }
+
+        .mainAcordionItem {
+            border: none;
+
+            .accordion-header {
+                .accordion-button {
+                    padding: 10px 20px;
                     display: flex;
                     align-items: center;
+                    color: $bodyColor;
+                    min-height: 50px;
+                    border-radius: 0px;
 
                     .icon {
-                        min-width: 35px;
+                        min-width: 39px;
 
                         svg path {
                             transition: 0.4s;
@@ -48,19 +97,144 @@
 
                     .menu_content {
                         position: relative;
-                        top: 2px;
+                        top: 0px;
                         transition: 0.4s;
                     }
 
                     &:hover {
                         .icon {
                             svg path {
-                                fill: red;
+                                fill: $brand;
                             }
                         }
 
                         .menu_content {
                             color: $brand;
+                        }
+                    }
+
+                    &::after {
+                        transition: 0.4s;
+                        content: "\f107";
+                        font-family: 'Font Awesome 6 Pro';
+                        background-image: none;
+                        transform: none;
+                        font-size: 19px;
+                        color: $brand;
+                        font-weight: 500;
+                    }
+                }
+
+                .accordion-button:not(.collapsed) {
+                    outline: none;
+                    box-shadow: none;
+                    background-color: $brand;
+
+                    .icon {
+                        svg path {
+                            fill: #fff;
+                        }
+                    }
+
+                    .menu_content {
+                        color: #fff;
+                    }
+
+                    &::after {
+                        content: "\f106";
+                        font-family: 'Font Awesome 6 Pro';
+                        color: #fff;
+                    }
+                }
+
+                .accordion-button:focus {
+                    z-index: 3;
+                    border-color: transparent;
+                    outline: none;
+                    box-shadow: none;
+                }
+            }
+
+            .sub_menu {
+                padding: 7px 0px;
+
+                ul {
+                    padding-left: 40px;
+
+                    li {
+                        a {
+                            display: flex;
+                            padding: 4px 0px;
+
+                            span {
+                                min-width: 50px;
+                            }
+
+                            p {
+                                transition: 0.4s;
+                            }
+
+                            &:hover {
+                                color: $brand;
+
+                                p {
+                                    color: $brand;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .subAcordionMenu {
+            .accordion-item {
+                border: none;
+
+                .accordion-header {
+                    .accordion-button {
+                        padding: 0px 20px 0px 0px !important;
+                        min-height: 40px;
+
+                        span {
+                            min-width: 50px;
+                        }
+                    }
+
+                    .accordion-button:not(.collapsed) {
+                        outline: none;
+                        box-shadow: none;
+                        background-color: transparent;
+                        color: $brand;
+
+                        p {
+                            color: $brand;
+                        }
+
+                        &::after {
+                            content: "\f106";
+                            font-family: 'Font Awesome 6 Pro';
+                            color: $brand;
+                        }
+                    }
+
+                    .accordion-button:focus {
+                        z-index: 3;
+                        border-color: transparent;
+                        outline: none;
+                        box-shadow: none;
+                    }
+                }
+
+                .subacorMenu {
+                    ul {
+                        padding-left: 0px !important;
+                        padding-bottom: 5px;
+
+                        li {
+                            a {
+                                padding: 7px 0px;
+                            }
                         }
                     }
                 }

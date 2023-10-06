@@ -1,0 +1,19 @@
+@media screen and (max-width: 1199px) {
+    .sidebar {
+        left: -309px;
+    }
+
+    .sidebar.toggle {
+        left: 0;
+    }
+
+    .app_wrapper {
+        max-width: calc(100% - 0px);
+        margin-left: 0px;
+    }
+
+    .app_wrapper.toggle {
+        max-width: calc(100% - 309px);
+        margin-left: 309px;
+    }
+}

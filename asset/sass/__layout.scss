@@ -12,6 +12,11 @@
     height: 100%;
     max-height: 100%;
     overflow-y: scroll;
+    transition: 0.4s;
+}
+
+.sidebar.toggle {
+    left: -309px;
 }
 
 .app_wrapper {
@@ -20,5 +25,17 @@
     margin-left: 309px;
     height: 100%;
     min-height: 100vh;
-    padding: 10px 15px;
+    padding: 10px 25px;
+    transition: 0.4s;
+
+    .appInnerCard {
+        min-height: calc(100vh - 140px);
+        background-color: #fff;
+        border-radius: 5px;
+    }
+}
+
+.app_wrapper.toggle {
+    max-width: calc(100% - 0px);
+    margin-left: 0px;
 }

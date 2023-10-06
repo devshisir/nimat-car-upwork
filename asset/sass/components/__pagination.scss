@@ -1,0 +1,44 @@
+.globalPagination {
+
+    ul {
+        li {
+            display: inline-block;
+        }
+
+        .leftArrow,
+        .rightArrow {
+            a {
+                height: 30px;
+                width: 30px;
+                display: block;
+                text-align: center;
+                line-height: 30px;
+                font-size: 15px;
+                color: #D5D5D5;
+
+                &:hover {
+                    color: $brand;
+                }
+            }
+        }
+
+        .middleInof {
+            margin: 0px 10px;
+            color: #D5D5D5;
+
+            .currentPage,
+            .totalPage {
+                font-family: mainfont_bold;
+                color: $brand;
+            }
+
+            .currentPage {
+                margin-right: 5px;
+            }
+
+            .totalPage {
+                margin-left: 5px;
+            }
+        }
+    }
+}
