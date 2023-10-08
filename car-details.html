@@ -1,0 +1,1268 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+   <meta charset="utf-8">
+   <title>Car - Details</title>
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- Favicons -->
+   <link rel="apple-touch-icon" href="asset/img/favicons/apple-touch-icon.png" sizes="180x180">
+   <link rel="icon" href="asset/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+   <link rel="icon" href="asset/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+   <!-- global styles link -->
+   <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+   <link rel="stylesheet" href="asset/css/fontawsome.min.css">
+   <link rel="stylesheet" href="asset/css/style.css">
+   <link rel="stylesheet" href="asset/css/responsive.css">
+   <!-- this is for mordanizar js link -->
+   <script src="asset/js/vendor/modernizr-3.6.0.min.js"></script>
+</head>
+
+<body>
+   <!-- main wrapper -->
+   <div id="mainWrapper">
+      <!-- sidebar -->
+      <div class="sidebar">
+         <div class="top_primary_link">
+            <ul>
+               <li>
+                  <a href="/">
+                     <span class="icon">
+                        <img class="inject" src="./asset/img/icons/sidebar/dashboard.svg" alt="">
+                     </span>
+                     <span class="menu_content">Dashboard</span>
+                  </a>
+               </li>
+            </ul>
+         </div>
+         <!-- main menu link -->
+         <div class="main_menu_link">
+            <div class="label_menu">
+               <h4>MENU</h4>
+            </div>
+            <!-- menu with acordion -->
+            <div class="accordion sidebarMenuWrapper" id="menuAcordion">
+               <li class="sidebarMenuLink">
+                  <a class="active" href="/">
+                     <span class="icon">
+                        <img class="inject" src="./asset/img/icons/sidebar/car.svg" alt="">
+                     </span>
+                     <span class="menu_content">Car Database</span>
+                  </a>
+               </li>
+               <!-- toggle menu -->
+               <div class="accordion-item mainAcordionItem">
+                  <h2 class="accordion-header">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu1" aria-expanded="false" aria-controls="collapseTwo">
+                        <span class="icon">
+                           <img class="inject" src="./asset/img/icons/sidebar/appraisal.svg" alt="">
+                        </span>
+                        <span class="menu_content">Appraisal</span>
+                     </button>
+                  </h2>
+                  <div id="menu1" class="accordion-collapse collapse" data-bs-parent="#menuAcordion">
+                     <div class="sub_menu">
+                        <ul>
+                           <li>
+                              <a href="#">
+                                 <span>-</span>
+                                 <div class="right_content">
+                                    <p>Inspection log</p>
+                                 </div>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <li class="sidebarMenuLink">
+                  <a href="/">
+                     <span class="icon">
+                        <img class="inject" src="./asset/img/icons/sidebar/card-purches.svg" alt="">
+                     </span>
+                     <span class="menu_content">Purchase</span>
+                  </a>
+               </li>
+               <li class="sidebarMenuLink">
+                  <a href="/">
+                     <span class="icon">
+                        <img class="inject" src="./asset/img/icons/sidebar/repair.svg" alt="">
+                     </span>
+                     <span class="menu_content">Repair</span>
+                  </a>
+               </li>
+               <!-- toggle menu -->
+               <div class="accordion-item mainAcordionItem">
+                  <h2 class="accordion-header">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu2" aria-expanded="false" aria-controls="collapseTwo">
+                        <span class="icon">
+                           <img class="inject" src="./asset/img/icons/sidebar/sales.svg" alt="">
+                        </span>
+                        <span class="menu_content">Sales</span>
+                     </button>
+                  </h2>
+                  <div id="menu2" class="accordion-collapse collapse" data-bs-parent="#menuAcordion">
+                     <div class="sub_menu">
+                        <ul>
+                           <li>
+                              <a href="#">
+                                 <span>-</span>
+                                 <div class="right_content">
+                                    <p>WIP</p>
+                                 </div>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <li class="sidebarMenuLink">
+                  <a href="/">
+                     <span class="icon">
+                        <img class="inject" src="./asset/img/icons/sidebar/tax.svg" alt="">
+                     </span>
+                     <span class="menu_content">Road Tax expiry</span>
+                  </a>
+               </li>
+               <!-- toggle menu -->
+               <div class="accordion-item mainAcordionItem">
+                  <h2 class="accordion-header">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu3" aria-expanded="false" aria-controls="collapseTwo">
+                        <span class="icon">
+                           <img class="inject" src="./asset/img/icons/sidebar/accounting.svg" alt="">
+                        </span>
+                        <span class="menu_content">Accounting</span>
+                     </button>
+                  </h2>
+                  <div id="menu3" class="accordion-collapse collapse" data-bs-parent="#menuAcordion">
+                     <div class="sub_menu">
+                        <ul>
+                           <li>
+                              <a href="#">
+                                 <span>-</span>
+                                 <div class="right_content">
+                                    <p>Expenses</p>
+                                 </div>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#">
+                                 <span>-</span>
+                                 <div class="right_content">
+                                    <p>Income</p>
+                                 </div>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#">
+                                 <span>-</span>
+                                 <div class="right_content">
+                                    <p>Commission</p>
+                                 </div>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <li class="sidebarMenuLink">
+                  <a href="/">
+                     <span class="icon">
+                        <img class="inject" src="./asset/img/icons/sidebar/notification.svg" alt="">
+                     </span>
+                     <span class="menu_content">Notification</span>
+                  </a>
+               </li>
+               <li class="sidebarMenuLink">
+                  <a href="/">
+                     <span class="icon">
+                        <img class="inject" src="./asset/img/icons/sidebar/search-inquary.svg" alt="">
+                     </span>
+                     <span class="menu_content">Audit Trial</span>
+                  </a>
+               </li>
+               <li class="sidebarMenuLink">
+                  <a href="/">
+                     <span class="icon">
+                        <img class="inject" src="./asset/img/icons/sidebar/reports.svg" alt="">
+                     </span>
+                     <span class="menu_content">Reports</span>
+                  </a>
+               </li>
+               <!-- toggle menu -->
+               <div class="accordion-item mainAcordionItem">
+                  <h2 class="accordion-header">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu4" aria-expanded="false" aria-controls="collapseTwo">
+                        <span class="icon">
+                           <img class="inject" src="./asset/img/icons/sidebar/settings.svg" alt="">
+                        </span>
+                        <span class="menu_content">Settings</span>
+                     </button>
+                  </h2>
+                  <div id="menu4" class="accordion-collapse collapse" data-bs-parent="#menuAcordion">
+                     <div class="sub_menu">
+                        <ul>
+                           <li>
+                              <a href="#">
+                                 <span>-</span>
+                                 <div class="right_content">
+                                    <p>User Role</p>
+                                 </div>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#">
+                                 <span>-</span>
+                                 <div class="right_content">
+                                    <p>User Master</p>
+                                 </div>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#">
+                                 <span>-</span>
+                                 <div class="right_content">
+                                    <p>Permission</p>
+                                 </div>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <!-- toggle menu -->
+               <div class="accordion-item mainAcordionItem">
+                  <h2 class="accordion-header">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu5" aria-expanded="false" aria-controls="collapseTwo">
+                        <span class="icon">
+                           <img class="inject" src="./asset/img/icons/sidebar/user.svg" alt="">
+                        </span>
+                        <span class="menu_content">Master</span>
+                     </button>
+                  </h2>
+                  <div id="menu5" class="accordion-collapse collapse" data-bs-parent="#menuAcordion">
+                     <div class="sub_menu">
+                        <ul>
+                           <li>
+                              <a href="#">
+                                 <span>-</span>
+                                 <div class="right_content">
+                                    <p>Brand & Model list</p>
+                                 </div>
+                              </a>
+                           </li>
+                           <div class="subAcordionMenu">
+                              <div class="accordion" id="subAcordion">
+                                 <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#subacor1" aria-expanded="false" aria-controls="collapseTwo">
+                                          <span>-</span>
+                                          <div class="right_content">
+                                             <p>Repair</p>
+                                          </div>
+                                       </button>
+                                    </h2>
+                                    <div id="subacor1" class="accordion-collapse collapse" data-bs-parent="#subAcordion">
+                                       <div class="subacorMenu">
+                                          <ul>
+                                             <li>
+                                                <a href="#">
+                                                   <span>-</span>
+                                                   <div class="right_content">
+                                                      <p>Company Name listing</p>
+                                                   </div>
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="#">
+                                                   <span>-</span>
+                                                   <div class="right_content">
+                                                      <p>Repair Type listing</p>
+                                                   </div>
+                                                </a>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <li>
+                              <a href="#">
+                                 <span>-</span>
+                                 <div class="right_content">
+                                    <p>SC Management</p>
+                                 </div>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         
+      </div>
+      <div class="app_wrapper">
+         <!-- header -->
+         <header class="appHeader">
+            <div class="row align-items-center">
+               <div class="col-xl-6 col-lg-6">
+                  <div class="header_left">
+                     <div class="toggleArrow">
+                        <button class="toggleButton" type="button">
+                           <i class="fa-regular fa-bars-sort"></i>
+                        </button>
+                     </div>
+                     <div class="search_form">
+                        <div class="input-group">
+                           <input type="text" class="form-control" placeholder="Search...">
+                           <span class="input-group-text">
+                              <button type="button">
+                                 <i class="fa-sharp fa-regular fa-magnifying-glass"></i>
+                              </button>
+                           </span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-6 col-lg-6">
+                  <div class="header_right text-end">
+                     <ul>
+                        <li class="notificationButton">
+                           <a href="#"><i class="fa-regular fa-bell"></i></a>
+                        </li>
+                        <li class="userInfo">
+                           <div class="btn-group">
+                              <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                 <span><i class="fa-solid fa-user"></i></span>
+                                 <p>Michael</p>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-end">
+                                 <li>
+                                    <a href="#" class="dropdown-item">Profile</a>
+                                 </li>
+                                 <li>
+                                    <a href="#" class="dropdown-item">Settings</a>
+                                 </li>
+                                 <li>
+                                    <a href="#" class="dropdown-item">Another Link</a>
+                                 </li>
+                                 <li>
+                                    <a href="#" class="dropdown-item">Logout</a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </header>
+         <!-- breadcome area -->
+         <div class="breadComeArea">
+            <div class="row">
+               <div class="col-xl-6 col-lg-6">
+                  <div class="pageTitle">
+                     <h4>Car Detail Page</h4>
+                  </div>
+               </div>
+               <div class="col-xl-6 col-lg-6">
+                  <div class="pageHistory text-end">
+                     <ul>
+                        <li>
+                           <a href="#">Home page</a>
+                        </li>
+                        <li>
+                           <a href="#"><i class="fa-sharp fa-regular fa-angle-right"></i></a>
+                        </li>
+                        <li>
+                           <a href="#">Car Data Page</a>
+                        </li>
+                        <li class="active">
+                           <a href="#"><i class="fa-sharp fa-regular fa-angle-right"></i></a>
+                        </li>
+                        <li class="active">
+                           <a href="#">Master Page</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- page inner card -->
+         <div class="appInnerCard">
+            <!-- top card -->
+            <div class="card">
+               <div class="card-header">
+                  <div class="carDetailsPageCardHeader">
+                     <div class="row align-items-center">
+                        <div class="col-xl-6 col-lg-6">
+                           <div class="leftContent">
+                              <div class="infoHeading">
+                                 <h4>Car Detail Page</h4>
+                              </div>
+                              <div class="carMainDetails">
+                                 <div class="mainCarImage">
+                                    <img src="./asset/img/car/v2.jpg" class="img-fluid" alt="">
+                                 </div>
+                                 <div class="content">
+                                    <buttonc class="editButton" type="button"><i class="fa-regular fa-pen-to-square"></i></buttonc>
+                                    <h3>2018 Toyoto Vios</h3>
+                                    <h6>Summary</h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nisi justo, vestibulum eget cursus pulvinar, consectetur eu nulla. Etiam finibus sollicitudin.</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6">
+                           <div class="rightContent">
+                              <div class="singleImage">
+                                 <img src="./asset/img/car/v1.jpg" class="img-fluid" alt="">
+                              </div>
+                              <div class="singleImage">
+                                 <img src="./asset/img/car/v1.jpg" class="img-fluid" alt="">
+                              </div>
+                              <div class="singleImage">
+                                 <img src="./asset/img/car/v1.jpg" class="img-fluid" alt="">
+                              </div>
+                              <div class="singleImage">
+                                 <img src="./asset/img/car/v1.jpg" class="img-fluid" alt="">
+                              </div>
+                              <div class="singleImage">
+                                 <img src="./asset/img/car/v1.jpg" class="img-fluid" alt="">
+                              </div>
+                              <div class="singleImage">
+                                 <img src="./asset/img/car/v1.jpg" class="img-fluid" alt="">
+                              </div>
+                              <div class="singleImage">
+                                 <img src="./asset/img/car/v1.jpg" class="img-fluid" alt="">
+                              </div>
+                              <div class="singleImage">
+                                 <img src="./asset/img/car/v1.jpg" class="img-fluid" alt="">
+                              </div>
+                              <div class="singleImage">
+                                 <img src="./asset/img/car/v1.jpg" class="img-fluid" alt="">
+                              </div>
+                              <div class="singleImage">
+                                 <img src="./asset/img/car/v1.jpg" class="img-fluid" alt="">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="card-body cardDetailsCard1 p-0">
+                  <div class="carDetailsPageCardBody">
+                     <div class="row">
+                        <div class="col-xl-8 col-lg-8">
+                           <div class="row">
+                              <div class="col-xl-8 col-lg-8">
+                                 <div class="leftWrapper">
+                                    <div class="row">
+                                       <div class="col-xl-3 col-lg-3 col-12">
+                                          <div class="leftSingle">
+                                             <h5>Type</h5>
+                                             <h4>Lorem Ipsum</h4>
+                                          </div>
+                                          <div class="leftSingle">
+                                             <h5>Source</h5>
+                                             <h4>Lorem Ipsum</h4>
+                                          </div>
+                                          <div class="leftSingle">
+                                             <h5>SC Code</h5>
+                                             <h4>Lorem Ipsum</h4>
+                                          </div>
+                                          <div class="leftSingle">
+                                             <h5>Date Received</h5>
+                                             <h4>Lorem Ipsum</h4>
+                                          </div>
+                                          <div class="leftSingle">
+                                             <h5>Age</h5>
+                                             <h4>Lorem Ipsum</h4>
+                                          </div>
+                                          <div class="leftSingle">
+                                             <h5>Body Type</h5>
+                                             <h4>Lorem Ipsum</h4>
+                                          </div>
+                                       </div>
+                                       <div class="col-xl-3 col-lg-3 col-12">
+                                          <div class="leftSingle">
+                                             <h5>Purchase Date</h5>
+                                             <h4>Lorem Ipsum</h4>
+                                          </div>
+                                          <div class="leftSingle">
+                                             <h5>Age - Purchase Date</h5>
+                                             <h4>Lorem Ipsum</h4>
+                                          </div>
+                                          <div class="leftSingle">
+                                             <h5>Regn Date</h5>
+                                             <h4>Lorem Ipsum</h4>
+                                          </div>
+                                          <div class="leftSingle">
+                                             <h5>Reg No.</h5>
+                                             <h4>Lorem Ipsum</h4>
+                                          </div>
+                                          <div class="leftSingle">
+                                             <h5>Reg No. (Previous)</h5>
+                                             <h4>Lorem Ipsum</h4>
+                                          </div>
+                                          <div class="leftSingle">
+                                             <h5>Seat Type</h5>
+                                             <h4>Lorem Ipsum</h4>
+                                          </div>
+                                       </div>
+                                       <div class="col-xl-3 col-lg-3 col-12">
+                                          <div class="leftSingle">
+                                             <h5>Brand</h5>
+                                             <h4>Lorem Ipsum</h4>
+                                          </div>
+                                          <div class="leftSingle">
+                                             <h5>Model</h5>
+                                             <h4>Lorem Ipsum</h4>
+                                          </div>
+                                          <div class="leftSingle">
+                                             <h5>Chassis No.</h5>
+                                             <h4>Lorem Ipsum</h4>
+                                          </div>
+                                          <div class="leftSingle">
+                                             <h5>Color</h5>
+                                             <h4>Lorem Ipsum</h4>
+                                          </div>
+                                          <div class="leftSingle">
+                                             <h5>Interior Color</h5>
+                                             <h4>Lorem Ipsum</h4>
+                                          </div>
+                                          <div class="leftSingle">
+                                             <h5>Mileage/km</h5>
+                                             <h4>Lorem Ipsum</h4>
+                                          </div>
+                                       </div>
+                                       <div class="col-xl-3 col-lg-3 col-12">
+                                          <div class="leftSingle">
+                                             <h5>Fuel</h5>
+                                             <h4>Lorem Ipsum</h4>
+                                          </div>
+                                          <div class="leftSingle">
+                                             <h5>Transmission</h5>
+                                             <h4>Lorem Ipsum</h4>
+                                          </div>
+                                          <div class="leftSingle">
+                                             <h5>Doors</h5>
+                                             <h4>Lorem Ipsum</h4>
+                                          </div>
+                                          <div class="leftSingle">
+                                             <h5>Roadtax Expiry</h5>
+                                             <h4>Lorem Ipsum</h4>
+                                          </div>
+                                          <div class="leftSingle">
+                                             <h5>Age - Road Tax</h5>
+                                             <h4>Lorem Ipsum</h4>
+                                          </div>
+                                          <div class="leftSingle">
+                                             <h5>Purchase Price</h5>
+                                             <h4>Lorem Ipsum</h4>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-xl-4 col-lg-4">
+                                 <div class="rightWrapper">
+                                    <div class="rightSingle">
+                                       <h5>Trade In Token SC $300 1.5% / QUCC SMEDIA $200</h5>
+                                       <h4>Lorem Ipsum</h4>
+                                    </div>
+                                    <div class="rightSingle">
+                                       <h5>Refurbishment Estimated Value</h5>
+                                       <h4>-</h4>
+                                    </div>
+                                    <div class="rightSingle">
+                                       <h5>Market Value (Selling Price)</h5>
+                                       <h4>-</h4>
+                                    </div>
+                                    <div class="rightSingle">
+                                       <h5>Overtrade / SC</h5>
+                                       <h4>-</h4>
+                                    </div>
+                                    <div class="rightSingle">
+                                       <h5>Consult Fee NBC</h5>
+                                       <h4>-</h4>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4">
+                           <div class="fullrightWrapper">
+                              <div class="conditionBox">
+                                 <h3>Condition</h3>
+                                 <div class="singleItem">
+                                    <h5>Category</h5>
+                                    <h4>-</h4>
+                                 </div>
+                                 <div class="singleItem">
+                                    <h5>Last Service Date</h5>
+                                    <h4>-</h4>
+                                 </div>
+                                 <div class="singleItem">
+                                    <h5>Next Service Date</h5>
+                                    <h4>-</h4>
+                                 </div>
+                              </div>
+                              <div class="featuresBox">
+                                 <h3>Features</h3>
+                                 <ul>
+                                    <li>
+                                       <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="" id="check1">
+                                          <label class="form-check-label" for="check1">Reverse Camera</label>
+                                       </div>
+                                    </li>
+                                    <li>
+                                       <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="" id="check2">
+                                          <label class="form-check-label" for="check2">360 Camera</label>
+                                       </div>
+                                    </li>
+                                    <li>
+                                       <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="" id="check3">
+                                          <label class="form-check-label" for="check3">Keyless</label>
+                                       </div>
+                                    </li>
+                                    <li>
+                                       <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="" id="check4">
+                                          <label class="form-check-label" for="check4">Smart Entry System</label>
+                                       </div>
+                                    </li>
+                                    <li>
+                                       <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="" id="check5">
+                                          <label class="form-check-label" for="check5">Android Auto, Apple Car play</label>
+                                       </div>
+                                    </li>
+                                    <li>
+                                       <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="" id="check6">
+                                          <label class="form-check-label" for="check6">Wireless charging</label>
+                                       </div>
+                                    </li>
+                                    <li>
+                                       <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="" id="check7">
+                                          <label class="form-check-label" for="check7">Lane Departure Alert</label>
+                                       </div>
+                                    </li>
+                                    <li>
+                                       <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="" id="check8">
+                                          <label class="form-check-label" for="check8">Blind Spot Monitoring</label>
+                                       </div>
+                                    </li>
+                                    <li>
+                                       <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="" id="check9">
+                                          <label class="form-check-label" for="check9">Auto Emergency Braking</label>
+                                       </div>
+                                    </li>
+                                    <li>
+                                       <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="" id="check10">
+                                          <label class="form-check-label" for="check10">Rain Sensors</label>
+                                       </div>
+                                    </li>
+                                    <li>
+                                       <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="" id="check11">
+                                          <label class="form-check-label" for="check11">Power Rear boot</label>
+                                       </div>
+                                    </li>
+                                    <li>
+                                       <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="">
+                                          <label class="form-check-label">
+                                             <input type="text" class="form-control" placeholder="Others">
+                                          </label>
+                                       </div>
+                                    </li>
+                                    <li>
+                                       <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="">
+                                          <label class="form-check-label">
+                                             <input type="text" class="form-control" placeholder="Others">
+                                          </label>
+                                       </div>
+                                    </li>
+                                    <li>
+                                       <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="">
+                                          <label class="form-check-label">
+                                             <input type="text" class="form-control" placeholder="Others">
+                                          </label>
+                                       </div>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="card-footer">
+                  <div class="carDetailsPageCardFooter">
+                     <div class="ButtonWrapper">
+                        <button type="button" class="btn btn-outline-primary rounded-pill">Inspect</button>
+                        <button type="button" class="btn btn-outline-primary rounded-pill">Assessment</button>
+                        <button type="button" class="btn btn-outline-primary rounded-pill">WFP (2)</button>
+                        <button type="button" class="btn btn-outline-primary rounded-pill">Book</button>
+                        <button type="button" class="btn btn-outline-primary rounded-pill">Sales</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- bottom card -->
+            <div class="card">
+               <div class="card-header">
+                  <div class="cardHeaderAction text-end">
+                     <button class="btn btn-secondary">
+                        <span><i class="fa-sharp fa-regular fa-plus"></i></span>
+                        <span>Add Appraisal</span>
+                     </button>
+                  </div>
+               </div>
+               <div class="card-body">
+                  <div class="masterTable carDetailsPageTable">
+                     <div class="table-responsive">
+                        <table class="table">
+                           <thead>
+                              <tr>
+                                 <td scope="col">
+                                    <span>Appraisal No.</span>
+                                    <div class="inputBox">
+                                       <input type="text" style="width: 89px;" class="form-control">
+                                    </div>
+                                 </td>
+                                 <td scope="col">
+                                    <span>Car_ID</span>
+                                    <div class="inputBox">
+                                       <input type="text" style="width: 63px;" class="form-control">
+                                    </div>
+                                 </td>
+                                 <td scope="col">
+                                    <span>Reg. No.</span>
+                                    <div class="inputBox">
+                                       <input type="text" style="width: 63px;" class="form-control">
+                                    </div>
+                                 </td>
+                                 <td scope="col">
+                                    <span>Reg. No. <br> (Old)</span>
+                                    <div class="inputBox">
+                                       <input type="text" style="width: 63px;" class="form-control">
+                                    </div>
+                                 </td>
+                                 <td scope="col">
+                                    <span>Appraisal No. <br> (Old)</span>
+                                    <div class="inputBox">
+                                       <input type="text" style="width: 89px;" class="form-control">
+                                    </div>
+                                 </td>
+                                 <td scope="col">
+                                    <span>Source <br> Type</span>
+                                    <div class="selectBox">
+                                       <select class="form-select" style="width: 97px;">
+                                          <option value="0">Select</option>
+                                          <option value="1">option 1</option>
+                                          <option value="2">option 2</option>
+                                          <option value="3">option 3</option>
+                                       </select>
+                                    </div>
+                                 </td>
+                                 <td scope="col">
+                                    <span>Make</span>
+                                    <div class="inputBox">
+                                       <input type="text" style="width: 63px;" class="form-control">
+                                    </div>
+                                 </td>
+                                 <td scope="col">
+                                    <span>Model</span>
+                                    <div class="inputBox">
+                                       <input type="text" style="width: 89px;" class="form-control">
+                                    </div>
+                                 </td>
+                                 <td scope="col">
+                                    <span>Year</span>
+                                    <div class="inputBox">
+                                       <input type="text" style="width: 63px;" class="form-control">
+                                    </div>
+                                 </td>
+                                 <td scope="col">
+                                    <span>Color</span>
+                                    <div class="inputBox">
+                                       <input type="text" style="width: 63px;" class="form-control">
+                                    </div>
+                                 </td>
+                                 <td scope="col">
+                                    <span>Latest <br>Appraisal No.</span>
+                                    <div class="inputBox">
+                                       <input type="text" style="width: 89px;" class="form-control">
+                                    </div>
+                                 </td>
+                                 <td scope="col">
+                                    <span>Stage</span>
+                                    <div class="selectBox">
+                                       <select class="form-select" style="width: 97px;">
+                                          <option value="0">Select</option>
+                                          <option value="1">option 1</option>
+                                          <option value="2">option 2</option>
+                                          <option value="3">option 3</option>
+                                       </select>
+                                    </div>
+                                 </td>
+                                 <td scope="col">
+                                    <span>Status</span>
+                                    <div class="selectBox">
+                                       <select class="form-select" style="width: 97px;">
+                                          <option value="0">Select</option>
+                                          <option value="1">option 1</option>
+                                          <option value="2">option 2</option>
+                                          <option value="3">option 3</option>
+                                       </select>
+                                    </div>
+                                 </td>
+                                 <td scope="col">
+                                    <span>Offer <br> Price 1</span>
+                                    <div class="inputBox">
+                                       <input type="text" style="width: 63px;" class="form-control">
+                                    </div>
+                                 </td>
+                                 <td scope="col">
+                                    <span>Offer <br> Price 2</span>
+                                    <div class="inputBox">
+                                       <input type="text" style="width: 63px;" class="form-control">
+                                    </div>
+                                 </td>
+                                 <td scope="col">
+                                    <span>Purchase <br> Price</span>
+                                    <div class="inputBox">
+                                       <input type="text" style="width: 63px;" class="form-control">
+                                    </div>
+                                 </td>
+                                 <td scope="col">
+                                    <span>Selling <br> Price</span>
+                                    <div class="inputBox">
+                                       <input type="text" style="width: 63px;" class="form-control">
+                                    </div>
+                                 </td>
+                                 <td scope="col" class="text-center">
+                                    <span>Action</span>
+                                 </td>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <!-- single row -->
+                              <tr>
+                                 <td>A000070</td>
+                                 <td>C000105</td>
+                                 <td>BAE732</td>
+                                 <td>BAE732</td>
+                                 <td>A000070</td>
+                                 <td>Used Car</td>
+                                 <td>Toyota</td>
+                                 <td>Honda Civic</td>
+                                 <td>2013</td>
+                                 <td>Red</td>
+                                 <td>A000070</td>
+                                 <td>Ready for Sale</td>
+                                 <td><span class="badge-outline rounded-pill badge-success-outline">Booked</span></td>
+                                 <td>$4,602</td>
+                                 <td>$4,602</td>
+                                 <td>$4,602</td>
+                                 <td>$4,602</td>
+                                 <td>
+                                    <div class="tableActions">
+                                       <a title="View" href="#">
+                                          <img class="inject" src="./asset/img/icons/eye.svg" alt="">
+                                       </a>
+                                       <a title="Edit" href="#">
+                                          <img class="inject" src="./asset/img/icons/pencil.svg" alt="">
+                                       </a>
+                                       <a title="Delete" href="#">
+                                          <img class="inject" src="./asset/img/icons/trash.svg" alt="">
+                                       </a>
+                                    </div>
+                                 </td>
+                              </tr>
+                              <!-- single row -->
+                              <tr>
+                                 <td>A000070</td>
+                                 <td>C000105</td>
+                                 <td>BAE732</td>
+                                 <td>BAE732</td>
+                                 <td>A000070</td>
+                                 <td>Used Car</td>
+                                 <td>Toyota</td>
+                                 <td>Honda Civic</td>
+                                 <td>2013</td>
+                                 <td>Red</td>
+                                 <td>A000070</td>
+                                 <td>Ready for Sale</td>
+                                 <td><span class="badge-outline rounded-pill badge-info-outline">Sold</span></td>
+                                 <td>$4,602</td>
+                                 <td>$4,602</td>
+                                 <td>$4,602</td>
+                                 <td>$4,602</td>
+                                 <td>
+                                    <div class="tableActions">
+                                       <a title="View" href="#">
+                                          <img class="inject" src="./asset/img/icons/eye.svg" alt="">
+                                       </a>
+                                       <a title="Edit" href="#">
+                                          <img class="inject" src="./asset/img/icons/pencil.svg" alt="">
+                                       </a>
+                                       <a title="Delete" href="#">
+                                          <img class="inject" src="./asset/img/icons/trash.svg" alt="">
+                                       </a>
+                                    </div>
+                                 </td>
+                              </tr>
+                              <!-- single row -->
+                              <tr>
+                                 <td>A000070</td>
+                                 <td>C000105</td>
+                                 <td>BAE732</td>
+                                 <td>BAE732</td>
+                                 <td>A000070</td>
+                                 <td>Used Car</td>
+                                 <td>Toyota</td>
+                                 <td>Honda Civic</td>
+                                 <td>2013</td>
+                                 <td>Red</td>
+                                 <td>A000070</td>
+                                 <td>Ready for Sale</td>
+                                 <td><span class="badge-outline rounded-pill badge-warning-outline">Free Stock</span></td>
+                                 <td>$4,602</td>
+                                 <td>$4,602</td>
+                                 <td>$4,602</td>
+                                 <td>$4,602</td>
+                                 <td>
+                                    <div class="tableActions">
+                                       <a title="View" href="#">
+                                          <img class="inject" src="./asset/img/icons/eye.svg" alt="">
+                                       </a>
+                                       <a title="Edit" href="#">
+                                          <img class="inject" src="./asset/img/icons/pencil.svg" alt="">
+                                       </a>
+                                       <a title="Delete" href="#">
+                                          <img class="inject" src="./asset/img/icons/trash.svg" alt="">
+                                       </a>
+                                    </div>
+                                 </td>
+                              </tr>
+                              <!-- single row -->
+                              <tr>
+                                 <td>A000070</td>
+                                 <td>C000105</td>
+                                 <td>BAE732</td>
+                                 <td>BAE732</td>
+                                 <td>A000070</td>
+                                 <td>Used Car</td>
+                                 <td>Toyota</td>
+                                 <td>Honda Civic</td>
+                                 <td>2013</td>
+                                 <td>Red</td>
+                                 <td>A000070</td>
+                                 <td>Ready for Sale</td>
+                                 <td><span class="badge-outline rounded-pill badge-success-outline">Booked</span></td>
+                                 <td>$4,602</td>
+                                 <td>$4,602</td>
+                                 <td>$4,602</td>
+                                 <td>$4,602</td>
+                                 <td>
+                                    <div class="tableActions">
+                                       <a title="View" href="#">
+                                          <img class="inject" src="./asset/img/icons/eye.svg" alt="">
+                                       </a>
+                                       <a title="Edit" href="#">
+                                          <img class="inject" src="./asset/img/icons/pencil.svg" alt="">
+                                       </a>
+                                       <a title="Delete" href="#">
+                                          <img class="inject" src="./asset/img/icons/trash.svg" alt="">
+                                       </a>
+                                    </div>
+                                 </td>
+                              </tr>
+                              <!-- single row -->
+                              <tr>
+                                 <td>A000070</td>
+                                 <td>C000105</td>
+                                 <td>BAE732</td>
+                                 <td>BAE732</td>
+                                 <td>A000070</td>
+                                 <td>Used Car</td>
+                                 <td>Toyota</td>
+                                 <td>Honda Civic</td>
+                                 <td>2013</td>
+                                 <td>Red</td>
+                                 <td>A000070</td>
+                                 <td>Ready for Sale</td>
+                                 <td><span class="badge-outline rounded-pill badge-info-outline">Sold</span></td>
+                                 <td>$4,602</td>
+                                 <td>$4,602</td>
+                                 <td>$4,602</td>
+                                 <td>$4,602</td>
+                                 <td>
+                                    <div class="tableActions">
+                                       <a title="View" href="#">
+                                          <img class="inject" src="./asset/img/icons/eye.svg" alt="">
+                                       </a>
+                                       <a title="Edit" href="#">
+                                          <img class="inject" src="./asset/img/icons/pencil.svg" alt="">
+                                       </a>
+                                       <a title="Delete" href="#">
+                                          <img class="inject" src="./asset/img/icons/trash.svg" alt="">
+                                       </a>
+                                    </div>
+                                 </td>
+                              </tr>
+                              <!-- single row -->
+                              <tr>
+                                 <td>A000070</td>
+                                 <td>C000105</td>
+                                 <td>BAE732</td>
+                                 <td>BAE732</td>
+                                 <td>A000070</td>
+                                 <td>Used Car</td>
+                                 <td>Toyota</td>
+                                 <td>Honda Civic</td>
+                                 <td>2013</td>
+                                 <td>Red</td>
+                                 <td>A000070</td>
+                                 <td>Ready for Sale</td>
+                                 <td><span class="badge-outline rounded-pill badge-warning-outline">Free Stock</span></td>
+                                 <td>$4,602</td>
+                                 <td>$4,602</td>
+                                 <td>$4,602</td>
+                                 <td>$4,602</td>
+                                 <td>
+                                    <div class="tableActions">
+                                       <a title="View" href="#">
+                                          <img class="inject" src="./asset/img/icons/eye.svg" alt="">
+                                       </a>
+                                       <a title="Edit" href="#">
+                                          <img class="inject" src="./asset/img/icons/pencil.svg" alt="">
+                                       </a>
+                                       <a title="Delete" href="#">
+                                          <img class="inject" src="./asset/img/icons/trash.svg" alt="">
+                                       </a>
+                                    </div>
+                                 </td>
+                              </tr>
+                              <!-- single row -->
+                              <tr>
+                                 <td>A000070</td>
+                                 <td>C000105</td>
+                                 <td>BAE732</td>
+                                 <td>BAE732</td>
+                                 <td>A000070</td>
+                                 <td>Used Car</td>
+                                 <td>Toyota</td>
+                                 <td>Honda Civic</td>
+                                 <td>2013</td>
+                                 <td>Red</td>
+                                 <td>A000070</td>
+                                 <td>Ready for Sale</td>
+                                 <td><span class="badge-outline rounded-pill badge-success-outline">Booked</span></td>
+                                 <td>$4,602</td>
+                                 <td>$4,602</td>
+                                 <td>$4,602</td>
+                                 <td>$4,602</td>
+                                 <td>
+                                    <div class="tableActions">
+                                       <a title="View" href="#">
+                                          <img class="inject" src="./asset/img/icons/eye.svg" alt="">
+                                       </a>
+                                       <a title="Edit" href="#">
+                                          <img class="inject" src="./asset/img/icons/pencil.svg" alt="">
+                                       </a>
+                                       <a title="Delete" href="#">
+                                          <img class="inject" src="./asset/img/icons/trash.svg" alt="">
+                                       </a>
+                                    </div>
+                                 </td>
+                              </tr>
+                              <!-- single row -->
+                              <tr>
+                                 <td>A000070</td>
+                                 <td>C000105</td>
+                                 <td>BAE732</td>
+                                 <td>BAE732</td>
+                                 <td>A000070</td>
+                                 <td>Used Car</td>
+                                 <td>Toyota</td>
+                                 <td>Honda Civic</td>
+                                 <td>2013</td>
+                                 <td>Red</td>
+                                 <td>A000070</td>
+                                 <td>Ready for Sale</td>
+                                 <td><span class="badge-outline rounded-pill badge-info-outline">Sold</span></td>
+                                 <td>$4,602</td>
+                                 <td>$4,602</td>
+                                 <td>$4,602</td>
+                                 <td>$4,602</td>
+                                 <td>
+                                    <div class="tableActions">
+                                       <a title="View" href="#">
+                                          <img class="inject" src="./asset/img/icons/eye.svg" alt="">
+                                       </a>
+                                       <a title="Edit" href="#">
+                                          <img class="inject" src="./asset/img/icons/pencil.svg" alt="">
+                                       </a>
+                                       <a title="Delete" href="#">
+                                          <img class="inject" src="./asset/img/icons/trash.svg" alt="">
+                                       </a>
+                                    </div>
+                                 </td>
+                              </tr>
+                              <!-- single row -->
+                              <tr>
+                                 <td>A000070</td>
+                                 <td>C000105</td>
+                                 <td>BAE732</td>
+                                 <td>BAE732</td>
+                                 <td>A000070</td>
+                                 <td>Used Car</td>
+                                 <td>Toyota</td>
+                                 <td>Honda Civic</td>
+                                 <td>2013</td>
+                                 <td>Red</td>
+                                 <td>A000070</td>
+                                 <td>Ready for Sale</td>
+                                 <td><span class="badge-outline rounded-pill badge-warning-outline">Free Stock</span></td>
+                                 <td>$4,602</td>
+                                 <td>$4,602</td>
+                                 <td>$4,602</td>
+                                 <td>$4,602</td>
+                                 <td>
+                                    <div class="tableActions">
+                                       <a title="View" href="#">
+                                          <img class="inject" src="./asset/img/icons/eye.svg" alt="">
+                                       </a>
+                                       <a title="Edit" href="#">
+                                          <img class="inject" src="./asset/img/icons/pencil.svg" alt="">
+                                       </a>
+                                       <a title="Delete" href="#">
+                                          <img class="inject" src="./asset/img/icons/trash.svg" alt="">
+                                       </a>
+                                    </div>
+                                 </td>
+                              </tr>
+                              <!-- single row -->
+                              <tr>
+                                 <td>A000070</td>
+                                 <td>C000105</td>
+                                 <td>BAE732</td>
+                                 <td>BAE732</td>
+                                 <td>A000070</td>
+                                 <td>Used Car</td>
+                                 <td>Toyota</td>
+                                 <td>Honda Civic</td>
+                                 <td>2013</td>
+                                 <td>Red</td>
+                                 <td>A000070</td>
+                                 <td>Ready for Sale</td>
+                                 <td><span class="badge-outline rounded-pill badge-success-outline">Booked</span></td>
+                                 <td>$4,602</td>
+                                 <td>$4,602</td>
+                                 <td>$4,602</td>
+                                 <td>$4,602</td>
+                                 <td>
+                                    <div class="tableActions">
+                                       <a title="View" href="#">
+                                          <img class="inject" src="./asset/img/icons/eye.svg" alt="">
+                                       </a>
+                                       <a title="Edit" href="#">
+                                          <img class="inject" src="./asset/img/icons/pencil.svg" alt="">
+                                       </a>
+                                       <a title="Delete" href="#">
+                                          <img class="inject" src="./asset/img/icons/trash.svg" alt="">
+                                       </a>
+                                    </div>
+                                 </td>
+                              </tr>
+                              <!-- single row -->
+                              <tr>
+                                 <td>A000070</td>
+                                 <td>C000105</td>
+                                 <td>BAE732</td>
+                                 <td>BAE732</td>
+                                 <td>A000070</td>
+                                 <td>Used Car</td>
+                                 <td>Toyota</td>
+                                 <td>Honda Civic</td>
+                                 <td>2013</td>
+                                 <td>Red</td>
+                                 <td>A000070</td>
+                                 <td>Ready for Sale</td>
+                                 <td><span class="badge-outline rounded-pill badge-info-outline">Sold</span></td>
+                                 <td>$4,602</td>
+                                 <td>$4,602</td>
+                                 <td>$4,602</td>
+                                 <td>$4,602</td>
+                                 <td>
+                                    <div class="tableActions">
+                                       <a title="View" href="#">
+                                          <img class="inject" src="./asset/img/icons/eye.svg" alt="">
+                                       </a>
+                                       <a title="Edit" href="#">
+                                          <img class="inject" src="./asset/img/icons/pencil.svg" alt="">
+                                       </a>
+                                       <a title="Delete" href="#">
+                                          <img class="inject" src="./asset/img/icons/trash.svg" alt="">
+                                       </a>
+                                    </div>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+               <div class="card-footer">
+                  <div class="paginationstyle2 d-flex justify-content-center">
+                     <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                           <li class="page-item">
+                              <a class="page-link" href="#" aria-label="Previous">
+                              <span aria-hidden="true">&laquo;</span>
+                              </a>
+                           </li>
+                           <li class="page-item"><a class="page-link" href="#">1</a></li>
+                           <li class="page-item"><a class="page-link" href="#">2</a></li>
+                           <li class="page-item"><a class="page-link" href="#">3</a></li>
+                           <li class="page-item">
+                              <a class="page-link" href="#" aria-label="Next">
+                              <span aria-hidden="true">&raquo;</span>
+                              </a>
+                           </li>
+                        </ul>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   
+
+
+   <!-- all javascript load here -->
+   <script src="asset/js/vendor/jquery-3.3.1.min.js"></script>
+   <script src="asset/js/bootstrap.bundle.min.js"></script>
+   <script src="asset/js/plugin/jquery.svginject.js"></script>
+   <script src="asset/js/custom.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,236 @@
+.carDetailsPageCardHeader {
+    .leftContent {
+        .infoHeading {
+            margin-bottom: 10px;
+
+            h4 {
+                font-size: 16px;
+            }
+        }
+
+        .carMainDetails {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+            column-gap: 15px;
+            row-gap: 15px;
+
+            .mainCarImage {
+                min-width: 225px;
+                max-width: 225px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .content {
+                flex: 1;
+
+                .editButton {
+                    border: none;
+                    background-color: transparent;
+                    color: #C1C0C0;
+                    transition: 0.4s;
+                    margin-bottom: 4px;
+
+                    &:hover {
+                        color: $brand;
+                    }
+                }
+
+                h3 {
+                    font-size: 22px;
+                    color: $titleColor;
+                    margin-bottom: 4px;
+                }
+
+                h6 {
+                    color: #C4C4C4;
+                    font-size: 14px;
+                }
+
+                p {
+                    font-size: 15px;
+                    margin-top: 4px;
+                }
+            }
+        }
+    }
+
+    .rightContent {
+        display: flex;
+        justify-content: end;
+        column-gap: 6px;
+        row-gap: 6px;
+        flex-flow: row wrap;
+
+        .singleImage {
+            flex: 0 1 calc(20% - 25px);
+        }
+    }
+}
+
+.carDetailsPageCardBody {
+    padding: 0px 20px;
+
+    .rightWrapper {
+        height: 100%;
+        padding: 20px 0px;
+    }
+
+    .leftWrapper {
+        padding: 20px 0px;
+    }
+
+    .leftSingle,
+    .rightSingle {
+        margin-bottom: 10px;
+
+        h5 {
+            color: $titleColor;
+            font-size: 14px;
+            margin-bottom: 3px;
+        }
+
+        h4 {
+            color: $brand;
+            font-size: 16px;
+        }
+    }
+
+    .fullrightWrapper {
+        padding: 0px 0px;
+        display: flex;
+        justify-content: flex-start;
+        column-gap: 30px;
+        row-gap: 15px;
+        flex-wrap: wrap;
+
+        .conditionBox {
+            min-width: 35%;
+            border-left: 1px solid $boredrColor;
+            padding-left: 20px;
+            padding-top: 20px;
+
+            h3 {
+                font-size: 17px;
+                color: $brand;
+                margin-bottom: 15px;
+            }
+
+            .singleItem {
+                margin-bottom: 10px;
+
+                h5 {
+                    color: $titleColor;
+                    font-size: 15px;
+                    margin-bottom: 3px;
+                }
+
+                h4 {
+                    color: $brand;
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .featuresBox {
+            flex: 1;
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+            h3 {
+                font-size: 17px;
+                color: $brand;
+                margin-bottom: 15px;
+            }
+
+            ul {
+                li {
+                    margin-bottom: 3px;
+                }
+            }
+
+            .form-check {
+                .form-check-input {
+                    border-color: $boredrColor;
+                }
+
+                .form-check-input:checked {
+                    background-color: $brand;
+                    border-color: $brand;
+                    outline: none;
+                    box-shadow: none;
+                }
+
+                .form-check-input:focus {
+                    outline: none;
+                    box-shadow: none;
+                }
+
+                .form-check-input:active {
+                    filter: brightness(100%);
+                }
+            }
+
+            .form-check-label {
+                .form-control {
+                    height: 30px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+.carDetailsPageCardFooter {
+    padding: 0px 20px;
+
+    .ButtonWrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        column-gap: 10px;
+        row-gap: 10px;
+
+        .btn {
+            min-width: 200px;
+        }
+    }
+}
+
+.cardDetailsCard1 {
+    border-bottom: 1px solid $boredrColor !important;
+}
+
+.carDetailsPageTable {
+    thead {
+        tr {
+            td {
+
+                span {
+                    min-height: 42px;
+                }
+
+                .form-control,
+                .form-select {
+                    height: 34px;
+                }
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            vertical-align: middle;
+
+            td {
+                padding-left: 22px;
+                padding-right: 22px;
+            }
+        }
+    }
+}
