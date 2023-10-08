@@ -96,3 +96,28 @@
         padding: 15px 0px;
     }
 }
+
+.badge-outline {
+    border: 1px solid #ddd;
+    width: 100%;
+    display: block;
+    text-align: center;
+    height: 26px;
+    padding: 0px;
+    line-height: 25px;
+}
+
+.badge-success-outline {
+    border-color: $success;
+    color: $success;
+}
+
+.badge-info-outline {
+    border-color: $info;
+    color: $info;
+}
+
+.badge-warning-outline {
+    border-color: $warning;
+    color: $warning;
+}

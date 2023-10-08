@@ -64,12 +64,38 @@
                 &:hover {
                     .icon {
                         svg path {
-                            fill: red;
+                            fill: $brand;
                         }
                     }
 
                     .menu_content {
                         color: $brand;
+                    }
+                }
+            }
+
+            .active {
+                background-color: $brand;
+
+                .icon {
+                    svg path {
+                        fill: #fff;
+                    }
+                }
+
+                .menu_content {
+                    color: #fff;
+                }
+
+                &:hover {
+                    .icon {
+                        svg path {
+                            fill: #fff;
+                        }
+                    }
+
+                    .menu_content {
+                        color: #fff;
                     }
                 }
             }

@@ -1,5 +1,4 @@
 .btn {
-    border: none;
     outline: none;
     box-shadow: none;
     height: 42px;
@@ -8,10 +7,37 @@
 
 .btn-secondary {
     background-color: #C1C0C0;
+    border-color: #C1C0C0;
     font-size: 15px;
 
-    &:hover {
+    &:hover,
+    &:focus {
         background-color: $brand;
         color: #fff;
+        border-color: $brand;
     }
+}
+
+.btn-secondary:active {
+    background-color: $brand !important;
+    color: #fff !important;
+    border-color: $brand !important;
+}
+
+.btn-outline-primary {
+    border-color: $titleColor;
+    color: $titleColor;
+
+    &:hover,
+    &:focus {
+        background-color: $titleColor;
+        color: #fff;
+        border-color: $titleColor;
+    }
+}
+
+.btn-outline-primary:active {
+    background-color: $titleColor !important;
+    color: #fff !important;
+    border-color: $titleColor !important;
 }
