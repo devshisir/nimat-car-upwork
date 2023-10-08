@@ -58,6 +58,29 @@
             font-size: 14px;
             color: $bodyColor;
 
+            .form-check {
+                .form-check-input {
+                    border-color: $boredrColor;
+                    height: 17px;
+                    width: 17px;
+                }
+
+                .form-check-input:checked {
+                    background-color: $brand;
+                    border-color: $brand;
+                    outline: none;
+                    box-shadow: none;
+                }
+
+                .form-check-input:focus {
+                    outline: none;
+                    box-shadow: none;
+                }
+
+                .form-check-input:active {
+                    filter: brightness(100%);
+                }
+            }
         }
 
         .carImage {
@@ -78,16 +101,33 @@
                 line-height: 35px;
 
                 svg {
-                    path {
+
+                    path,
+                    circle {
                         transition: 0.4s;
                     }
                 }
 
                 &:hover {
                     svg {
+
                         path {
-                            fill: red;
+                            fill: $brand;
                         }
+
+
+                    }
+                }
+            }
+
+            .searchCarIcon {
+                &:hover {
+                    svg circle {
+                        stroke: $brand;
+                    }
+
+                    svg path#Path_3400 {
+                        stroke: $brand;
                     }
                 }
             }

@@ -121,3 +121,22 @@
     border-color: $warning;
     color: $warning;
 }
+
+.dropdown-menu {
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+
+    li {
+        display: block;
+
+        .dropdown-item {
+            font-size: 16px;
+            color: $bodyColor;
+
+            &:hover {
+                color: $brand;
+            }
+        }
+    }
+}

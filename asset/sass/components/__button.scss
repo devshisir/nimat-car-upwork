@@ -24,6 +24,23 @@
     border-color: $brand !important;
 }
 
+.btn-dark {
+    background-color: #4F4F51;
+    border: 1px solid #4F4F51;
+
+    &:hover,
+    &:focus {
+        background-color: $brand;
+        border-color: $brand;
+    }
+}
+
+.btn-dark:active {
+    background-color: $brand !important;
+    color: #fff !important;
+    border-color: $brand !important;
+}
+
 .btn-outline-primary {
     border-color: $titleColor;
     color: $titleColor;
@@ -40,4 +57,16 @@
     background-color: $titleColor !important;
     color: #fff !important;
     border-color: $titleColor !important;
+}
+
+.dropdown-toggle {
+    &::after {
+        transition: 0.4s;
+    }
+}
+
+.dropdown-toggle[aria-expanded="true"] {
+    &::after {
+        transform: rotate(180deg);
+    }
 }
