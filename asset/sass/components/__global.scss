@@ -64,7 +64,6 @@
     }
 
     .card-header {
-        padding: 15px 20px;
         border-bottom: 1px solid $boredrColor;
 
         .cardTopTitle {
@@ -75,15 +74,56 @@
             }
         }
 
+        .cardPageTititle {
+            background-color: $titleColor;
+            padding: 0px 20px;
+            border-radius: 5px 5px 0px 0px;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+
+            &::before {
+                position: absolute;
+                height: 100%;
+                width: 300px;
+                content: "";
+                top: 0;
+                left: -15px;
+                background-color: $brand;
+                z-index: -1;
+                transform: skewX(-30deg);
+            }
+
+            h3 {
+                color: #fff;
+                font-size: 17px;
+                padding: 20px 0px;
+            }
+        }
+
+        .longContent {
+            &::before {
+                width: 430px;
+            }
+        }
+
         .cardHeaderAction {
+            padding: 15px 15px;
+            min-height: 72px;
+
             .btn {
-                width: 180px;
+                min-width: 180px;
                 text-align: center;
 
                 i {
                     font-size: 14px;
                     margin-right: 15px;
                 }
+            }
+
+            .dropdown-toggle-split {
+                width: max-content !important;
+                min-width: auto !important;
             }
         }
     }
@@ -137,6 +177,71 @@
             &:hover {
                 color: $brand;
             }
+        }
+    }
+}
+
+.required {
+    color: $brand;
+}
+
+.text-danger {
+    color: $brand !important;
+}
+
+.text-gray {
+    color: #4F4F51 !important;
+}
+
+.text-primary {
+    color: $titleColor !important;
+}
+
+.fileUploadInput {
+    input {
+        display: none;
+    }
+
+    label {
+        border: 1px solid #e5e5e5;
+        height: 80px;
+        width: 140px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        cursor: pointer;
+
+        &:hover {
+            border-color: $brand;
+        }
+    }
+}
+
+.fileUploadInput.small-size {
+    label {
+        height: 60px;
+        width: 100px;
+    }
+}
+
+.inputWithIconRight {
+    border: 1px solid #D5D5D5;
+    border-radius: 5px;
+
+    .form-control {
+        border: none;
+        height: 36px;
+    }
+
+    .input-group-text {
+        background-color: transparent;
+        border: none;
+        margin: 0;
+
+        i {
+            font-size: 16px;
+            color: #D5D5D5;
         }
     }
 }

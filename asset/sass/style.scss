@@ -35,9 +35,12 @@
 @import './components/_breadCome';
 @import './components/_masterTable';
 @import './components/_pagination';
+@import './components/_navTabs';
 
 // all page scss file import
 @import './pages/_carDetails';
+@import './pages/_addCar';
+@import './pages/_scmanagement';
 
 // responsive file import
 @import './_responsive';

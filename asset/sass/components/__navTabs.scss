@@ -1,0 +1,27 @@
+.globalTabButton {
+    margin-bottom: 10px;
+
+    .nav-tabs {
+        width: max-content;
+        display: flex;
+        align-items: ce;
+        background-color: #fff;
+        border: none;
+        border-radius: 10px;
+
+        .nav-link {
+            height: 47px;
+            min-width: 170px;
+            padding: 0px 30px;
+            color: #C1C0C0;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .active {
+            border: none;
+            background-color: $brand;
+            color: #fff;
+        }
+    }
+}

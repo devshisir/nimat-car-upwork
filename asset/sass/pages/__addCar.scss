@@ -1,0 +1,118 @@
+.addCarCardBody {
+    padding: 0px 20px;
+
+    .topInfoHeading {
+        margin-bottom: 20px;
+    }
+
+    .carAddForm {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+
+        .leftFormArea {
+            margin-right: 60px;
+        }
+
+        .singleInputBox {
+            margin-bottom: 6px;
+
+            .selectBox {
+                min-width: 230px;
+            }
+
+            .multiSelect {
+                .form-select {
+                    height: 100px;
+                }
+            }
+
+            .form-control {
+                min-width: 230px;
+            }
+
+            .col-form-label {
+                min-width: 170px;
+                font-family: mainfont_medium;
+                font-size: 15px;
+
+                span {
+                    min-width: 5px;
+                    display: inline-block;
+                }
+            }
+
+            .radioBox {
+                display: flex;
+                justify-content: flex-start;
+                column-gap: 10px;
+
+                .form-check-input {
+                    outline: none;
+                    box-shadow: none;
+                }
+
+                .form-check-label {
+                    font-size: 13px;
+                }
+
+                .form-check-input:checked {
+                    background-color: $brand;
+                    border-color: $brand;
+                }
+            }
+        }
+
+        .readyForSalePhoto {
+            margin-top: 30px;
+
+            p {
+                font-family: mainfont_medium;
+                margin-bottom: 20px;
+            }
+        }
+
+        .innerSelectDiv {
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+
+            .singleFileUpload {}
+        }
+
+        .rightTableArea {
+            .table {
+
+
+                thead {
+                    font-family: mainfont_medium;
+                    font-size: 15px;
+
+                    tr {
+                        td {
+                            padding-top: 14px;
+                            padding-bottom: 14px;
+                            padding-left: 24px;
+                            padding-right: 24px;
+                        }
+                    }
+                }
+
+                tbody {
+                    tr {
+                        font-family: mainfont_medium;
+                        font-size: 15px;
+
+                        td {
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            padding-left: 15px;
+                            padding-right: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -208,6 +208,16 @@
                                 }
                             }
                         }
+
+                        a.active {
+                            color: $brand !important;
+
+                            .right_content {
+                                p {
+                                    color: $brand !important;
+                                }
+                            }
+                        }
                     }
                 }
             }

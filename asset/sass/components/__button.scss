@@ -18,6 +18,25 @@
     }
 }
 
+.btn-primary {
+    background-color: $titleColor;
+    border-color: $titleColor;
+    font-size: 15px;
+
+    &:hover,
+    &:focus {
+        background-color: $titleColor;
+        color: #fff;
+        border-color: $titleColor;
+    }
+}
+
+.btn-primary:active {
+    background-color: $titleColor !important;
+    color: #fff !important;
+    border-color: $titleColor !important;
+}
+
 .btn-secondary:active {
     background-color: $brand !important;
     color: #fff !important;

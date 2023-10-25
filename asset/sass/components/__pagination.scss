@@ -47,5 +47,20 @@
     .page-link {
         outline: none;
         box-shadow: none;
+        color: $titleColor;
+        font-family: mainfont_medium;
+        min-height: 39px;
+
+        &:hover {
+            background-color: $titleColor;
+            color: #fff;
+            border-color: $titleColor;
+        }
+    }
+
+    .active {
+        font-family: mainfont_bold;
+        background-color: transparent;
+        border-color: #dee2e6;
     }
 }
