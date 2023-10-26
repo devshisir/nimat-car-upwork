@@ -3,7 +3,7 @@
 
 <head>
    <meta charset="utf-8">
-   <title>Car - Repair Type</title>
+   <title>Car - Add Car Type</title>
    <meta name="description" content="">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <!-- Favicons -->
@@ -256,18 +256,18 @@
                               <div class="accordion" id="subAcordion">
                                  <div class="accordion-item">
                                     <h2 class="accordion-header">
-                                       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#subacor1" aria-expanded="true" aria-controls="collapseTwo">
+                                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#subacor1" aria-expanded="false" aria-controls="collapseTwo">
                                           <span>-</span>
                                           <div class="right_content">
                                              <p>Repair</p>
                                           </div>
                                        </button>
                                     </h2>
-                                    <div id="subacor1" class="accordion-collapse collapse show" data-bs-parent="#subAcordion">
+                                    <div id="subacor1" class="accordion-collapse collapse" data-bs-parent="#subAcordion">
                                        <div class="subacorMenu">
                                           <ul>
                                              <li>
-                                                <a href="#" class="active">
+                                                <a href="#">
                                                    <span>-</span>
                                                    <div class="right_content">
                                                       <p>Company Name listing</p>
@@ -289,7 +289,7 @@
                               </div>
                            </div>
                            <li>
-                              <a href="./sg-manageent.html">
+                              <a href="./sg-management/sg-manageent.html">
                                  <span>-</span>
                                  <div class="right_content">
                                     <p>SC Management</p>
@@ -365,7 +365,7 @@
             <div class="row">
                <div class="col-xl-6 col-lg-6">
                   <div class="pageTitle">
-                     <h4>Workshop listing Page</h4>
+                     <h4>Add Car Type Page</h4>
                   </div>
                </div>
                <div class="col-xl-6 col-lg-6">
@@ -378,19 +378,13 @@
                            <a href="#"><i class="fa-sharp fa-regular fa-angle-right"></i></a>
                         </li>
                         <li>
-                           <a href="#">Master Page</a>
-                        </li>
-                        <li>
-                           <a href="#"><i class="fa-sharp fa-regular fa-angle-right"></i></a>
-                        </li>
-                        <li>
-                           <a href="#">Repair Page</a>
+                           <a href="/">Master Page</a>
                         </li>
                         <li class="active">
                            <a href="#"><i class="fa-sharp fa-regular fa-angle-right"></i></a>
                         </li>
                         <li class="active">
-                           <a href="#">Workshop listing Page</a>
+                           <a href="#">Add Car Type Page</a>
                         </li>
                      </ul>
                   </div>
@@ -402,183 +396,93 @@
             <div class="card">
                <div class="card-header">
                   <div class="cardPageTititle">
-                     <h3>Workshop listing Page</h3>
+                     <h3>Add Car Type Page</h3>
                   </div>
                   <div class="cardHeaderAction text-end">
-                     <a href="./add-company.html" class="btn btn-outline-danger">
+                     <button class="btn btn-outline-danger">
                         <span><i class="fa-sharp fa-regular fa-plus"></i></span>
-                        <span>Add Company</span>
-                     </a>
+                        <span>Add Type</span>
+                     </button>
                   </div>
                </div>
                <div class="card-body">
-                  <div class="masterTable">
-                     <div class="table-responsive">
-                        <table class="table">
-                           <thead>
-                              <tr>
-                                 <td style="width: 200px;">
-                                    <span>Workshop Code</span>
-                                    <input type="text" class="form-control">
-                                 </td>
-                                 <td style="width: 230px;">
-                                    <span>Workshop Name</span>
-                                    <input type="text" class="form-control">
-                                 </td>
-                                 <td style="width: 300px;">
-                                    <span>Workshop Address</span>
-                                    <input type="text" class="form-control">
-                                 </td>
-                                 <td style="width: 230px;">
-                                    <span>Workshop Tel. No.</span>
-                                    <input type="text" class="form-control">
-                                 </td>
-                                 <td style="width: 230px;">
-                                    <span>Contact Name</span>
-                                    <input type="text" class="form-control">
-                                 </td>
-                                 <td style="width: 230px;">
-                                    <span>Contact Mobile No.</span>
-                                    <input type="text" class="form-control">
-                                 </td>
-                                 <td></td>
-                              </tr>
-                           </thead>
-                           <tbody>
-                              <!-- single table row -->
-                              <tr>
-                                 <td>WS 093</td>
-                                 <td>Gadong Autoparts</td>
-                                 <td>Gadong BSB</td>
-                                 <td>+673 XXX XXXX</td>
-                                 <td>Michael</td>
-                                 <td>+673 XXX XXXX</td>
-                                 <td></td>
-                              </tr>
-                              <!-- single table row -->
-                              <tr>
-                                 <td>WS 093</td>
-                                 <td>Gadong Autoparts</td>
-                                 <td>Gadong BSB</td>
-                                 <td>+673 XXX XXXX</td>
-                                 <td>Michael</td>
-                                 <td>+673 XXX XXXX</td>
-                                 <td></td>
-                              </tr>
-                              <!-- single table row -->
-                              <tr>
-                                 <td>WS 093</td>
-                                 <td>Gadong Autoparts</td>
-                                 <td>Gadong BSB</td>
-                                 <td>+673 XXX XXXX</td>
-                                 <td>Michael</td>
-                                 <td>+673 XXX XXXX</td>
-                                 <td></td>
-                              </tr>
-                              <!-- single table row -->
-                              <tr>
-                                 <td>WS 093</td>
-                                 <td>Gadong Autoparts</td>
-                                 <td>Gadong BSB</td>
-                                 <td>+673 XXX XXXX</td>
-                                 <td>Michael</td>
-                                 <td>+673 XXX XXXX</td>
-                                 <td></td>
-                              </tr>
-                              <!-- single table row -->
-                              <tr>
-                                 <td>WS 093</td>
-                                 <td>Gadong Autoparts</td>
-                                 <td>Gadong BSB</td>
-                                 <td>+673 XXX XXXX</td>
-                                 <td>Michael</td>
-                                 <td>+673 XXX XXXX</td>
-                                 <td></td>
-                              </tr>
-                              <!-- single table row -->
-                              <tr>
-                                 <td>WS 093</td>
-                                 <td>Gadong Autoparts</td>
-                                 <td>Gadong BSB</td>
-                                 <td>+673 XXX XXXX</td>
-                                 <td>Michael</td>
-                                 <td>+673 XXX XXXX</td>
-                                 <td></td>
-                              </tr>
-                              <!-- single table row -->
-                              <tr>
-                                 <td>WS 093</td>
-                                 <td>Gadong Autoparts</td>
-                                 <td>Gadong BSB</td>
-                                 <td>+673 XXX XXXX</td>
-                                 <td>Michael</td>
-                                 <td>+673 XXX XXXX</td>
-                                 <td></td>
-                              </tr>
-                              <!-- single table row -->
-                              <tr>
-                                 <td>WS 093</td>
-                                 <td>Gadong Autoparts</td>
-                                 <td>Gadong BSB</td>
-                                 <td>+673 XXX XXXX</td>
-                                 <td>Michael</td>
-                                 <td>+673 XXX XXXX</td>
-                                 <td></td>
-                              </tr>
-                              <!-- single table row -->
-                              <tr>
-                                 <td>WS 093</td>
-                                 <td>Gadong Autoparts</td>
-                                 <td>Gadong BSB</td>
-                                 <td>+673 XXX XXXX</td>
-                                 <td>Michael</td>
-                                 <td>+673 XXX XXXX</td>
-                                 <td></td>
-                              </tr>
-                              <!-- single table row -->
-                              <tr>
-                                 <td>WS 093</td>
-                                 <td>Gadong Autoparts</td>
-                                 <td>Gadong BSB</td>
-                                 <td>+673 XXX XXXX</td>
-                                 <td>Michael</td>
-                                 <td>+673 XXX XXXX</td>
-                                 <td></td>
-                              </tr>
-                              <!-- single table row -->
-                              <tr>
-                                 <td>WS 093</td>
-                                 <td>Gadong Autoparts</td>
-                                 <td>Gadong BSB</td>
-                                 <td>+673 XXX XXXX</td>
-                                 <td>Michael</td>
-                                 <td>+673 XXX XXXX</td>
-                                 <td></td>
-                              </tr>
-                           </tbody>
-                        </table>
-                     </div>
-                  </div>
-               </div>
-               <div class="card-footer">
-                  <div class="paginationstyle2 d-flex justify-content-center">
-                     <nav aria-label="Page navigation example">
-                        <ul class="pagination">
-                           <li class="page-item">
-                              <a class="page-link" href="#" aria-label="Previous">
-                              <span aria-hidden="true">&laquo;</span>
-                              </a>
-                           </li>
-                           <li class="page-item"><a class="page-link active" href="#">1</a></li>
-                           <li class="page-item"><a class="page-link" href="#">2</a></li>
-                           <li class="page-item"><a class="page-link" href="#">3</a></li>
-                           <li class="page-item">
-                              <a class="page-link" href="#" aria-label="Next">
-                              <span aria-hidden="true">&raquo;</span>
-                              </a>
-                           </li>
-                        </ul>
-                     </nav>
+                  <div class="addSalesManForm makeBrandModelForm">
+                     <form action="#">
+                        <div class="singleInputBox">
+                           <div class="row g-3 align-items-center">
+                              <div class="col-auto">
+                                 <label for="inputPassword6" class="col-form-label">
+                                    <span class="required">*</span>
+                                    Car Type Code
+                                 </label>
+                              </div>
+                              <div class="col-auto">
+                                 <input type="text" class="form-control">
+                              </div>
+                           </div>
+                        </div>
+                        <div class="singleInputBox">
+                           <div class="row g-3 align-items-center">
+                              <div class="col-auto">
+                                 <label for="inputPassword6" class="col-form-label">
+                                    <span class="required">*</span>
+                                    Image (Make)
+                                 </label>
+                              </div>
+                              <div class="col-auto">
+                                 <div class="d-flex align-items-center">
+                                    <div class="leftSelect">
+                                       <div class="singleFileUpload fileUploadInput small-size">
+                                          <input type="file" id="selectfile7">
+                                          <label for="selectfile7">
+                                             <img src="../asset/img/icons/select-file.png" alt="">
+                                          </label>
+                                       </div>
+                                    </div>
+                                    <div class="rightPreview" style="margin-left: 20px;">
+                                       <img src="../asset/img/car/9.png" alt="">
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="singleInputBox">
+                           <div class="row g-3 align-items-center">
+                              <div class="col-auto">
+                                 <label for="inputPassword6" class="col-form-label">
+                                    <span class="required">*</span>
+                                    Type
+                                 </label>
+                              </div>
+                              <div class="col-auto">
+                                 <input type="text" class="form-control">
+                              </div>
+                           </div>
+                        </div>
+                        <div class="singleInputBox">
+                           <div class="row g-3 align-items-center">
+                              <div class="col-auto">
+                                 <label for="inputPassword6" class="col-form-label">
+                                    <span class="required">*</span>
+                                    Status
+                                 </label>
+                              </div>
+                              <div class="col-auto">
+                                 <div class="selectBox">
+                                    <select class="form-select">
+                                       <option value="0">Select</option>
+                                       <option value="1">Active</option>
+                                       <option value="2">InActive</option>
+                                    </select>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="bottomSubmitActions">
+                           <button type="button" class="btn btn-outline-primary">Reset</button>
+                           <button type="submit" class="btn btn-primary">Save</button>
+                        </div>
+                     </form>
                   </div>
                </div>
             </div>
