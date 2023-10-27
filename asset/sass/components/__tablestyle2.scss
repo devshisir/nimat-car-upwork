@@ -1,0 +1,26 @@
+.tablestyle2 {
+    font-size: 14px;
+    min-width: max-content;
+
+    .middleFirst {
+        padding-left: 30px;
+        min-width: 195px;
+    }
+
+    thead,
+    tbody,
+    tfoot {
+        vertical-align: middle;
+
+        tr {
+            td {
+                // min-width: 70px;
+
+                &:first-child {
+                    padding-left: 30px;
+                    min-width: 195px;
+                }
+            }
+        }
+    }
+}

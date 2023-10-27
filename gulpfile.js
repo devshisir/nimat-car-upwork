@@ -30,6 +30,11 @@ function watch(){
     gulp.watch('./brand-modellist/*.html').on('change', browserSync.reload);
     gulp.watch('./customer-listing/*.html').on('change', browserSync.reload);
     gulp.watch('./car-body-type/*.html').on('change', browserSync.reload);
+    gulp.watch('./*/*.html').on('change', browserSync.reload);
+
+
+
+
     gulp.watch('./asset/css/*.css').on('change', browserSync.reload);
     gulp.watch('./asset/js/*.js').on('change', browserSync.reload);
 }

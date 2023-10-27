@@ -34,14 +34,17 @@
 @import './components/_header';
 @import './components/_breadCome';
 @import './components/_masterTable';
+@import './components/_tablestyle2';
 @import './components/_pagination';
 @import './components/_navTabs';
+@import './components/_formElement';
 
 // all page scss file import
 @import './pages/_carDetails';
 @import './pages/_addCar';
 @import './pages/_scmanagement';
 @import './pages/_addCompany';
+@import './pages/_inspection';
 
 // responsive file import
 @import './_responsive';
