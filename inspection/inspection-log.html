@@ -1,0 +1,2085 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+   <meta charset="utf-8">
+   <title>Car - Inspection Log Page</title>
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- Favicons -->
+   <link rel="apple-touch-icon" href="../asset/img/favicons/apple-touch-icon.png" sizes="180x180">
+   <link rel="icon" href="../asset/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+   <link rel="icon" href="../asset/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+   <!-- global styles link -->
+   <link rel="stylesheet" href="../asset/css/bootstrap.min.css">
+   <link rel="stylesheet" href="../asset/css/fontawsome.min.css">
+   <link rel="stylesheet" href="../asset/css/style.css">
+   <link rel="stylesheet" href="../asset/css/responsive.css">
+   <!-- this is for mordanizar js link -->
+   <script src="../asset/js/vendor/modernizr-3.6.0.min.js"></script>
+</head>
+
+<body>
+   <!-- main wrapper -->
+   <div id="mainWrapper">
+      <!-- sidebar -->
+      <div class="sidebar">
+         <div class="top_primary_link">
+            <ul>
+               <li>
+                  <a href="/">
+                     <span class="icon">
+                        <img class="inject" src="../asset/img/icons/sidebar/dashboard.svg" alt="">
+                     </span>
+                     <span class="menu_content">Dashboard</span>
+                  </a>
+               </li>
+            </ul>
+         </div>
+         <!-- main menu link -->
+         <div class="main_menu_link">
+            <div class="label_menu">
+               <h4>MENU</h4>
+            </div>
+            <!-- menu with acordion -->
+            <div class="accordion sidebarMenuWrapper" id="menuAcordion">
+               <li class="sidebarMenuLink">
+                  <a href="./car-database.html">
+                     <span class="icon">
+                        <img class="inject" src="./../asset/img/icons/sidebar/car.svg" alt="">
+                     </span>
+                     <span class="menu_content">Car Database</span>
+                  </a>
+               </li>
+               <!-- toggle menu -->
+               <div class="accordion-item mainAcordionItem">
+                  <h2 class="accordion-header">
+                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#menu1" aria-expanded="true" aria-controls="collapseTwo">
+                        <span class="icon">
+                           <img class="inject" src="./../asset/img/icons/sidebar/appraisal.svg" alt="">
+                        </span>
+                        <span class="menu_content">Appraisal</span>
+                     </button>
+                  </h2>
+                  <div id="menu1" class="accordion-collapse collapse show" data-bs-parent="#menuAcordion">
+                     <div class="sub_menu">
+                        <ul>
+                           <li>
+                              <a class="active" href="#">
+                                 <span>-</span>
+                                 <div class="right_content">
+                                    <p>Inspection log</p>
+                                 </div>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <li class="sidebarMenuLink">
+                  <a href="/">
+                     <span class="icon">
+                        <img class="inject" src="./../asset/img/icons/sidebar/card-purches.svg" alt="">
+                     </span>
+                     <span class="menu_content">Purchase</span>
+                  </a>
+               </li>
+               <li class="sidebarMenuLink">
+                  <a href="/">
+                     <span class="icon">
+                        <img class="inject" src="./../asset/img/icons/sidebar/repair.svg" alt="">
+                     </span>
+                     <span class="menu_content">Repair</span>
+                  </a>
+               </li>
+               <!-- toggle menu -->
+               <div class="accordion-item mainAcordionItem">
+                  <h2 class="accordion-header">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu2" aria-expanded="false" aria-controls="collapseTwo">
+                        <span class="icon">
+                           <img class="inject" src="./../asset/img/icons/sidebar/sales.svg" alt="">
+                        </span>
+                        <span class="menu_content">Sales</span>
+                     </button>
+                  </h2>
+                  <div id="menu2" class="accordion-collapse collapse" data-bs-parent="#menuAcordion">
+                     <div class="sub_menu">
+                        <ul>
+                           <li>
+                              <a href="#">
+                                 <span>-</span>
+                                 <div class="right_content">
+                                    <p>WIP</p>
+                                 </div>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <li class="sidebarMenuLink">
+                  <a href="/">
+                     <span class="icon">
+                        <img class="inject" src="./../asset/img/icons/sidebar/tax.svg" alt="">
+                     </span>
+                     <span class="menu_content">Road Tax expiry</span>
+                  </a>
+               </li>
+               <!-- toggle menu -->
+               <div class="accordion-item mainAcordionItem">
+                  <h2 class="accordion-header">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu3" aria-expanded="false" aria-controls="collapseTwo">
+                        <span class="icon">
+                           <img class="inject" src="./../asset/img/icons/sidebar/accounting.svg" alt="">
+                        </span>
+                        <span class="menu_content">Accounting</span>
+                     </button>
+                  </h2>
+                  <div id="menu3" class="accordion-collapse collapse" data-bs-parent="#menuAcordion">
+                     <div class="sub_menu">
+                        <ul>
+                           <li>
+                              <a href="#">
+                                 <span>-</span>
+                                 <div class="right_content">
+                                    <p>Expenses</p>
+                                 </div>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#">
+                                 <span>-</span>
+                                 <div class="right_content">
+                                    <p>Income</p>
+                                 </div>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#">
+                                 <span>-</span>
+                                 <div class="right_content">
+                                    <p>Commission</p>
+                                 </div>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <li class="sidebarMenuLink">
+                  <a href="/">
+                     <span class="icon">
+                        <img class="inject" src="./../asset/img/icons/sidebar/notification.svg" alt="">
+                     </span>
+                     <span class="menu_content">Notification</span>
+                  </a>
+               </li>
+               <li class="sidebarMenuLink">
+                  <a href="/">
+                     <span class="icon">
+                        <img class="inject" src="./../asset/img/icons/sidebar/search-inquary.svg" alt="">
+                     </span>
+                     <span class="menu_content">Audit Trial</span>
+                  </a>
+               </li>
+               <li class="sidebarMenuLink">
+                  <a href="/">
+                     <span class="icon">
+                        <img class="inject" src="./../asset/img/icons/sidebar/reports.svg" alt="">
+                     </span>
+                     <span class="menu_content">Reports</span>
+                  </a>
+               </li>
+               <!-- toggle menu -->
+               <div class="accordion-item mainAcordionItem">
+                  <h2 class="accordion-header">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu4" aria-expanded="false" aria-controls="collapseTwo">
+                        <span class="icon">
+                           <img class="inject" src="./../asset/img/icons/sidebar/settings.svg" alt="">
+                        </span>
+                        <span class="menu_content">Settings</span>
+                     </button>
+                  </h2>
+                  <div id="menu4" class="accordion-collapse collapse" data-bs-parent="#menuAcordion">
+                     <div class="sub_menu">
+                        <ul>
+                           <li>
+                              <a href="#">
+                                 <span>-</span>
+                                 <div class="right_content">
+                                    <p>User Role</p>
+                                 </div>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#">
+                                 <span>-</span>
+                                 <div class="right_content">
+                                    <p>User Master</p>
+                                 </div>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#">
+                                 <span>-</span>
+                                 <div class="right_content">
+                                    <p>Permission</p>
+                                 </div>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <!-- toggle menu -->
+               <div class="accordion-item mainAcordionItem">
+                  <h2 class="accordion-header">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu5" aria-expanded="false" aria-controls="collapseTwo">
+                        <span class="icon">
+                           <img class="inject" src="./../asset/img/icons/sidebar/user.svg" alt="">
+                        </span>
+                        <span class="menu_content">Master</span>
+                     </button>
+                  </h2>
+                  <div id="menu5" class="accordion-collapse collapse" data-bs-parent="#menuAcordion">
+                     <div class="sub_menu">
+                        <ul>
+                           <li>
+                              <a href="/">
+                                 <span>-</span>
+                                 <div class="right_content">
+                                    <p>Brand & Model list</p>
+                                 </div>
+                              </a>
+                           </li>
+                           <div class="subAcordionMenu">
+                              <div class="accordion" id="subAcordion">
+                                 <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#subacor1" aria-expanded="false" aria-controls="collapseTwo">
+                                          <span>-</span>
+                                          <div class="right_content">
+                                             <p>Repair</p>
+                                          </div>
+                                       </button>
+                                    </h2>
+                                    <div id="subacor1" class="accordion-collapse collapse" data-bs-parent="#subAcordion">
+                                       <div class="subacorMenu">
+                                          <ul>
+                                             <li>
+                                                <a href="#">
+                                                   <span>-</span>
+                                                   <div class="right_content">
+                                                      <p>Company Name listing</p>
+                                                   </div>
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="#">
+                                                   <span>-</span>
+                                                   <div class="right_content">
+                                                      <p>Repair Type listing</p>
+                                                   </div>
+                                                </a>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <li>
+                              <a href="../sg-management/sg-manageent.html">
+                                 <span>-</span>
+                                 <div class="right_content">
+                                    <p>SC Management</p>
+                                 </div>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         
+      </div>
+      <div class="app_wrapper">
+         <!-- header -->
+         <header class="appHeader">
+            <div class="row align-items-center">
+               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                  <div class="header_left">
+                     <div class="toggleArrow">
+                        <button class="toggleButton" type="button">
+                           <i class="fa-regular fa-bars-sort"></i>
+                        </button>
+                     </div>
+                     <div class="search_form">
+                        <div class="input-group">
+                           <input type="text" class="form-control" placeholder="Search...">
+                           <span class="input-group-text">
+                              <button type="button">
+                                 <i class="fa-sharp fa-regular fa-magnifying-glass"></i>
+                              </button>
+                           </span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                  <div class="header_right text-end">
+                     <ul>
+                        <li class="notificationButton">
+                           <a href="#"><i class="fa-regular fa-bell"></i></a>
+                        </li>
+                        <li class="userInfo">
+                           <div class="btn-group">
+                              <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                 <span><i class="fa-solid fa-user"></i></span>
+                                 <p>Michael</p>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-end">
+                                 <li>
+                                    <a href="#" class="dropdown-item">Profile</a>
+                                 </li>
+                                 <li>
+                                    <a href="#" class="dropdown-item">Settings</a>
+                                 </li>
+                                 <li>
+                                    <a href="#" class="dropdown-item">Another Link</a>
+                                 </li>
+                                 <li>
+                                    <a href="#" class="dropdown-item">Logout</a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </header>
+         <!-- breadcome area -->
+         <div class="breadComeArea">
+            <div class="row">
+               <div class="col-xl-6 col-lg-6">
+                  <div class="pageTitle">
+                     <h4>Inspection Log Page</h4>
+                  </div>
+               </div>
+               <div class="col-xl-6 col-lg-6">
+                  <div class="pageHistory text-end">
+                     <ul>
+                        <li>
+                           <a href="#">Home page</a>
+                        </li>
+                        <li>
+                           <a href="#"><i class="fa-sharp fa-regular fa-angle-right"></i></a>
+                        </li>
+                        <li>
+                           <a href="#">Appraisal Page</a>
+                        </li>
+                        <li class="active">
+                           <a href="#"><i class="fa-sharp fa-regular fa-angle-right"></i></a>
+                        </li>
+                        <li class="active">
+                           <a href="#">Inspection Log Page</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- global tab button -->
+         <div class="globalTabButton d-flex justify-content-center">
+            <ul class="nav-tabs" id="myTab" role="tablist">
+               <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#pending" type="button" role="tab" aria-selected="true">Pending</button>
+               </li>
+               <li class="nav-item" role="presentation">
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#completed" type="button" role="tab" aria-selected="false">Completed</button>
+               </li>
+               <li class="nav-item" role="presentation">
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#approved" type="button" role="tab" aria-selected="false">Approved</button>
+               </li>
+            </ul>
+         </div>
+         <!-- page inner card -->
+         <div class="appInnerCard">
+            <!-- bottom card -->
+            <div class="card">
+               <div class="card-header">
+                  <div class="cardPageTititle">
+                     <h3>Inspection Log Page</h3>
+                  </div>
+                  <div class="cardHeaderAction text-end"></div>
+               </div>
+               <div class="card-body">
+                  <div class="tab-content" id="myTabContent">
+                     <div class="tab-pane fade show active" id="pending" role="tabpanel" tabindex="0">
+                        <div class="masterTable">
+                           <div class="table-responsive">
+                              <table class="table inspectionTable">
+                                 <thead>
+                                    <tr>
+                                       <td>
+                                          <span>Reg. No. <br> (Old)</span>
+                                          <div class="inputBox">
+                                             <input type="text" style="width: 63px;" class="form-control">
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <span>Source <br> Type</span>
+                                          <div class="selectBox">
+                                             <select class="form-select" style="width: 97px;">
+                                                <option value="0">Select</option>
+                                                <option value="1">option 1</option>
+                                                <option value="2">option 2</option>
+                                                <option value="3">option 3</option>
+                                             </select>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <span>Make</span>
+                                          <div class="inputBox">
+                                             <input type="text" style="width: 63px;" class="form-control">
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <span>Model</span>
+                                          <div class="inputBox">
+                                             <input type="text" style="width: 113px;" class="form-control">
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <span>Year</span>
+                                          <div class="inputBox">
+                                             <input type="text" style="width: 63px;" class="form-control">
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <span>Color</span>
+                                          <div class="inputBox">
+                                             <input type="text" style="width: 63px;" class="form-control">
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <span>Module</span>
+                                          <div class="inputBox">
+                                             <input type="text" style="width: 113px;" class="form-control">
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <span>Status</span>
+                                          <div class="inputBox">
+                                             <input type="text" style="width: 213px;" class="form-control">
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <span>Inspection <br> Approved?</span>
+                                          <div class="inputBox">
+                                             <input type="text" style="width: 80px;" class="form-control">
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <span>Schedule <br> Date</span>
+                                          <div class="inputBox">
+                                             <input type="text" style="width: 70px;" class="form-control">
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <span>No. of days <br> pending</span>
+                                          <div class="inputBox">
+                                             <input type="text" style="width: 75px;" class="form-control">
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <span>Inspection <br> Age</span>
+                                          <div class="inputBox">
+                                             <input type="text" style="width: 75px;" class="form-control">
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <span>Age of <br> Appraisal</span>
+                                          <div class="inputBox">
+                                             <input type="text" style="width: 75px;" class="form-control">
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <span>Total <br> Estimate</span>
+                                          <div class="inputBox">
+                                             <input type="text" style="width: 75px;" class="form-control">
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <span>Offer <br> Price 1</span>
+                                          <div class="inputBox">
+                                             <input type="text" style="width: 75px;" class="form-control">
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <span>Offer <br> Price 2</span>
+                                          <div class="inputBox">
+                                             <input type="text" style="width: 75px;" class="form-control">
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <span>Offer <br> Price 3</span>
+                                          <div class="inputBox">
+                                             <input type="text" style="width: 75px;" class="form-control">
+                                          </div>
+                                       </td>
+                                       <td scope="col" class="text-center">
+                                          <span>Action</span>
+                                       </td>
+                                    </tr>
+                                 </thead>
+                                 <tbody>
+                                    <!-- single table -->
+                                    <tr>
+                                       <td>BAE732</td>
+                                       <td>Used Car</td>
+                                       <td>Toyota</td>
+                                       <td>Honda Civic</td>
+                                       <td>2013</td>
+                                       <td>Red</td>
+                                       <td>Purchasing</td>
+                                       <td>
+                                          <span class="badge-outline rounded-pill badge-success-outline">P-Inspection Pending</span>
+                                       </td>
+                                       <td>NO</td>
+                                       <td>08-Nov-23</td>
+                                       <td>15</td>
+                                       <td class="text-success">1</td>
+                                       <td class="text-success">1</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>
+                                          <div class="tableActions">
+                                             <a class="searchCarIcon" title="Search Car" href="#">
+                                                <img class="inject" src="./../asset/img/icons/search-car.svg" alt="">
+                                             </a>
+                                             <a title="View" href="car-details.html">
+                                                <img class="inject" src="./../asset/img/icons/eye.svg" alt="">
+                                             </a>
+                                             <a title="Edit" href="#">
+                                                <img class="inject" src="./../asset/img/icons/pencil.svg" alt="">
+                                             </a>
+                                             <a title="Refresh" href="#" class="refresh_icon">
+                                                <img class="inject" src="./../asset/img/icons/refresh.svg" alt="">
+                                             </a>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <!-- single table -->
+                                    <tr>
+                                       <td>BAE732</td>
+                                       <td>Used Car</td>
+                                       <td>Toyota</td>
+                                       <td>Honda Civic</td>
+                                       <td>2013</td>
+                                       <td>Red</td>
+                                       <td>Purchasing</td>
+                                       <td>
+                                          <span class="badge-outline rounded-pill badge-success-outline">P-Inspection Pending</span>
+                                       </td>
+                                       <td>NO</td>
+                                       <td>08-Nov-23</td>
+                                       <td>15</td>
+                                       <td class="text-warning">14</td>
+                                       <td class="text-warning">14</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>
+                                          <div class="tableActions">
+                                             <a class="searchCarIcon" title="Search Car" href="#">
+                                                <img class="inject" src="./../asset/img/icons/search-car.svg" alt="">
+                                             </a>
+                                             <a title="View" href="car-details.html">
+                                                <img class="inject" src="./../asset/img/icons/eye.svg" alt="">
+                                             </a>
+                                             <a title="Edit" href="#">
+                                                <img class="inject" src="./../asset/img/icons/pencil.svg" alt="">
+                                             </a>
+                                             <a title="Refresh" href="#" class="refresh_icon">
+                                                <img class="inject" src="./../asset/img/icons/refresh.svg" alt="">
+                                             </a>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <!-- single table -->
+                                    <tr>
+                                       <td>BAE732</td>
+                                       <td>Used Car</td>
+                                       <td>Toyota</td>
+                                       <td>Honda Civic</td>
+                                       <td>2013</td>
+                                       <td>Red</td>
+                                       <td>Purchasing</td>
+                                       <td>
+                                          <span class="badge-outline rounded-pill badge-success-outline">P-Inspection Pending</span>
+                                       </td>
+                                       <td>NO</td>
+                                       <td>08-Nov-23</td>
+                                       <td>15</td>
+                                       <td class="text-danger">15</td>
+                                       <td class="text-danger">15</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>
+                                          <div class="tableActions">
+                                             <a class="searchCarIcon" title="Search Car" href="#">
+                                                <img class="inject" src="./../asset/img/icons/search-car.svg" alt="">
+                                             </a>
+                                             <a title="View" href="car-details.html">
+                                                <img class="inject" src="./../asset/img/icons/eye.svg" alt="">
+                                             </a>
+                                             <a title="Edit" href="#">
+                                                <img class="inject" src="./../asset/img/icons/pencil.svg" alt="">
+                                             </a>
+                                             <a title="Refresh" href="#" class="refresh_icon">
+                                                <img class="inject" src="./../asset/img/icons/refresh.svg" alt="">
+                                             </a>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <!-- single table -->
+                                    <tr>
+                                       <td>BAE732</td>
+                                       <td>Used Car</td>
+                                       <td>Toyota</td>
+                                       <td>Honda Civic</td>
+                                       <td>2013</td>
+                                       <td>Red</td>
+                                       <td>Purchasing</td>
+                                       <td>
+                                          <span class="badge-outline rounded-pill badge-success-outline">P-Inspection Pending</span>
+                                       </td>
+                                       <td>NO</td>
+                                       <td>08-Nov-23</td>
+                                       <td>15</td>
+                                       <td class="text-success">4</td>
+                                       <td class="text-success">4</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>
+                                          <div class="tableActions">
+                                             <a class="searchCarIcon" title="Search Car" href="#">
+                                                <img class="inject" src="./../asset/img/icons/search-car.svg" alt="">
+                                             </a>
+                                             <a title="View" href="car-details.html">
+                                                <img class="inject" src="./../asset/img/icons/eye.svg" alt="">
+                                             </a>
+                                             <a title="Edit" href="#">
+                                                <img class="inject" src="./../asset/img/icons/pencil.svg" alt="">
+                                             </a>
+                                             <a title="Refresh" href="#" class="refresh_icon">
+                                                <img class="inject" src="./../asset/img/icons/refresh.svg" alt="">
+                                             </a>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <!-- single table -->
+                                    <tr>
+                                       <td>BAE732</td>
+                                       <td>Used Car</td>
+                                       <td>Toyota</td>
+                                       <td>Honda Civic</td>
+                                       <td>2013</td>
+                                       <td>Red</td>
+                                       <td>Purchasing</td>
+                                       <td>
+                                          <span class="badge-outline rounded-pill badge-success-outline">P-Inspection Pending</span>
+                                       </td>
+                                       <td>NO</td>
+                                       <td>08-Nov-23</td>
+                                       <td>15</td>
+                                       <td class="text-warning">8</td>
+                                       <td class="text-warning">8</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>
+                                          <div class="tableActions">
+                                             <a class="searchCarIcon" title="Search Car" href="#">
+                                                <img class="inject" src="./../asset/img/icons/search-car.svg" alt="">
+                                             </a>
+                                             <a title="View" href="car-details.html">
+                                                <img class="inject" src="./../asset/img/icons/eye.svg" alt="">
+                                             </a>
+                                             <a title="Edit" href="#">
+                                                <img class="inject" src="./../asset/img/icons/pencil.svg" alt="">
+                                             </a>
+                                             <a title="Refresh" href="#" class="refresh_icon">
+                                                <img class="inject" src="./../asset/img/icons/refresh.svg" alt="">
+                                             </a>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <!-- single table -->
+                                    <tr>
+                                       <td>BAE732</td>
+                                       <td>Used Car</td>
+                                       <td>Toyota</td>
+                                       <td>Honda Civic</td>
+                                       <td>2013</td>
+                                       <td>Red</td>
+                                       <td>Purchasing</td>
+                                       <td>
+                                          <span class="badge-outline rounded-pill badge-success-outline">P-Inspection Pending</span>
+                                       </td>
+                                       <td>NO</td>
+                                       <td>08-Nov-23</td>
+                                       <td>15</td>
+                                       <td class="text-danger">20</td>
+                                       <td class="text-danger">20</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>
+                                          <div class="tableActions">
+                                             <a class="searchCarIcon" title="Search Car" href="#">
+                                                <img class="inject" src="./../asset/img/icons/search-car.svg" alt="">
+                                             </a>
+                                             <a title="View" href="car-details.html">
+                                                <img class="inject" src="./../asset/img/icons/eye.svg" alt="">
+                                             </a>
+                                             <a title="Edit" href="#">
+                                                <img class="inject" src="./../asset/img/icons/pencil.svg" alt="">
+                                             </a>
+                                             <a title="Refresh" href="#" class="refresh_icon">
+                                                <img class="inject" src="./../asset/img/icons/refresh.svg" alt="">
+                                             </a>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <!-- single table -->
+                                    <tr>
+                                       <td>BAE732</td>
+                                       <td>Used Car</td>
+                                       <td>Toyota</td>
+                                       <td>Honda Civic</td>
+                                       <td>2013</td>
+                                       <td>Red</td>
+                                       <td>Purchasing</td>
+                                       <td>
+                                          <span class="badge-outline rounded-pill badge-success-outline">P-Inspection Pending</span>
+                                       </td>
+                                       <td>NO</td>
+                                       <td>08-Nov-23</td>
+                                       <td>15</td>
+                                       <td class="text-success">3</td>
+                                       <td class="text-success">3</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>
+                                          <div class="tableActions">
+                                             <a class="searchCarIcon" title="Search Car" href="#">
+                                                <img class="inject" src="./../asset/img/icons/search-car.svg" alt="">
+                                             </a>
+                                             <a title="View" href="car-details.html">
+                                                <img class="inject" src="./../asset/img/icons/eye.svg" alt="">
+                                             </a>
+                                             <a title="Edit" href="#">
+                                                <img class="inject" src="./../asset/img/icons/pencil.svg" alt="">
+                                             </a>
+                                             <a title="Refresh" href="#" class="refresh_icon">
+                                                <img class="inject" src="./../asset/img/icons/refresh.svg" alt="">
+                                             </a>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <!-- single table -->
+                                    <tr>
+                                       <td>BAE732</td>
+                                       <td>Used Car</td>
+                                       <td>Toyota</td>
+                                       <td>Honda Civic</td>
+                                       <td>2013</td>
+                                       <td>Red</td>
+                                       <td>Purchasing</td>
+                                       <td>
+                                          <span class="badge-outline rounded-pill badge-success-outline">P-Inspection Pending</span>
+                                       </td>
+                                       <td>NO</td>
+                                       <td>08-Nov-23</td>
+                                       <td>15</td>
+                                       <td class="text-warning">12</td>
+                                       <td class="text-warning">12</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>
+                                          <div class="tableActions">
+                                             <a class="searchCarIcon" title="Search Car" href="#">
+                                                <img class="inject" src="./../asset/img/icons/search-car.svg" alt="">
+                                             </a>
+                                             <a title="View" href="car-details.html">
+                                                <img class="inject" src="./../asset/img/icons/eye.svg" alt="">
+                                             </a>
+                                             <a title="Edit" href="#">
+                                                <img class="inject" src="./../asset/img/icons/pencil.svg" alt="">
+                                             </a>
+                                             <a title="Refresh" href="#" class="refresh_icon">
+                                                <img class="inject" src="./../asset/img/icons/refresh.svg" alt="">
+                                             </a>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <!-- single table -->
+                                    <tr>
+                                       <td>BAE732</td>
+                                       <td>Used Car</td>
+                                       <td>Toyota</td>
+                                       <td>Honda Civic</td>
+                                       <td>2013</td>
+                                       <td>Red</td>
+                                       <td>Purchasing</td>
+                                       <td>
+                                          <span class="badge-outline rounded-pill badge-success-outline">P-Inspection Pending</span>
+                                       </td>
+                                       <td>NO</td>
+                                       <td>08-Nov-23</td>
+                                       <td>15</td>
+                                       <td class="text-danger">13</td>
+                                       <td class="text-danger">13</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>
+                                          <div class="tableActions">
+                                             <a class="searchCarIcon" title="Search Car" href="#">
+                                                <img class="inject" src="./../asset/img/icons/search-car.svg" alt="">
+                                             </a>
+                                             <a title="View" href="car-details.html">
+                                                <img class="inject" src="./../asset/img/icons/eye.svg" alt="">
+                                             </a>
+                                             <a title="Edit" href="#">
+                                                <img class="inject" src="./../asset/img/icons/pencil.svg" alt="">
+                                             </a>
+                                             <a title="Refresh" href="#" class="refresh_icon">
+                                                <img class="inject" src="./../asset/img/icons/refresh.svg" alt="">
+                                             </a>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <!-- single table -->
+                                    <tr>
+                                       <td>BAE732</td>
+                                       <td>Used Car</td>
+                                       <td>Toyota</td>
+                                       <td>Honda Civic</td>
+                                       <td>2013</td>
+                                       <td>Red</td>
+                                       <td>Purchasing</td>
+                                       <td>
+                                          <span class="badge-outline rounded-pill badge-success-outline">P-Inspection Pending</span>
+                                       </td>
+                                       <td>NO</td>
+                                       <td>08-Nov-23</td>
+                                       <td>15</td>
+                                       <td class="text-success">6</td>
+                                       <td class="text-success">6</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>
+                                          <div class="tableActions">
+                                             <a class="searchCarIcon" title="Search Car" href="#">
+                                                <img class="inject" src="./../asset/img/icons/search-car.svg" alt="">
+                                             </a>
+                                             <a title="View" href="car-details.html">
+                                                <img class="inject" src="./../asset/img/icons/eye.svg" alt="">
+                                             </a>
+                                             <a title="Edit" href="#">
+                                                <img class="inject" src="./../asset/img/icons/pencil.svg" alt="">
+                                             </a>
+                                             <a title="Refresh" href="#" class="refresh_icon">
+                                                <img class="inject" src="./../asset/img/icons/refresh.svg" alt="">
+                                             </a>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <!-- single table -->
+                                    <tr>
+                                       <td>BAE732</td>
+                                       <td>Used Car</td>
+                                       <td>Toyota</td>
+                                       <td>Honda Civic</td>
+                                       <td>2013</td>
+                                       <td>Red</td>
+                                       <td>Purchasing</td>
+                                       <td>
+                                          <span class="badge-outline rounded-pill badge-success-outline">P-Inspection Pending</span>
+                                       </td>
+                                       <td>NO</td>
+                                       <td>08-Nov-23</td>
+                                       <td>15</td>
+                                       <td class="text-warning">9</td>
+                                       <td class="text-warning">9</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>
+                                          <div class="tableActions">
+                                             <a class="searchCarIcon" title="Search Car" href="#">
+                                                <img class="inject" src="./../asset/img/icons/search-car.svg" alt="">
+                                             </a>
+                                             <a title="View" href="car-details.html">
+                                                <img class="inject" src="./../asset/img/icons/eye.svg" alt="">
+                                             </a>
+                                             <a title="Edit" href="#">
+                                                <img class="inject" src="./../asset/img/icons/pencil.svg" alt="">
+                                             </a>
+                                             <a title="Refresh" href="#" class="refresh_icon">
+                                                <img class="inject" src="./../asset/img/icons/refresh.svg" alt="">
+                                             </a>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- complete table -->
+                     <div class="tab-pane fade" id="completed" role="tabpanel" tabindex="0">
+                        <div class="masterTable">
+                           <div class="table-responsive">
+                              <table class="table inspectionTable">
+                                 <thead>
+                                    <tr>
+                                       <td>
+                                          <span>Reg. No. <br> (Old)</span>
+                                          <div class="inputBox">
+                                             <input type="text" style="width: 63px;" class="form-control">
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <span>Source <br> Type</span>
+                                          <div class="selectBox">
+                                             <select class="form-select" style="width: 97px;">
+                                                <option value="0">Select</option>
+                                                <option value="1">option 1</option>
+                                                <option value="2">option 2</option>
+                                                <option value="3">option 3</option>
+                                             </select>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <span>Make</span>
+                                          <div class="inputBox">
+                                             <input type="text" style="width: 63px;" class="form-control">
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <span>Model</span>
+                                          <div class="inputBox">
+                                             <input type="text" style="width: 113px;" class="form-control">
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <span>Year</span>
+                                          <div class="inputBox">
+                                             <input type="text" style="width: 63px;" class="form-control">
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <span>Color</span>
+                                          <div class="inputBox">
+                                             <input type="text" style="width: 63px;" class="form-control">
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <span>Module</span>
+                                          <div class="inputBox">
+                                             <input type="text" style="width: 113px;" class="form-control">
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <span>Status</span>
+                                          <div class="inputBox">
+                                             <input type="text" style="width: 213px;" class="form-control">
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <span>Inspection <br> Approved?</span>
+                                          <div class="inputBox">
+                                             <input type="text" style="width: 80px;" class="form-control">
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <span>Schedule <br> Date</span>
+                                          <div class="inputBox">
+                                             <input type="text" style="width: 70px;" class="form-control">
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <span>No. of days <br> pending</span>
+                                          <div class="inputBox">
+                                             <input type="text" style="width: 75px;" class="form-control">
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <span>Inspection <br> Age</span>
+                                          <div class="inputBox">
+                                             <input type="text" style="width: 75px;" class="form-control">
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <span>Age of <br> Appraisal</span>
+                                          <div class="inputBox">
+                                             <input type="text" style="width: 75px;" class="form-control">
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <span>Total <br> Estimate</span>
+                                          <div class="inputBox">
+                                             <input type="text" style="width: 75px;" class="form-control">
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <span>Offer <br> Price 1</span>
+                                          <div class="inputBox">
+                                             <input type="text" style="width: 75px;" class="form-control">
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <span>Offer <br> Price 2</span>
+                                          <div class="inputBox">
+                                             <input type="text" style="width: 75px;" class="form-control">
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <span>Offer <br> Price 3</span>
+                                          <div class="inputBox">
+                                             <input type="text" style="width: 75px;" class="form-control">
+                                          </div>
+                                       </td>
+                                       <td scope="col" class="text-center">
+                                          <span>Action</span>
+                                       </td>
+                                    </tr>
+                                 </thead>
+                                 <tbody>
+                                    <!-- single table -->
+                                    <tr>
+                                       <td>BAE732</td>
+                                       <td>Used Car</td>
+                                       <td>Toyota</td>
+                                       <td>Honda Civic</td>
+                                       <td>2013</td>
+                                       <td>Red</td>
+                                       <td>Purchasing</td>
+                                       <td>
+                                          <span class="badge-outline rounded-pill badge-info-outline">P-Inspected</span>
+                                       </td>
+                                       <td>NO</td>
+                                       <td>08-Nov-23</td>
+                                       <td>15</td>
+                                       <td class="text-success">1</td>
+                                       <td class="text-success">1</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>
+                                          <div class="tableActions">
+                                             <a class="searchCarIcon" title="Search Car" href="#">
+                                                <img class="inject" src="./../asset/img/icons/search-car.svg" alt="">
+                                             </a>
+                                             <a title="View" href="car-details.html">
+                                                <img class="inject" src="./../asset/img/icons/eye.svg" alt="">
+                                             </a>
+                                             <a title="Edit" href="#">
+                                                <img class="inject" src="./../asset/img/icons/pencil.svg" alt="">
+                                             </a>
+                                             <a title="Refresh" href="#" class="refresh_icon">
+                                                <img class="inject" src="./../asset/img/icons/refresh.svg" alt="">
+                                             </a>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <!-- single table -->
+                                    <tr>
+                                       <td>BAE732</td>
+                                       <td>Used Car</td>
+                                       <td>Toyota</td>
+                                       <td>Honda Civic</td>
+                                       <td>2013</td>
+                                       <td>Red</td>
+                                       <td>Purchasing</td>
+                                       <td>
+                                          <span class="badge-outline rounded-pill badge-info-outline">P-Inspected</span>
+                                       </td>
+                                       <td>NO</td>
+                                       <td>08-Nov-23</td>
+                                       <td>15</td>
+                                       <td class="text-warning">14</td>
+                                       <td class="text-warning">14</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>
+                                          <div class="tableActions">
+                                             <a class="searchCarIcon" title="Search Car" href="#">
+                                                <img class="inject" src="./../asset/img/icons/search-car.svg" alt="">
+                                             </a>
+                                             <a title="View" href="car-details.html">
+                                                <img class="inject" src="./../asset/img/icons/eye.svg" alt="">
+                                             </a>
+                                             <a title="Edit" href="#">
+                                                <img class="inject" src="./../asset/img/icons/pencil.svg" alt="">
+                                             </a>
+                                             <a title="Refresh" href="#" class="refresh_icon">
+                                                <img class="inject" src="./../asset/img/icons/refresh.svg" alt="">
+                                             </a>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <!-- single table -->
+                                    <tr>
+                                       <td>BAE732</td>
+                                       <td>Used Car</td>
+                                       <td>Toyota</td>
+                                       <td>Honda Civic</td>
+                                       <td>2013</td>
+                                       <td>Red</td>
+                                       <td>Purchasing</td>
+                                       <td>
+                                          <span class="badge-outline rounded-pill badge-info-outline">P-Inspected</span>
+                                       </td>
+                                       <td>NO</td>
+                                       <td>08-Nov-23</td>
+                                       <td>15</td>
+                                       <td class="text-danger">15</td>
+                                       <td class="text-danger">15</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>
+                                          <div class="tableActions">
+                                             <a class="searchCarIcon" title="Search Car" href="#">
+                                                <img class="inject" src="./../asset/img/icons/search-car.svg" alt="">
+                                             </a>
+                                             <a title="View" href="car-details.html">
+                                                <img class="inject" src="./../asset/img/icons/eye.svg" alt="">
+                                             </a>
+                                             <a title="Edit" href="#">
+                                                <img class="inject" src="./../asset/img/icons/pencil.svg" alt="">
+                                             </a>
+                                             <a title="Refresh" href="#" class="refresh_icon">
+                                                <img class="inject" src="./../asset/img/icons/refresh.svg" alt="">
+                                             </a>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <!-- single table -->
+                                    <tr>
+                                       <td>BAE732</td>
+                                       <td>Used Car</td>
+                                       <td>Toyota</td>
+                                       <td>Honda Civic</td>
+                                       <td>2013</td>
+                                       <td>Red</td>
+                                       <td>Purchasing</td>
+                                       <td>
+                                          <span class="badge-outline rounded-pill badge-info-outline">P-Inspected</span>
+                                       </td>
+                                       <td>NO</td>
+                                       <td>08-Nov-23</td>
+                                       <td>15</td>
+                                       <td class="text-success">4</td>
+                                       <td class="text-success">4</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>
+                                          <div class="tableActions">
+                                             <a class="searchCarIcon" title="Search Car" href="#">
+                                                <img class="inject" src="./../asset/img/icons/search-car.svg" alt="">
+                                             </a>
+                                             <a title="View" href="car-details.html">
+                                                <img class="inject" src="./../asset/img/icons/eye.svg" alt="">
+                                             </a>
+                                             <a title="Edit" href="#">
+                                                <img class="inject" src="./../asset/img/icons/pencil.svg" alt="">
+                                             </a>
+                                             <a title="Refresh" href="#" class="refresh_icon">
+                                                <img class="inject" src="./../asset/img/icons/refresh.svg" alt="">
+                                             </a>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <!-- single table -->
+                                    <tr>
+                                       <td>BAE732</td>
+                                       <td>Used Car</td>
+                                       <td>Toyota</td>
+                                       <td>Honda Civic</td>
+                                       <td>2013</td>
+                                       <td>Red</td>
+                                       <td>Purchasing</td>
+                                       <td>
+                                          <span class="badge-outline rounded-pill badge-info-outline">P-Inspected</span>
+                                       </td>
+                                       <td>NO</td>
+                                       <td>08-Nov-23</td>
+                                       <td>15</td>
+                                       <td class="text-warning">8</td>
+                                       <td class="text-warning">8</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>
+                                          <div class="tableActions">
+                                             <a class="searchCarIcon" title="Search Car" href="#">
+                                                <img class="inject" src="./../asset/img/icons/search-car.svg" alt="">
+                                             </a>
+                                             <a title="View" href="car-details.html">
+                                                <img class="inject" src="./../asset/img/icons/eye.svg" alt="">
+                                             </a>
+                                             <a title="Edit" href="#">
+                                                <img class="inject" src="./../asset/img/icons/pencil.svg" alt="">
+                                             </a>
+                                             <a title="Refresh" href="#" class="refresh_icon">
+                                                <img class="inject" src="./../asset/img/icons/refresh.svg" alt="">
+                                             </a>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <!-- single table -->
+                                    <tr>
+                                       <td>BAE732</td>
+                                       <td>Used Car</td>
+                                       <td>Toyota</td>
+                                       <td>Honda Civic</td>
+                                       <td>2013</td>
+                                       <td>Red</td>
+                                       <td>Purchasing</td>
+                                       <td>
+                                          <span class="badge-outline rounded-pill badge-info-outline">P-Inspected</span>
+                                       </td>
+                                       <td>NO</td>
+                                       <td>08-Nov-23</td>
+                                       <td>15</td>
+                                       <td class="text-danger">20</td>
+                                       <td class="text-danger">20</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>
+                                          <div class="tableActions">
+                                             <a class="searchCarIcon" title="Search Car" href="#">
+                                                <img class="inject" src="./../asset/img/icons/search-car.svg" alt="">
+                                             </a>
+                                             <a title="View" href="car-details.html">
+                                                <img class="inject" src="./../asset/img/icons/eye.svg" alt="">
+                                             </a>
+                                             <a title="Edit" href="#">
+                                                <img class="inject" src="./../asset/img/icons/pencil.svg" alt="">
+                                             </a>
+                                             <a title="Refresh" href="#" class="refresh_icon">
+                                                <img class="inject" src="./../asset/img/icons/refresh.svg" alt="">
+                                             </a>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <!-- single table -->
+                                    <tr>
+                                       <td>BAE732</td>
+                                       <td>Used Car</td>
+                                       <td>Toyota</td>
+                                       <td>Honda Civic</td>
+                                       <td>2013</td>
+                                       <td>Red</td>
+                                       <td>Purchasing</td>
+                                       <td>
+                                          <span class="badge-outline rounded-pill badge-info-outline">P-Inspected</span>
+                                       </td>
+                                       <td>NO</td>
+                                       <td>08-Nov-23</td>
+                                       <td>15</td>
+                                       <td class="text-success">3</td>
+                                       <td class="text-success">3</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>
+                                          <div class="tableActions">
+                                             <a class="searchCarIcon" title="Search Car" href="#">
+                                                <img class="inject" src="./../asset/img/icons/search-car.svg" alt="">
+                                             </a>
+                                             <a title="View" href="car-details.html">
+                                                <img class="inject" src="./../asset/img/icons/eye.svg" alt="">
+                                             </a>
+                                             <a title="Edit" href="#">
+                                                <img class="inject" src="./../asset/img/icons/pencil.svg" alt="">
+                                             </a>
+                                             <a title="Refresh" href="#" class="refresh_icon">
+                                                <img class="inject" src="./../asset/img/icons/refresh.svg" alt="">
+                                             </a>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <!-- single table -->
+                                    <tr>
+                                       <td>BAE732</td>
+                                       <td>Used Car</td>
+                                       <td>Toyota</td>
+                                       <td>Honda Civic</td>
+                                       <td>2013</td>
+                                       <td>Red</td>
+                                       <td>Purchasing</td>
+                                       <td>
+                                          <span class="badge-outline rounded-pill badge-info-outline">P-Inspected</span>
+                                       </td>
+                                       <td>NO</td>
+                                       <td>08-Nov-23</td>
+                                       <td>15</td>
+                                       <td class="text-warning">12</td>
+                                       <td class="text-warning">12</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>
+                                          <div class="tableActions">
+                                             <a class="searchCarIcon" title="Search Car" href="#">
+                                                <img class="inject" src="./../asset/img/icons/search-car.svg" alt="">
+                                             </a>
+                                             <a title="View" href="car-details.html">
+                                                <img class="inject" src="./../asset/img/icons/eye.svg" alt="">
+                                             </a>
+                                             <a title="Edit" href="#">
+                                                <img class="inject" src="./../asset/img/icons/pencil.svg" alt="">
+                                             </a>
+                                             <a title="Refresh" href="#" class="refresh_icon">
+                                                <img class="inject" src="./../asset/img/icons/refresh.svg" alt="">
+                                             </a>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <!-- single table -->
+                                    <tr>
+                                       <td>BAE732</td>
+                                       <td>Used Car</td>
+                                       <td>Toyota</td>
+                                       <td>Honda Civic</td>
+                                       <td>2013</td>
+                                       <td>Red</td>
+                                       <td>Purchasing</td>
+                                       <td>
+                                          <span class="badge-outline rounded-pill badge-info-outline">P-Inspected</span>
+                                       </td>
+                                       <td>NO</td>
+                                       <td>08-Nov-23</td>
+                                       <td>15</td>
+                                       <td class="text-danger">13</td>
+                                       <td class="text-danger">13</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>
+                                          <div class="tableActions">
+                                             <a class="searchCarIcon" title="Search Car" href="#">
+                                                <img class="inject" src="./../asset/img/icons/search-car.svg" alt="">
+                                             </a>
+                                             <a title="View" href="car-details.html">
+                                                <img class="inject" src="./../asset/img/icons/eye.svg" alt="">
+                                             </a>
+                                             <a title="Edit" href="#">
+                                                <img class="inject" src="./../asset/img/icons/pencil.svg" alt="">
+                                             </a>
+                                             <a title="Refresh" href="#" class="refresh_icon">
+                                                <img class="inject" src="./../asset/img/icons/refresh.svg" alt="">
+                                             </a>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <!-- single table -->
+                                    <tr>
+                                       <td>BAE732</td>
+                                       <td>Used Car</td>
+                                       <td>Toyota</td>
+                                       <td>Honda Civic</td>
+                                       <td>2013</td>
+                                       <td>Red</td>
+                                       <td>Purchasing</td>
+                                       <td>
+                                          <span class="badge-outline rounded-pill badge-info-outline">P-Inspected</span>
+                                       </td>
+                                       <td>NO</td>
+                                       <td>08-Nov-23</td>
+                                       <td>15</td>
+                                       <td class="text-success">6</td>
+                                       <td class="text-success">6</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>
+                                          <div class="tableActions">
+                                             <a class="searchCarIcon" title="Search Car" href="#">
+                                                <img class="inject" src="./../asset/img/icons/search-car.svg" alt="">
+                                             </a>
+                                             <a title="View" href="car-details.html">
+                                                <img class="inject" src="./../asset/img/icons/eye.svg" alt="">
+                                             </a>
+                                             <a title="Edit" href="#">
+                                                <img class="inject" src="./../asset/img/icons/pencil.svg" alt="">
+                                             </a>
+                                             <a title="Refresh" href="#" class="refresh_icon">
+                                                <img class="inject" src="./../asset/img/icons/refresh.svg" alt="">
+                                             </a>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <!-- single table -->
+                                    <tr>
+                                       <td>BAE732</td>
+                                       <td>Used Car</td>
+                                       <td>Toyota</td>
+                                       <td>Honda Civic</td>
+                                       <td>2013</td>
+                                       <td>Red</td>
+                                       <td>Purchasing</td>
+                                       <td>
+                                          <span class="badge-outline rounded-pill badge-info-outline">P-Inspected</span>
+                                       </td>
+                                       <td>NO</td>
+                                       <td>08-Nov-23</td>
+                                       <td>15</td>
+                                       <td class="text-warning">9</td>
+                                       <td class="text-warning">9</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>
+                                          <div class="tableActions">
+                                             <a class="searchCarIcon" title="Search Car" href="#">
+                                                <img class="inject" src="./../asset/img/icons/search-car.svg" alt="">
+                                             </a>
+                                             <a title="View" href="car-details.html">
+                                                <img class="inject" src="./../asset/img/icons/eye.svg" alt="">
+                                             </a>
+                                             <a title="Edit" href="#">
+                                                <img class="inject" src="./../asset/img/icons/pencil.svg" alt="">
+                                             </a>
+                                             <a title="Refresh" href="#" class="refresh_icon">
+                                                <img class="inject" src="./../asset/img/icons/refresh.svg" alt="">
+                                             </a>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- approuved table -->
+                     <div class="tab-pane fade" id="approved" role="tabpanel" tabindex="0">
+                        <div class="masterTable">
+                           <div class="table-responsive">
+                              <table class="table inspectionTable">
+                                 <thead>
+                                    <tr>
+                                       <td>
+                                          <span>Reg. No. <br> (Old)</span>
+                                          <div class="inputBox">
+                                             <input type="text" style="width: 63px;" class="form-control">
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <span>Source <br> Type</span>
+                                          <div class="selectBox">
+                                             <select class="form-select" style="width: 97px;">
+                                                <option value="0">Select</option>
+                                                <option value="1">option 1</option>
+                                                <option value="2">option 2</option>
+                                                <option value="3">option 3</option>
+                                             </select>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <span>Make</span>
+                                          <div class="inputBox">
+                                             <input type="text" style="width: 63px;" class="form-control">
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <span>Model</span>
+                                          <div class="inputBox">
+                                             <input type="text" style="width: 113px;" class="form-control">
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <span>Year</span>
+                                          <div class="inputBox">
+                                             <input type="text" style="width: 63px;" class="form-control">
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <span>Color</span>
+                                          <div class="inputBox">
+                                             <input type="text" style="width: 63px;" class="form-control">
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <span>Module</span>
+                                          <div class="inputBox">
+                                             <input type="text" style="width: 113px;" class="form-control">
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <span>Status</span>
+                                          <div class="inputBox">
+                                             <input type="text" style="width: 213px;" class="form-control">
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <span>Inspection <br> Approved?</span>
+                                          <div class="inputBox">
+                                             <input type="text" style="width: 80px;" class="form-control">
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <span>Schedule <br> Date</span>
+                                          <div class="inputBox">
+                                             <input type="text" style="width: 70px;" class="form-control">
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <span>No. of days <br> pending</span>
+                                          <div class="inputBox">
+                                             <input type="text" style="width: 75px;" class="form-control">
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <span>Inspection <br> Age</span>
+                                          <div class="inputBox">
+                                             <input type="text" style="width: 75px;" class="form-control">
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <span>Age of <br> Appraisal</span>
+                                          <div class="inputBox">
+                                             <input type="text" style="width: 75px;" class="form-control">
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <span>Total <br> Estimate</span>
+                                          <div class="inputBox">
+                                             <input type="text" style="width: 75px;" class="form-control">
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <span>Offer <br> Price 1</span>
+                                          <div class="inputBox">
+                                             <input type="text" style="width: 75px;" class="form-control">
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <span>Offer <br> Price 2</span>
+                                          <div class="inputBox">
+                                             <input type="text" style="width: 75px;" class="form-control">
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <span>Offer <br> Price 3</span>
+                                          <div class="inputBox">
+                                             <input type="text" style="width: 75px;" class="form-control">
+                                          </div>
+                                       </td>
+                                       <td scope="col" class="text-center">
+                                          <span>Action</span>
+                                       </td>
+                                    </tr>
+                                 </thead>
+                                 <tbody>
+                                    <!-- single table -->
+                                    <tr>
+                                       <td>BAE732</td>
+                                       <td>Used Car</td>
+                                       <td>Toyota</td>
+                                       <td>Honda Civic</td>
+                                       <td>2013</td>
+                                       <td>Red</td>
+                                       <td>Purchasing</td>
+                                       <td>
+                                          <span class="badge-outline rounded-pill badge-info-outline">P-Inspected</span>
+                                       </td>
+                                       <td>YES</td>
+                                       <td>08-Nov-23</td>
+                                       <td>15</td>
+                                       <td class="text-success">1</td>
+                                       <td class="text-success">1</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>
+                                          <div class="tableActions">
+                                             <a class="searchCarIcon" title="Search Car" href="#">
+                                                <img class="inject" src="./../asset/img/icons/search-car.svg" alt="">
+                                             </a>
+                                             <a title="View" href="car-details.html">
+                                                <img class="inject" src="./../asset/img/icons/eye.svg" alt="">
+                                             </a>
+                                             <a title="Edit" href="#">
+                                                <img class="inject" src="./../asset/img/icons/pencil.svg" alt="">
+                                             </a>
+                                             <a title="Refresh" href="#" class="refresh_icon">
+                                                <img class="inject" src="./../asset/img/icons/refresh.svg" alt="">
+                                             </a>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <!-- single table -->
+                                    <tr>
+                                       <td>BAE732</td>
+                                       <td>Used Car</td>
+                                       <td>Toyota</td>
+                                       <td>Honda Civic</td>
+                                       <td>2013</td>
+                                       <td>Red</td>
+                                       <td>Purchasing</td>
+                                       <td>
+                                          <span class="badge-outline rounded-pill badge-info-outline">P-Inspected</span>
+                                       </td>
+                                       <td>YES</td>
+                                       <td>08-Nov-23</td>
+                                       <td>15</td>
+                                       <td class="text-warning">14</td>
+                                       <td class="text-warning">14</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>
+                                          <div class="tableActions">
+                                             <a class="searchCarIcon" title="Search Car" href="#">
+                                                <img class="inject" src="./../asset/img/icons/search-car.svg" alt="">
+                                             </a>
+                                             <a title="View" href="car-details.html">
+                                                <img class="inject" src="./../asset/img/icons/eye.svg" alt="">
+                                             </a>
+                                             <a title="Edit" href="#">
+                                                <img class="inject" src="./../asset/img/icons/pencil.svg" alt="">
+                                             </a>
+                                             <a title="Refresh" href="#" class="refresh_icon">
+                                                <img class="inject" src="./../asset/img/icons/refresh.svg" alt="">
+                                             </a>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <!-- single table -->
+                                    <tr>
+                                       <td>BAE732</td>
+                                       <td>Used Car</td>
+                                       <td>Toyota</td>
+                                       <td>Honda Civic</td>
+                                       <td>2013</td>
+                                       <td>Red</td>
+                                       <td>Purchasing</td>
+                                       <td>
+                                          <span class="badge-outline rounded-pill badge-info-outline">P-Inspected</span>
+                                       </td>
+                                       <td>YES</td>
+                                       <td>08-Nov-23</td>
+                                       <td>15</td>
+                                       <td class="text-danger">15</td>
+                                       <td class="text-danger">15</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>
+                                          <div class="tableActions">
+                                             <a class="searchCarIcon" title="Search Car" href="#">
+                                                <img class="inject" src="./../asset/img/icons/search-car.svg" alt="">
+                                             </a>
+                                             <a title="View" href="car-details.html">
+                                                <img class="inject" src="./../asset/img/icons/eye.svg" alt="">
+                                             </a>
+                                             <a title="Edit" href="#">
+                                                <img class="inject" src="./../asset/img/icons/pencil.svg" alt="">
+                                             </a>
+                                             <a title="Refresh" href="#" class="refresh_icon">
+                                                <img class="inject" src="./../asset/img/icons/refresh.svg" alt="">
+                                             </a>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <!-- single table -->
+                                    <tr>
+                                       <td>BAE732</td>
+                                       <td>Used Car</td>
+                                       <td>Toyota</td>
+                                       <td>Honda Civic</td>
+                                       <td>2013</td>
+                                       <td>Red</td>
+                                       <td>Purchasing</td>
+                                       <td>
+                                          <span class="badge-outline rounded-pill badge-info-outline">P-Inspected</span>
+                                       </td>
+                                       <td>YES</td>
+                                       <td>08-Nov-23</td>
+                                       <td>15</td>
+                                       <td class="text-success">4</td>
+                                       <td class="text-success">4</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>
+                                          <div class="tableActions">
+                                             <a class="searchCarIcon" title="Search Car" href="#">
+                                                <img class="inject" src="./../asset/img/icons/search-car.svg" alt="">
+                                             </a>
+                                             <a title="View" href="car-details.html">
+                                                <img class="inject" src="./../asset/img/icons/eye.svg" alt="">
+                                             </a>
+                                             <a title="Edit" href="#">
+                                                <img class="inject" src="./../asset/img/icons/pencil.svg" alt="">
+                                             </a>
+                                             <a title="Refresh" href="#" class="refresh_icon">
+                                                <img class="inject" src="./../asset/img/icons/refresh.svg" alt="">
+                                             </a>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <!-- single table -->
+                                    <tr>
+                                       <td>BAE732</td>
+                                       <td>Used Car</td>
+                                       <td>Toyota</td>
+                                       <td>Honda Civic</td>
+                                       <td>2013</td>
+                                       <td>Red</td>
+                                       <td>Purchasing</td>
+                                       <td>
+                                          <span class="badge-outline rounded-pill badge-info-outline">P-Inspected</span>
+                                       </td>
+                                       <td>YES</td>
+                                       <td>08-Nov-23</td>
+                                       <td>15</td>
+                                       <td class="text-warning">8</td>
+                                       <td class="text-warning">8</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>
+                                          <div class="tableActions">
+                                             <a class="searchCarIcon" title="Search Car" href="#">
+                                                <img class="inject" src="./../asset/img/icons/search-car.svg" alt="">
+                                             </a>
+                                             <a title="View" href="car-details.html">
+                                                <img class="inject" src="./../asset/img/icons/eye.svg" alt="">
+                                             </a>
+                                             <a title="Edit" href="#">
+                                                <img class="inject" src="./../asset/img/icons/pencil.svg" alt="">
+                                             </a>
+                                             <a title="Refresh" href="#" class="refresh_icon">
+                                                <img class="inject" src="./../asset/img/icons/refresh.svg" alt="">
+                                             </a>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <!-- single table -->
+                                    <tr>
+                                       <td>BAE732</td>
+                                       <td>Used Car</td>
+                                       <td>Toyota</td>
+                                       <td>Honda Civic</td>
+                                       <td>2013</td>
+                                       <td>Red</td>
+                                       <td>Purchasing</td>
+                                       <td>
+                                          <span class="badge-outline rounded-pill badge-info-outline">P-Inspected</span>
+                                       </td>
+                                       <td>YES</td>
+                                       <td>08-Nov-23</td>
+                                       <td>15</td>
+                                       <td class="text-danger">20</td>
+                                       <td class="text-danger">20</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>
+                                          <div class="tableActions">
+                                             <a class="searchCarIcon" title="Search Car" href="#">
+                                                <img class="inject" src="./../asset/img/icons/search-car.svg" alt="">
+                                             </a>
+                                             <a title="View" href="car-details.html">
+                                                <img class="inject" src="./../asset/img/icons/eye.svg" alt="">
+                                             </a>
+                                             <a title="Edit" href="#">
+                                                <img class="inject" src="./../asset/img/icons/pencil.svg" alt="">
+                                             </a>
+                                             <a title="Refresh" href="#" class="refresh_icon">
+                                                <img class="inject" src="./../asset/img/icons/refresh.svg" alt="">
+                                             </a>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <!-- single table -->
+                                    <tr>
+                                       <td>BAE732</td>
+                                       <td>Used Car</td>
+                                       <td>Toyota</td>
+                                       <td>Honda Civic</td>
+                                       <td>2013</td>
+                                       <td>Red</td>
+                                       <td>Purchasing</td>
+                                       <td>
+                                          <span class="badge-outline rounded-pill badge-info-outline">P-Inspected</span>
+                                       </td>
+                                       <td>YES</td>
+                                       <td>08-Nov-23</td>
+                                       <td>15</td>
+                                       <td class="text-success">3</td>
+                                       <td class="text-success">3</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>
+                                          <div class="tableActions">
+                                             <a class="searchCarIcon" title="Search Car" href="#">
+                                                <img class="inject" src="./../asset/img/icons/search-car.svg" alt="">
+                                             </a>
+                                             <a title="View" href="car-details.html">
+                                                <img class="inject" src="./../asset/img/icons/eye.svg" alt="">
+                                             </a>
+                                             <a title="Edit" href="#">
+                                                <img class="inject" src="./../asset/img/icons/pencil.svg" alt="">
+                                             </a>
+                                             <a title="Refresh" href="#" class="refresh_icon">
+                                                <img class="inject" src="./../asset/img/icons/refresh.svg" alt="">
+                                             </a>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <!-- single table -->
+                                    <tr>
+                                       <td>BAE732</td>
+                                       <td>Used Car</td>
+                                       <td>Toyota</td>
+                                       <td>Honda Civic</td>
+                                       <td>2013</td>
+                                       <td>Red</td>
+                                       <td>Purchasing</td>
+                                       <td>
+                                          <span class="badge-outline rounded-pill badge-info-outline">P-Inspected</span>
+                                       </td>
+                                       <td>YES</td>
+                                       <td>08-Nov-23</td>
+                                       <td>15</td>
+                                       <td class="text-warning">12</td>
+                                       <td class="text-warning">12</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>
+                                          <div class="tableActions">
+                                             <a class="searchCarIcon" title="Search Car" href="#">
+                                                <img class="inject" src="./../asset/img/icons/search-car.svg" alt="">
+                                             </a>
+                                             <a title="View" href="car-details.html">
+                                                <img class="inject" src="./../asset/img/icons/eye.svg" alt="">
+                                             </a>
+                                             <a title="Edit" href="#">
+                                                <img class="inject" src="./../asset/img/icons/pencil.svg" alt="">
+                                             </a>
+                                             <a title="Refresh" href="#" class="refresh_icon">
+                                                <img class="inject" src="./../asset/img/icons/refresh.svg" alt="">
+                                             </a>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <!-- single table -->
+                                    <tr>
+                                       <td>BAE732</td>
+                                       <td>Used Car</td>
+                                       <td>Toyota</td>
+                                       <td>Honda Civic</td>
+                                       <td>2013</td>
+                                       <td>Red</td>
+                                       <td>Purchasing</td>
+                                       <td>
+                                          <span class="badge-outline rounded-pill badge-info-outline">P-Inspected</span>
+                                       </td>
+                                       <td>YES</td>
+                                       <td>08-Nov-23</td>
+                                       <td>15</td>
+                                       <td class="text-danger">13</td>
+                                       <td class="text-danger">13</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>
+                                          <div class="tableActions">
+                                             <a class="searchCarIcon" title="Search Car" href="#">
+                                                <img class="inject" src="./../asset/img/icons/search-car.svg" alt="">
+                                             </a>
+                                             <a title="View" href="car-details.html">
+                                                <img class="inject" src="./../asset/img/icons/eye.svg" alt="">
+                                             </a>
+                                             <a title="Edit" href="#">
+                                                <img class="inject" src="./../asset/img/icons/pencil.svg" alt="">
+                                             </a>
+                                             <a title="Refresh" href="#" class="refresh_icon">
+                                                <img class="inject" src="./../asset/img/icons/refresh.svg" alt="">
+                                             </a>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <!-- single table -->
+                                    <tr>
+                                       <td>BAE732</td>
+                                       <td>Used Car</td>
+                                       <td>Toyota</td>
+                                       <td>Honda Civic</td>
+                                       <td>2013</td>
+                                       <td>Red</td>
+                                       <td>Purchasing</td>
+                                       <td>
+                                          <span class="badge-outline rounded-pill badge-info-outline">P-Inspected</span>
+                                       </td>
+                                       <td>YES</td>
+                                       <td>08-Nov-23</td>
+                                       <td>15</td>
+                                       <td class="text-success">6</td>
+                                       <td class="text-success">6</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>
+                                          <div class="tableActions">
+                                             <a class="searchCarIcon" title="Search Car" href="#">
+                                                <img class="inject" src="./../asset/img/icons/search-car.svg" alt="">
+                                             </a>
+                                             <a title="View" href="car-details.html">
+                                                <img class="inject" src="./../asset/img/icons/eye.svg" alt="">
+                                             </a>
+                                             <a title="Edit" href="#">
+                                                <img class="inject" src="./../asset/img/icons/pencil.svg" alt="">
+                                             </a>
+                                             <a title="Refresh" href="#" class="refresh_icon">
+                                                <img class="inject" src="./../asset/img/icons/refresh.svg" alt="">
+                                             </a>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <!-- single table -->
+                                    <tr>
+                                       <td>BAE732</td>
+                                       <td>Used Car</td>
+                                       <td>Toyota</td>
+                                       <td>Honda Civic</td>
+                                       <td>2013</td>
+                                       <td>Red</td>
+                                       <td>Purchasing</td>
+                                       <td>
+                                          <span class="badge-outline rounded-pill badge-info-outline">P-Inspected</span>
+                                       </td>
+                                       <td>YES</td>
+                                       <td>08-Nov-23</td>
+                                       <td>15</td>
+                                       <td class="text-warning">9</td>
+                                       <td class="text-warning">9</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>$4,602</td>
+                                       <td>
+                                          <div class="tableActions">
+                                             <a class="searchCarIcon" title="Search Car" href="#">
+                                                <img class="inject" src="./../asset/img/icons/search-car.svg" alt="">
+                                             </a>
+                                             <a title="View" href="car-details.html">
+                                                <img class="inject" src="./../asset/img/icons/eye.svg" alt="">
+                                             </a>
+                                             <a title="Edit" href="#">
+                                                <img class="inject" src="./../asset/img/icons/pencil.svg" alt="">
+                                             </a>
+                                             <a title="Refresh" href="#" class="refresh_icon">
+                                                <img class="inject" src="./../asset/img/icons/refresh.svg" alt="">
+                                             </a>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="card-footer">
+                  <div class="paginationstyle2 d-flex justify-content-center">
+                     <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                           <li class="page-item">
+                              <a class="page-link" href="#" aria-label="Previous">
+                              <span aria-hidden="true">&laquo;</span>
+                              </a>
+                           </li>
+                           <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                           <li class="page-item"><a class="page-link" href="#">2</a></li>
+                           <li class="page-item"><a class="page-link" href="#">3</a></li>
+                           <li class="page-item">
+                              <a class="page-link" href="#" aria-label="Next">
+                              <span aria-hidden="true">&raquo;</span>
+                              </a>
+                           </li>
+                        </ul>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   
+
+
+   <!-- all javascript load here -->
+   <script src="../asset/js/vendor/jquery-3.3.1.min.js"></script>
+   <script src="../asset/js/bootstrap.bundle.min.js"></script>
+   <script src="../asset/js/plugin/jquery.svginject.js"></script>
+   <script src="../asset/js/custom.js"></script>
+</body>
+
+</html>

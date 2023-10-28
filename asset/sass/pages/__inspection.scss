@@ -109,6 +109,63 @@
     display: none;
 }
 
+.inspectionPageInnerMobile {
+    background-color: #fff;
+    padding: 20px 10px !important;
+}
+
+.inspectionPageglobalTitle {
+    margin-bottom: 20px;
+
+    h4 {
+        font-size: 17px;
+    }
+}
+
+.tablestyle2Mobile {
+    width: auto !important;
+    min-width: inherit !important;
+
+
+}
+
+.tableMobile {
+    font-size: 11px;
+    width: 100%;
+    min-width: 100%;
+
+    thead,
+    tbody,
+    tfoot {
+        vertical-align: middle;
+
+        tr {
+            td {
+                word-break: break-all !important;
+            }
+        }
+    }
+}
+
+.inspectionTable {
+    thead {
+        tr {
+            td {
+                span {
+                    min-height: 42px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
 @media screen and (max-width: 767px) {
     .mobileReverse {
         flex-direction: column-reverse;
@@ -117,6 +174,14 @@
     .breadComeArea .pageHistory {
         text-align: center !important;
         margin-top: 15px;
+
+        ul {
+            li {
+                a {
+                    font-size: 13px;
+                }
+            }
+        }
     }
 
     .hide_mobile {
@@ -167,6 +232,7 @@
 
     .inspectionPageInner .bottomSection .remarkText {
         text-align: center !important;
+        margin-bottom: 40px;
     }
 }
 
@@ -207,7 +273,7 @@
 
 @media screen and (max-width: 576px) {
     .inspectionPageInner {
-        padding: 0px;
+        padding: 0px 10px !important;
     }
 
     .appHeader,
@@ -216,7 +282,7 @@
     }
 
     .breadComeArea {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
     .app_wrapper {
@@ -286,6 +352,85 @@
     .card .card-header .cardPageTititle h3 {
         font-size: 14px;
         padding: 14px 0px;
+    }
+
+    .squareRadio .form-check-input {
+        height: 13px !important;
+        width: 13px !important;
+    }
+
+    .globalcheckBox .form-check-label {
+        font-size: 12px !important;
+    }
+
+    .globalcheckBox .form-check-input {
+        height: 13px;
+        width: 13px;
+    }
+
+    .inspectionPageInner .topSection {
+        margin-bottom: 25px;
+    }
+
+    .card {
+        background-color: #fff;
+        border-radius: 0px !important;
+    }
+
+    .app_wrapper {
+        padding-bottom: 0px;
+    }
+
+    .card-body {
+        padding-bottom: 0px !important;
+    }
+
+    .card-footer {
+        padding-top: 0px !important;
+    }
+
+    .paginationstyle2 .page-link {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .paginationstyle2 .active {
+        font-size: 16px !important;
+    }
+
+    .form-check {
+        min-height: inherit !important;
+    }
+
+    .inspectionPageInner .topSection .leftForm .col-form-label {
+        font-size: 14px !important;
+    }
+
+    .form-control {
+        font-size: 14px !important;
+        height: 35px;
+    }
+
+    .inspectionPageInner .bottomSection .button_group_right .btn {
+        min-width: inherit !important;
+    }
+
+    .inspectionPageInner .bottomSection .button_group_right {
+        width: 82%;
+        margin: 0 auto;
+        margin-top: 14px;
+
+        .btn {
+            width: 100%;
+        }
+    }
+
+    .inspectionPageInner .bottomSection .button_group .btn {
+        font-size: 14px !important;
+    }
+
+    .inspectionPageInner .bottomSection .button_group_right .btn {
+        font-size: 14px !important;
     }
 }
 

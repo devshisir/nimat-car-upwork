@@ -132,6 +132,19 @@
                     }
                 }
             }
+
+            .refresh_icon {
+                &:hover {
+                    svg circle {
+                        stroke: $brand;
+                    }
+
+                    svg path {
+                        stroke: $brand;
+                        fill: none;
+                    }
+                }
+            }
         }
     }
 }
