@@ -65,4 +65,38 @@
             }
         }
     }
+
+    .estimateAmount {
+        .col-form-label {
+            font-size: 14px !important;
+        }
+
+        .form-control {
+            width: 300px;
+        }
+    }
+
+    .bottomSection {
+        margin-top: 40px;
+
+        .button_group {
+            .btn {
+                margin-right: 10px;
+                min-width: 140px;
+                height: 38px;
+            }
+        }
+
+        .button_group_right {
+            .btn {
+                margin-left: 10px;
+                min-width: 140px;
+                height: 38px;
+            }
+        }
+
+        .remarkText {
+            margin-top: 10px;
+        }
+    }
 }
