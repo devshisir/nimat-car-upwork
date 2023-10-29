@@ -1,0 +1,88 @@
+.refurbishmentpageCard {
+    padding: 0px 20px;
+
+    .leftInfo {
+        .singleInfo {}
+    }
+
+    .rightInfo {
+        .topInfo {
+            .headingArea {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                h4 {
+                    font-size: 17px;
+                }
+
+                .btn {
+                    min-width: 160px;
+                    font-size: 15px;
+                    line-height: 27px;
+                }
+            }
+
+            .downloadFile {
+                margin-top: 5px;
+
+                .btn {
+                    min-width: 240px;
+                }
+            }
+
+            .formBox {
+                width: 50%;
+                margin-top: 20px;
+
+                .singleInfo {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+
+    .chartBox {
+        margin-top: 30px;
+
+        .chartTitle {
+            h5 {
+                font-size: 18px;
+            }
+        }
+
+        .chartBoxInner {
+            margin-top: 10px;
+        }
+
+        .bottomInfo {
+            margin-top: 20px;
+
+            h4 {
+                font-size: 16px;
+            }
+
+            .saveButton {
+                margin-top: 20px;
+                display: flex;
+                justify-content: flex-end;
+
+                .btn {
+                    min-width: 150px;
+                }
+            }
+        }
+    }
+}
+
+.repiarBottomTable {
+    thead {
+        tr {
+            td {
+                span {
+                    min-height: 50px;
+                }
+            }
+        }
+    }
+}

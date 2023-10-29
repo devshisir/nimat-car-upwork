@@ -40,3 +40,19 @@
     max-width: calc(100% - 0px);
     margin-left: 0px;
 }
+
+.subInnerLayout {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 15px;
+
+    .leftSubSidebar {
+        width: 300px;
+        background-color: #fff;
+        height: auto;
+    }
+
+    .RightMainPreview {
+        flex: 1;
+    }
+}

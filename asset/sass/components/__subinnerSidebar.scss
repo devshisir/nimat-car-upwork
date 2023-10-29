@@ -1,0 +1,41 @@
+.leftSubSidebar {
+    padding: 17px 25px;
+    border-radius: 5px;
+
+    ul {
+        li {
+            margin-bottom: 7px;
+
+            a {
+                display: block;
+                color: #4F4F51;
+                padding: 9px 0px;
+                position: relative;
+
+                &::after {
+                    height: 3px;
+                    width: 100%;
+                    content: "";
+                    position: absolute;
+                    bottom: -4px;
+                    left: 0;
+                    background-color: $brand;
+                    border-radius: 30px;
+                    opacity: 0;
+                    visibility: hidden;
+                }
+
+                &:hover {
+                    color: $brand;
+                }
+            }
+
+            .active {
+                &::after {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+}

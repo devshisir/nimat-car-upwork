@@ -38,6 +38,7 @@
 @import './components/_pagination';
 @import './components/_navTabs';
 @import './components/_formElement';
+@import './components/_subinnerSidebar';
 
 // all page scss file import
 @import './pages/_carDetails';
@@ -45,6 +46,7 @@
 @import './pages/_scmanagement';
 @import './pages/_addCompany';
 @import './pages/_inspection';
+@import './pages/_repair';
 
 // responsive file import
 @import './_responsive';
