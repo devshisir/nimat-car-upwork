@@ -15,32 +15,26 @@
             }
 
             .chosseCarButton {
-                width: 70%;
+                width: 100%;
+                flex: 1;
 
-                .inputBox {
+                .btn {
+                    width: 100%;
 
-                    input {
-                        display: none;
+                    svg {
+                        margin-left: 5px;
+                        transition: 0.4s;
+
+                        path {
+                            fill: $brand;
+                            transition: 0.4s;
+                        }
                     }
 
-                    label {
-                        border: 1px solid $brand;
-                        color: $brand;
-                        font-family: mainfont_semi !important;
-                        font-size: 14px !important;
-                        width: 100%;
-                        text-align: center;
-                        cursor: pointer;
-                        padding: 6px 0px;
-                        border-radius: 5px;
-                        min-width: max-content;
-                        padding: 6px 10px;
-
+                    &:hover {
                         svg {
-                            margin-left: 5px;
-
                             path {
-                                fill: $brand;
+                                fill: #fff;
                             }
                         }
                     }
@@ -159,6 +153,61 @@
     }
 }
 
+
+// chose car modal content
+.choseCarModalBody {
+    .topInfo {
+        padding: 0px 20px;
+        padding-bottom: 20px;
+
+        .singleInputBox {
+            margin-bottom: 7px;
+
+            .col-form-label {
+                min-width: 90px;
+            }
+        }
+    }
+
+    .bottomTable {
+        border: 1px solid #ddd;
+
+        .table {
+            vertical-align: middle;
+            min-width: 100%;
+            width: max-content;
+
+            .form-check {
+                margin-bottom: 0px;
+            }
+
+            thead {
+                tr {
+                    td {
+                        background-color: #F6F5F5 !important;
+                        padding: 10px 10px;
+                        font-size: 14px;
+                        border-right: 1px solid #e5e5e5;
+                    }
+                }
+            }
+
+            tbody {
+                tr {
+                    td {
+                        padding: 5px 10px;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+
+        .table-hover>tbody>tr:hover>* {
+            background-color: #c822264d;
+            color: #C82226;
+        }
+    }
+}
 
 
 
@@ -432,6 +481,19 @@
     .inspectionPageInner .bottomSection .button_group_right .btn {
         font-size: 14px !important;
     }
+
+    .choseCarModalBody .topInfo .singleInputBox .col-form-label {
+        min-width: 90px;
+        font-size: 13px !important;
+    }
+
+    .choseCarModalBody .topInfo .singleInputBox {
+        .form-control {
+            height: 34px !important;
+        }
+    }
+
+
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {

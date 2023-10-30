@@ -1,0 +1,18 @@
+.modal {
+    .modalCloseButton {
+        background-color: transparent;
+        color: $brand;
+        border: none;
+        font-size: 20px;
+    }
+
+    .modal-header {
+        border: none;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .modal-body {
+        padding: 0px;
+    }
+}
