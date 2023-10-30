@@ -3,7 +3,7 @@
 
 <head>
    <meta charset="utf-8">
-   <title>Car - Refurbishment Page</title>
+   <title>Car - QC</title>
    <meta name="description" content="">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <!-- Favicons -->
@@ -401,13 +401,13 @@
                      <a href="#">Assessment</a>
                   </li>
                   <li>
-                     <a class="active" href="#">Under Repair</a>
+                     <a href="#">Under Repair</a>
                   </li>
                   <li>
                      <a href="#">WFP</a>
                   </li>
                   <li>
-                     <a href="#">QC</a>
+                     <a class="active" href="#">QC</a>
                   </li>
                   <li>
                      <a href="#">R-Done</a>
@@ -548,34 +548,49 @@
                                  <div class="rightInfo">
                                     <div class="topInfo">
                                        <div class="headingArea">
-                                          <h4 class="text-danger">Under Repair</h4>
-                                          <a href="#" class="btn btn-danger">
-                                             <span><i class="fa-sharp fa-regular fa-plus" style="margin-right: 8px;"></i></span>
-                                             <span>Add Repair</span>
-                                          </a>
+                                          <h4 class="text-danger">QC (Quality Check)</h4>
                                        </div>
-                                       <div class="downloadFile">
-                                          <button class="btn btn-outline-primary">
-                                             View Inspection (PDF) 
+                                       <div class="rdoneform">
+                                          <div class="formCheckBox">
+                                             <h6>Does the car pass QC?</h6>
+                                             <div class="wrapperBox">
+                                                <div class="form-check squareRadio d-flex justify-content-center">
+                                                   <input class="form-check-input" id="Yes" name="windshield" type="radio" value="">
+                                                   <label class="form-label" for="Yes">YES</label>
+                                                </div>
+                                                <div class="form-check squareRadio d-flex justify-content-center">
+                                                   <input class="form-check-input" id="No" name="windshield" type="radio" value="">
+                                                   <label class="form-label" for="No">NO</label>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="downloadFile mt-3">
+                                          <button class="btn btn-primary">
+                                             Upload document (PDF)
                                              <span><i class="fa-light fa-file-arrow-down" style="margin-left: 5px;"></i></span>
                                           </button>
                                        </div>
-                                       <div class="formBox">
+                                       <div class="formBox mt-4">
                                           <div class="singleInfo">
-                                             <label class="form-label">Total estimated budget</label>
-                                             <input type="text" class="form-control">
+                                             <label class="form-label">Checked by</label>
+                                             <div class="selectBox">
+                                                <select class="form-select">
+                                                   <option value="0">Select</option>
+                                                   <option value="1">option 1</option>
+                                                   <option value="2">option 2</option>
+                                                   <option value="3">option 3</option>
+                                                </select>
+                                             </div>
                                           </div>
                                           <div class="singleInfo">
-                                             <label class="form-label">Total Actual cost</label>
-                                             <input type="text" class="form-control">
+                                             <label class="form-label">Date</label>
+                                             <input type="date" class="form-control">
                                           </div>
-                                          <div class="singleInfo">
-                                             <label class="form-label">Difference:</label>
-                                             <input type="text" class="form-control">
-                                          </div>
-                                          <div class="singleInfo">
-                                             <label class="form-label">Total number of days in repair</label>
-                                             <input type="text" class="form-control">
+                                       </div>
+                                       <div class="chartBox">
+                                          <div class="bottomInfo">
+                                             <h4 class="text-danger" style="font-style: italic;">By clicking save, the status will change to: R-QC</h4>
                                           </div>
                                        </div>
                                     </div>
@@ -586,14 +601,7 @@
                               <div class="col-xl-3 col-lg-3 col-12"></div>
                               <div class="col-xl-9 col-lg-9 col-12 ml-auto">
                                  <div class="chartBox">
-                                    <div class="chartTitle">
-                                       <h5>Gantt chart</h5>
-                                    </div>
-                                    <div class="chartBoxInner">
-                                       <canvas id="GanttChart"></canvas>
-                                    </div>
                                     <div class="bottomInfo">
-                                       <h4 class="text-danger">By clicking save, the status will change to: R-Under Repair</h4>
                                        <div class="saveButton">
                                           <button class="btn btn-outline-primary">Save</button>
                                        </div>
@@ -602,213 +610,6 @@
                               </div>
                            </div>
                         </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <!-- bottom page content -->
-         <div class="repiarBottomTable mt-4">
-            <div class="appInnerCard" style="min-height: inherit;">
-               <div class="card">
-                  <div class="card-body">
-                     <div class="masterTable">
-                        <div class="table-responsive">
-                           <table class="table">
-                              <thead>
-                                 <tr>
-                                    <td></td>
-                                    <td>
-                                       <span>W.Shop/Contractor/ <br> Supplier</span>
-                                       <div class="inputBox">
-                                          <input type="text" style="width: 140px;" class="form-control">
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <span>Internal/ <br> Out Source</span>
-                                       <div class="inputBox">
-                                          <input type="text" style="width: 90px;" class="form-control">
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <span>Date In</span>
-                                       <div class="selectBox">
-                                          <select class="form-select" style="width: 120px">
-                                             <option value="0">Select</option>
-                                             <option value="1">option 1</option>
-                                             <option value="2">option 2</option>
-                                             <option value="3">option 3</option>
-                                          </select>
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <span>Date <br> Completed</span>
-                                       <div class="inputBox">
-                                          <input type="text" style="width: 110px;" class="form-control">
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <span>No. of <br> Actual Days</span>
-                                       <div class="inputBox">
-                                          <input type="text" style="width: 100px;" class="form-control">
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <span>Work Area</span>
-                                       <div class="inputBox">
-                                          <input type="text" style="width: 90px;" class="form-control">
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <span>Work Type</span>
-                                       <div class="inputBox">
-                                          <input type="text" style="width: 90px;" class="form-control">
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <span>Type of Repair</span>
-                                       <div class="inputBox">
-                                          <input type="text" style="width: 100px" class="form-control">
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <span>Cost</span>
-                                       <div class="inputBox">
-                                          <input type="text" style="width: 60px;" class="form-control">
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <span>Estimated <br> Date Out</span>
-                                       <div class="selectBox">
-                                          <select class="form-select" style="width: 120px;">
-                                             <option value="0">Select</option>
-                                             <option value="1">option 1</option>
-                                             <option value="2">option 2</option>
-                                             <option value="3">option 3</option>
-                                          </select>
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <span>Estimated <br> Days</span>
-                                       <div class="inputBox">
-                                          <input type="text" style="width: 80px;" class="form-control">
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <span>Status</span>
-                                       <div class="selectBox">
-                                          <select class="form-select" style="width: 100%;">
-                                             <option value="0">Select</option>
-                                             <option value="1">option 1</option>
-                                             <option value="2">option 2</option>
-                                             <option value="3">option 3</option>
-                                          </select>
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <span>Click before <br> Handover to Sales</span>
-                                       <div class="inputBox">
-                                          <input type="text" style="width: 120px;" class="form-control">
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <span>Remarks</span>
-                                       <div class="inputBox">
-                                          <input type="text" style="width: 70px;" class="form-control">
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <span>Created <br> by</span>
-                                       <div class="inputBox">
-                                          <input type="text" style="width: 90px;" class="form-control">
-                                       </div>
-                                    </td>
-                                    <td class="text-center">
-                                       <span>Action</span>
-                                    </td>
-                                 </tr>
-                              </thead>
-                              <tbody>
-                                 <tr>
-                                    <td>1</td>
-                                    <td>NBT</td>
-                                    <td>Internal</td>
-                                    <td>08-Nov-23</td>
-                                    <td>08-Nov-23</td>
-                                    <td>25</td>
-                                    <td>-</td>
-                                    <td>Mechanical</td>
-                                    <td>Rear Tyres</td>
-                                    <td>$331.00</td>
-                                    <td>08-Nov-23</td>
-                                    <td>25</td>
-                                    <td>Completed</td>
-                                    <td>Delivered</td>
-                                    <td>On Order S...</td>
-                                    <td>Adam</td>
-                                    <td>
-                                       <div class="tableActions">
-                                          <a title="Edit" href="#">
-                                             <img class="inject" src="../asset/img/icons/pencil.svg" alt="">
-                                          </a>
-                                          <a title="Delete" href="#">
-                                             <img class="inject" src="../asset/img/icons/trash.svg" alt="">
-                                          </a>
-                                       </div>
-                                    </td>
-                                 </tr>
-                                 <tr>
-                                    <td>2</td>
-                                    <td>Roda</td>
-                                    <td>Out Source</td>
-                                    <td>08-Nov-23</td>
-                                    <td>08-Nov-23</td>
-                                    <td>25</td>
-                                    <td>-</td>
-                                    <td>Tyres</td>
-                                    <td>Rear Boot Co…</td>
-                                    <td>$331.00</td>
-                                    <td>08-Nov-23</td>
-                                    <td>25</td>
-                                    <td>Under Repair</td>
-                                    <td>Delivered</td>
-                                    <td>On Order S...</td>
-                                    <td>Adam</td>
-                                    <td>
-                                       <div class="tableActions">
-                                          <a title="Edit" href="#">
-                                             <img class="inject" src="../asset/img/icons/pencil.svg" alt="">
-                                          </a>
-                                          <a title="Delete" href="#">
-                                             <img class="inject" src="../asset/img/icons/trash.svg" alt="">
-                                          </a>
-                                       </div>
-                                    </td>
-                                 </tr>
-                              </tbody>
-                           </table>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="card-footer">
-                     <div class="paginationstyle2 d-flex justify-content-center">
-                        <nav aria-label="Page navigation example">
-                           <ul class="pagination">
-                              <li class="page-item">
-                                 <a class="page-link" href="#" aria-label="Previous">
-                                 <span aria-hidden="true">&laquo;</span>
-                                 </a>
-                              </li>
-                              <li class="page-item"><a class="page-link active" href="#">1</a></li>
-                              <li class="page-item"><a class="page-link" href="#">2</a></li>
-                              <li class="page-item"><a class="page-link" href="#">3</a></li>
-                              <li class="page-item">
-                                 <a class="page-link" href="#" aria-label="Next">
-                                 <span aria-hidden="true">&raquo;</span>
-                                 </a>
-                              </li>
-                           </ul>
-                        </nav>
                      </div>
                   </div>
                </div>
@@ -824,134 +625,6 @@
    <script src="../asset/js/bootstrap.bundle.min.js"></script>
    <script src="../asset/js/plugin/jquery.svginject.js"></script>
    <script src="../asset/js/custom.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
-   <script>
-         // setup 
-         const data = {
-            datasets: [
-            {
-               data: [
-                  {x: ['2022-02-01', '2022-02-07'], y: 'Mechnical',doubleLabel: ['','Piasau Workshop']},
-                  {x: ['2022-02-04', '2022-02-08'], y: 'Tyres',doubleLabel: ['','Gadong Auto parts']},
-                  {x: ['2022-02-07', '2022-02-14'], y: 'Mechnical2',doubleLabel: ['','Sing Hiap Hin']},
-                  {x: ['2022-02-12', '2022-02-20'], y: 'Tyres2',doubleLabel: ['','Autoplus']},
-                  {x: ['2022-02-05', '2022-02-11'], y: 'Mechnical3',doubleLabel: ['','NBT']},
-                  {x: ['2022-02-09', '2022-02-19'], y: 'Tyres3',doubleLabel: ['','NBT']},
-                  {x: ['2022-02-01', '2022-02-07'], y: 'Mechnical4',doubleLabel: ['','NBT']},
-               ],
-               backgroundColor: [
-                  '#233390',
-                  '#6AB123',
-                  '#228FC8',
-                  '#B1239B',
-                  '#C82226',
-                  '#C82226',
-                  '#C82226',
-               ],
-               borderColor: [
-                  '#233390',
-                  '#6AB123',
-                  '#228FC8',
-                  '#B1239B',
-                  '#C82226',
-                  '#C82226',
-                  '#C82226',
-               ],
-               borderWidth: 0,
-               borderRadius: 100,
-               barPercentage: 0.7,
-               borderSkipped: false,
-            }]
-         };
-         
-         // plugin blog
-         const doubleDataLabels = {
-            id: 'doubleDataLabels',
-            afterDatasetsDraw(chart, args, plugins){
-               const {ctx, data} = chart;
-               console.log(chart.getDatasetMeta(0).data)
-               ctx.save();
-               chart.getDatasetMeta(0).data.forEach((datapoint,index) => {
-                  const startX = chart.getDatasetMeta(0).data[index].base;
-                  const endX = chart.getDatasetMeta(0).data[index].x;
-                  const y = chart.getDatasetMeta(0).data[index].y;
-
-                  const textStart = data.datasets[0].data[index].doubleLabel[0];
-                  const textEnd = data.datasets[0].data[index].doubleLabel[1];
-
-                  const textWidthStart = ctx.measureText(textStart).width;
-                  const textWidthEnd = ctx.measureText(textEnd).width;
-
-                  ctx.font = '11px mainfont_semi ';
-                  ctx.font.lineHeight = 3.9,
-                  ctx.textAlign = 'center',
-                  ctx.fillStyle =  '#fff';
-                  ctx.fillText(textStart, startX - textWidthStart, y)
-                  ctx.fillText(textEnd, endX - 70 , y)
-               })
-            }
-         }
-         Chart.register(doubleDataLabels)
-         // config 
-         const config = {
-            type: 'bar',
-            data,
-            options: {
-               indexAxis: 'y',
-               responsive: true,
-               maintainAspectRatio: true,
-               scales: {
-                  x:{
-                     beginAtZero: true,
-                     grace: '10%',
-                     position: 'top',
-                     type: 'time',
-                     min: '2022-02-01',
-                     time: {
-                        unit: 'day',
-                     },
-                     grid: {
-                        display: false,
-                     },
-                  },
-                  y: {
-                     beginAtZero: true
-                  }
-               },
-               plugins:{
-                  datalabels:{
-                     align: 'end',
-                     font:{
-                        size: '14',
-                        family: 'mainfont_semi',
-                     },
-                  },
-                  legend:{
-                     display: false,
-                  },
-                  tooltip: {
-                     enabled: false,
-                  },
-                  title: {
-                     display: true,
-                     text: 'Repair Type',
-                     position: 'left',
-                     color: '#C82226'
-                  },
-               },
-            },
-         };
-         // render init block
-         const myChart = new Chart(
-            document.getElementById('GanttChart'),
-            config
-         );
-         // Instantly assign Chart.js version
-         const chartVersion = document.getElementById('chartVersion');
-         chartVersion.innerText = Chart.version;
-   </script>
 </body>
 
 </html>

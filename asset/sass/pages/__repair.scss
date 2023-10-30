@@ -27,7 +27,7 @@
                 margin-top: 5px;
 
                 .btn {
-                    min-width: 240px;
+                    margin-right: 10px;
                 }
             }
 
@@ -37,6 +37,64 @@
 
                 .singleInfo {
                     margin-bottom: 10px;
+                }
+            }
+        }
+
+        .rdoneform {
+            margin-top: 20px;
+
+            p {
+                font-size: 15px;
+            }
+
+            .choseButton {
+                margin-top: 10px;
+
+                .btn {
+                    width: max-content;
+                    padding-left: 20px;
+                    padding-right: 20px;
+
+                    svg {
+                        margin-left: 5px;
+                        transition: 0.4s;
+
+                        path {
+                            fill: $brand;
+                            transition: 0.4s;
+                        }
+                    }
+
+                    &:hover {
+                        svg {
+                            path {
+                                fill: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .formCheckBox {
+                margin-top: 15px;
+
+                .wrapperBox {
+                    display: flex;
+                    justify-content: flex-start;
+                    flex-wrap: wrap;
+                    column-gap: 100px;
+                    margin-top: 20px;
+
+                    .form-check {
+                        .form-label {
+                            margin-left: 10px;
+                            cursor: pointer;
+                            font-size: 14px;
+                            position: relative;
+                            top: 1px;
+                        }
+                    }
                 }
             }
         }

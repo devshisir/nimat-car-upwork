@@ -236,3 +236,135 @@
         }
     }
 }
+
+// addfeaturesModalMain
+.addfeaturesModalMain {
+    .modal-body {
+        padding: 10px 0px;
+    }
+
+    .modal-header {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .addFeaturesModalBody {
+        display: flex;
+        justify-content: flex-start;
+        overflow: hidden;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+
+        .leftInfo {
+            border-right: 1px solid #ddd;
+            width: 150px;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                min-height: 100%;
+
+                li {
+                    flex: 1;
+                    border-bottom: 1px solid #ddd;
+
+                    &:last-child {
+                        border: none;
+                    }
+
+                    a {
+                        color: $brand;
+                        display: block;
+                        font-size: 14px;
+                        line-height: 18px !important;
+                        padding: 7px 15px;
+
+                    }
+                }
+            }
+        }
+
+        .rightContent {
+            flex: 1;
+            width: 100%;
+            padding: 10px 10px;
+
+            .rightLeft {
+                .mainItemList {
+                    margin-top: 15px;
+
+                    li {
+                        display: block;
+                        width: 100%;
+                        margin-bottom: 7px;
+
+                        &:last-child {
+                            margin-bottom: 0px;
+                        }
+
+                        a {
+                            border: 1px solid #ddd;
+                            text-align: center;
+                            display: block;
+                            padding: 10px;
+                            border-radius: 30px;
+                            color: rgba(79, 79, 81, 0.466);
+                            font-size: 14px;
+
+                            &:hover {
+                                color: $titleColor;
+                                border-color: $titleColor;
+                            }
+                        }
+                    }
+
+                    .active {
+                        a {
+                            color: $titleColor;
+                            border-color: $titleColor;
+                        }
+                    }
+                }
+            }
+
+            .rightFull {
+                border: 1px solid #ddd;
+                padding: 10px;
+                border-radius: 10px;
+                height: 100%;
+                min-height: 400px;
+                max-height: 400px;
+                overflow-y: scroll;
+
+                .selectedItemList {
+                    .alert {
+                        border-radius: 30px;
+                        padding: 6px 15px;
+                        font-size: 14px;
+                        margin: 0;
+                        margin-bottom: 7px;
+
+                        button {
+                            position: absolute;
+                            padding: 0px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            right: 10px;
+                            font-size: 14px;
+                            color: #fff;
+                            background-color: transparent;
+                            border: none;
+                        }
+                    }
+
+                    .alert-primary {
+                        background-color: $titleColor;
+                        border-color: $titleColor;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

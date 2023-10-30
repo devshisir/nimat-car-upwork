@@ -3,7 +3,7 @@
 
 <head>
    <meta charset="utf-8">
-   <title>Car - SG - Management</title>
+   <title>Car - R-Pending</title>
    <meta name="description" content="">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <!-- Favicons -->
@@ -29,7 +29,7 @@
                <li>
                   <a href="/">
                      <span class="icon">
-                        <img class="inject" src="./../asset/img/icons/sidebar/dashboard.svg" alt="">
+                        <img class="inject" src="../asset/img/icons/sidebar/dashboard.svg" alt="">
                      </span>
                      <span class="menu_content">Dashboard</span>
                   </a>
@@ -44,7 +44,7 @@
             <!-- menu with acordion -->
             <div class="accordion sidebarMenuWrapper" id="menuAcordion">
                <li class="sidebarMenuLink">
-                  <a href="./car-database/car-database.html">
+                  <a href="./car-database.html">
                      <span class="icon">
                         <img class="inject" src="./../asset/img/icons/sidebar/car.svg" alt="">
                      </span>
@@ -85,7 +85,7 @@
                   </a>
                </li>
                <li class="sidebarMenuLink">
-                  <a href="/">
+                  <a class="active" href="/">
                      <span class="icon">
                         <img class="inject" src="./../asset/img/icons/sidebar/repair.svg" alt="">
                      </span>
@@ -234,14 +234,14 @@
                <!-- toggle menu -->
                <div class="accordion-item mainAcordionItem">
                   <h2 class="accordion-header">
-                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#menu5" aria-expanded="true" aria-controls="collapseTwo">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu5" aria-expanded="false" aria-controls="collapseTwo">
                         <span class="icon">
                            <img class="inject" src="./../asset/img/icons/sidebar/user.svg" alt="">
                         </span>
                         <span class="menu_content">Master</span>
                      </button>
                   </h2>
-                  <div id="menu5" class="accordion-collapse collapse show" data-bs-parent="#menuAcordion">
+                  <div id="menu5" class="accordion-collapse collapse" data-bs-parent="#menuAcordion">
                      <div class="sub_menu">
                         <ul>
                            <li>
@@ -289,7 +289,7 @@
                               </div>
                            </div>
                            <li>
-                              <a class="active" href="./sg-manageent.html">
+                              <a href="../sg-management/sg-manageent.html">
                                  <span>-</span>
                                  <div class="right_content">
                                     <p>SC Management</p>
@@ -308,7 +308,7 @@
          <!-- header -->
          <header class="appHeader">
             <div class="row align-items-center">
-               <div class="col-xl-6 col-lg-6">
+               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                   <div class="header_left">
                      <div class="toggleArrow">
                         <button class="toggleButton" type="button">
@@ -327,7 +327,7 @@
                      </div>
                   </div>
                </div>
-               <div class="col-xl-6 col-lg-6">
+               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                   <div class="header_right text-end">
                      <ul>
                         <li class="notificationButton">
@@ -365,7 +365,7 @@
             <div class="row">
                <div class="col-xl-6 col-lg-6">
                   <div class="pageTitle">
-                     <h4>SC Management Page</h4>
+                     <h4>Refurbishment Page</h4>
                   </div>
                </div>
                <div class="col-xl-6 col-lg-6">
@@ -378,323 +378,225 @@
                            <a href="#"><i class="fa-sharp fa-regular fa-angle-right"></i></a>
                         </li>
                         <li>
-                           <a href="#">Master Page</a>
+                           <a href="#">Repair Page</a>
                         </li>
                         <li class="active">
                            <a href="#"><i class="fa-sharp fa-regular fa-angle-right"></i></a>
                         </li>
                         <li class="active">
-                           <a href="#">SC Management Page</a>
+                           <a href="#">Refurbishment Page</a>
                         </li>
                      </ul>
                   </div>
                </div>
             </div>
          </div>
-         <!-- page inner card -->
-         <div class="appInnerCard">
-            <div class="card">
-               <div class="card-header">
-                  <div class="cardPageTititle longContent">
-                     <h3>SC Management Page - Referral Settings</h3>
-                  </div>
-                  <div class="cardHeaderAction text-end">
-                     <button class="btn btn-outline-danger">
-                        <span><i class="fa-sharp fa-regular fa-plus"></i></span>
-                        <span>Add Salesman</span>
-                     </button>
-                  </div>
-               </div>
-               <div class="card-body">
-                  <div class="masterTable">
-                     <div class="table-responsive">
-                        <table class="table">
-                           <thead>
-                              <tr>
-                                 <td style="width: 150px;">
-                                    <span>SC Code</span>
-                                    <input type="text" class="form-control">
-                                 </td>
-                                 <td style="width: 270px;">
-                                    <span>Salesman Name</span>
-                                    <div class="input-group inputWithIconRight">
-                                       <input type="text" class="form-control">
-                                       <span class="input-group-text">
-                                          <i class="fa-light fa-magnifying-glass"></i>
-                                       </span>
-                                    </div>
-                                 </td>
-                                 <td style="width: 270px;">
-                                    <span>Salesman Mobile</span>
-                                    <input type="text" class="form-control">
-                                 </td>
-                                 <td style="width: 270px;">
-                                    <span>Salesman Type</span>
-                                    <input type="text" class="form-control">
-                                 </td>
-                                 <td style="width: 270px;">
-                                    <span>Total sales Mode</span>
-                                    <input type="text" class="form-control">
-                                 </td>
-                                 <td>Action</td>
-                              </tr>
-                           </thead>
-                           <tbody>
-                              <!-- single table row -->
-                              <tr>
-                                 <td>SC 093</td>
-                                 <td>Khairul Bunut</td>
-                                 <td>+673 XXX XXXX</td>
-                                 <td>NBT</td>
-                                 <td>$12,345</td>
-                                 <td>
-                                    <div class="tableActions justify-content-start">
-                                       <a title="View" href="#">
-                                          <img class="inject" src="../asset/img/icons/eye.svg" alt="" style="visibility: hidden;">
-                                       </a>
-                                       <a title="Edit" href="#">
-                                          <img class="inject" src="../asset/img/icons/pencil.svg" alt="" style="visibility: hidden;">
-                                       </a>
-                                       <a title="Delete" href="#">
-                                          <img class="inject" src="../asset/img/icons/trash.svg" alt="" style="visibility: hidden;">
-                                       </a>
-                                    </div>
-                                 </td>
-                              </tr>
-                              <!-- single table row -->
-                              <tr>
-                                 <td>SC 093</td>
-                                 <td>Eric Gadong</td>
-                                 <td>+673 XXX XXXX</td>
-                                 <td>Lexus</td>
-                                 <td>$12,345</td>
-                                 <td>
-                                    <div class="tableActions justify-content-start">
-                                       <a title="View" href="#">
-                                          <img class="inject" src="../asset/img/icons/eye.svg" alt="" style="visibility: hidden;">
-                                       </a>
-                                       <a title="Edit" href="#">
-                                          <img class="inject" src="../asset/img/icons/pencil.svg" alt="" style="visibility: hidden;">
-                                       </a>
-                                       <a title="Delete" href="#">
-                                          <img class="inject" src="../asset/img/icons/trash.svg" alt="" style="visibility: hidden;">
-                                       </a>
-                                    </div>
-                                 </td>
-                              </tr>
-                              <!-- single table row -->
-                              <tr>
-                                 <td>SC 093</td>
-                                 <td>Susan KB</td>
-                                 <td>+673 XXX XXXX</td>
-                                 <td>Office</td>
-                                 <td>$12,345</td>
-                                 <td>
-                                    <div class="tableActions justify-content-start">
-                                       <a title="View" href="#">
-                                          <img class="inject" src="../asset/img/icons/eye.svg" alt="" style="visibility: hidden;">
-                                       </a>
-                                       <a title="Edit" href="#">
-                                          <img class="inject" src="../asset/img/icons/pencil.svg" alt="" style="visibility: hidden;">
-                                       </a>
-                                       <a title="Delete" href="#">
-                                          <img class="inject" src="../asset/img/icons/trash.svg" alt="" style="visibility: hidden;">
-                                       </a>
-                                    </div>
-                                 </td>
-                              </tr>
-                              <!-- single table row -->
-                              <tr>
-                                 <td>SC 093</td>
-                                 <td>Instagram</td>
-                                 <td>+673 XXX XXXX</td>
-                                 <td>Walk-in</td>
-                                 <td>$12,345</td>
-                                 <td>
-                                    <div class="tableActions justify-content-start">
-                                       <a title="View" href="#">
-                                          <img class="inject" src="../asset/img/icons/eye.svg" alt="" style="visibility: hidden;">
-                                       </a>
-                                       <a title="Edit" href="#">
-                                          <img class="inject" src="../asset/img/icons/pencil.svg" alt="" style="visibility: hidden;">
-                                       </a>
-                                       <a title="Delete" href="#">
-                                          <img class="inject" src="../asset/img/icons/trash.svg" alt="" style="visibility: hidden;">
-                                       </a>
-                                    </div>
-                                 </td>
-                              </tr>
-                              <!-- single table row -->
-                              <tr>
-                                 <td>SC 093</td>
-                                 <td>Facebook</td>
-                                 <td>+673 XXX XXXX</td>
-                                 <td>NBT</td>
-                                 <td>$12,345</td>
-                                 <td>
-                                    <div class="tableActions justify-content-start">
-                                       <a title="View" href="#">
-                                          <img class="inject" src="../asset/img/icons/eye.svg" alt="" style="visibility: hidden;">
-                                       </a>
-                                       <a title="Edit" href="#">
-                                          <img class="inject" src="../asset/img/icons/pencil.svg" alt="" style="visibility: hidden;">
-                                       </a>
-                                       <a title="Delete" href="#">
-                                          <img class="inject" src="../asset/img/icons/trash.svg" alt="" style="visibility: hidden;">
-                                       </a>
-                                    </div>
-                                 </td>
-                              </tr>
-                              <!-- single table row -->
-                              <tr>
-                                 <td>SC 093</td>
-                                 <td>Khairul Bunut</td>
-                                 <td>+673 XXX XXXX</td>
-                                 <td>NBT</td>
-                                 <td>$12,345</td>
-                                 <td>
-                                    <div class="tableActions justify-content-start">
-                                       <a title="View" href="#">
-                                          <img class="inject" src="../asset/img/icons/eye.svg" alt="" style="visibility: hidden;">
-                                       </a>
-                                       <a title="Edit" href="#">
-                                          <img class="inject" src="../asset/img/icons/pencil.svg" alt="" style="visibility: hidden;">
-                                       </a>
-                                       <a title="Delete" href="#">
-                                          <img class="inject" src="../asset/img/icons/trash.svg" alt="" style="visibility: hidden;">
-                                       </a>
-                                    </div>
-                                 </td>
-                              </tr>
-                              <!-- single table row -->
-                              <tr>
-                                 <td>SC 093</td>
-                                 <td>Eric Gadong</td>
-                                 <td>+673 XXX XXXX</td>
-                                 <td>Lexus</td>
-                                 <td>$12,345</td>
-                                 <td>
-                                    <div class="tableActions justify-content-start">
-                                       <a title="View" href="#">
-                                          <img class="inject" src="../asset/img/icons/eye.svg" alt="" style="visibility: hidden;">
-                                       </a>
-                                       <a title="Edit" href="#">
-                                          <img class="inject" src="../asset/img/icons/pencil.svg" alt="" style="visibility: hidden;">
-                                       </a>
-                                       <a title="Delete" href="#">
-                                          <img class="inject" src="../asset/img/icons/trash.svg" alt="" style="visibility: hidden;">
-                                       </a>
-                                    </div>
-                                 </td>
-                              </tr>
-                              <!-- single table row -->
-                              <tr>
-                                 <td>SC 093</td>
-                                 <td>Susan KB</td>
-                                 <td>+673 XXX XXXX</td>
-                                 <td>Office</td>
-                                 <td>$12,345</td>
-                                 <td>
-                                    <div class="tableActions justify-content-start">
-                                       <a title="View" href="#">
-                                          <img class="inject" src="../asset/img/icons/eye.svg" alt="" style="visibility: hidden;">
-                                       </a>
-                                       <a title="Edit" href="#">
-                                          <img class="inject" src="../asset/img/icons/pencil.svg" alt="" style="visibility: hidden;">
-                                       </a>
-                                       <a title="Delete" href="#">
-                                          <img class="inject" src="../asset/img/icons/trash.svg" alt="" style="visibility: hidden;">
-                                       </a>
-                                    </div>
-                                 </td>
-                              </tr>
-                              <!-- single table row -->
-                              <tr>
-                                 <td>SC 093</td>
-                                 <td>Instagram</td>
-                                 <td>+673 XXX XXXX</td>
-                                 <td>Walk-in</td>
-                                 <td>$12,345</td>
-                                 <td>
-                                    <div class="tableActions justify-content-start">
-                                       <a title="View" href="#">
-                                          <img class="inject" src="../asset/img/icons/eye.svg" alt="" style="visibility: hidden;">
-                                       </a>
-                                       <a title="Edit" href="#">
-                                          <img class="inject" src="../asset/img/icons/pencil.svg" alt="" style="visibility: hidden;">
-                                       </a>
-                                       <a title="Delete" href="#">
-                                          <img class="inject" src="../asset/img/icons/trash.svg" alt="" style="visibility: hidden;">
-                                       </a>
-                                    </div>
-                                 </td>
-                              </tr>
-                              <!-- single table row -->
-                              <tr>
-                                 <td>SC 093</td>
-                                 <td>Facebook</td>
-                                 <td>+673 XXX XXXX</td>
-                                 <td>NBT</td>
-                                 <td>$12,345</td>
-                                 <td>
-                                    <div class="tableActions justify-content-start">
-                                       <a title="View" href="#">
-                                          <img class="inject" src="../asset/img/icons/eye.svg" alt="" style="visibility: hidden;">
-                                       </a>
-                                       <a title="Edit" href="#">
-                                          <img class="inject" src="../asset/img/icons/pencil.svg" alt="" style="visibility: hidden;">
-                                       </a>
-                                       <a title="Delete" href="#">
-                                          <img class="inject" src="../asset/img/icons/trash.svg" alt="" style="visibility: hidden;">
-                                       </a>
-                                    </div>
-                                 </td>
-                              </tr>
-                              <!-- single table row -->
-                              <tr>
-                                 <td>SC 093</td>
-                                 <td>Khairul Bunut</td>
-                                 <td>+673 XXX XXXX</td>
-                                 <td>NBT</td>
-                                 <td>$12,345</td>
-                                 <td>
-                                    <div class="tableActions justify-content-start">
-                                       <a title="View" href="#">
-                                          <img class="inject" src="../asset/img/icons/eye.svg" alt="" style="visibility: hidden;">
-                                       </a>
-                                       <a title="Edit" href="#">
-                                          <img class="inject" src="../asset/img/icons/pencil.svg" alt="" style="visibility: hidden;">
-                                       </a>
-                                       <a title="Delete" href="#">
-                                          <img class="inject" src="../asset/img/icons/trash.svg" alt="" style="visibility: hidden;">
-                                       </a>
-                                    </div>
-                                 </td>
-                              </tr>
-                           </tbody>
-                        </table>
+         <div class="subInnerLayout">
+            <div class="leftSubSidebar">
+               <ul>
+                  <li>
+                     <a class="active" href="#">R-Pending</a>
+                  </li>
+                  <li>
+                     <a href="#">Assessment</a>
+                  </li>
+                  <li>
+                     <a href="#">Under Repair</a>
+                  </li>
+                  <li>
+                     <a href="#">WFP</a>
+                  </li>
+                  <li>
+                     <a href="#">QC</a>
+                  </li>
+                  <li>
+                     <a href="#">R-Done</a>
+                  </li>
+               </ul>
+            </div>
+            <div class="RightMainPreview">
+               <!-- page inner card -->
+               <div class="appInnerCard">
+                  <!-- bottom card -->
+                  <div class="card">
+                     <div class="card-header">
+                        <div class="cardPageTititle">
+                           <h3>Refurbishment Page</h3>
+                        </div>
+                        <div class="cardHeaderAction text-end"></div>
                      </div>
-                  </div>
-               </div>
-               <div class="card-footer">
-                  <div class="paginationstyle2 d-flex justify-content-center">
-                     <nav aria-label="Page navigation example">
-                        <ul class="pagination">
-                           <li class="page-item">
-                              <a class="page-link" href="#" aria-label="Previous">
-                              <span aria-hidden="true">&laquo;</span>
-                              </a>
-                           </li>
-                           <li class="page-item"><a class="page-link active" href="#">1</a></li>
-                           <li class="page-item"><a class="page-link" href="#">2</a></li>
-                           <li class="page-item"><a class="page-link" href="#">3</a></li>
-                           <li class="page-item">
-                              <a class="page-link" href="#" aria-label="Next">
-                              <span aria-hidden="true">&raquo;</span>
-                              </a>
-                           </li>
-                        </ul>
-                     </nav>
+                     <div class="card-body">
+                        <div class="refurbishmentpageCard">
+                           <div class="row">
+                              <div class="col-xl-6 col-lg-6 col-12">
+                                 <div class="leftInfo">
+                                    <div class="singleInfo">
+                                       <div class="row">
+                                          <label class="col-xl-6 col-xl-6 col-form-label">Car_ID</label>
+                                          <div class="col-xl-6 col-xl-6">
+                                             <input type="text" readonly class="form-control-plaintext" value="C028405 ">
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="singleInfo">
+                                       <div class="row">
+                                          <label class="col-xl-6 col-xl-6 col-form-label">Reg. No.</label>
+                                          <div class="col-xl-6 col-xl-6">
+                                             <input type="text" readonly class="form-control-plaintext" value="KA1489 ">
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="singleInfo">
+                                       <div class="row">
+                                          <label class="col-xl-6 col-xl-6 col-form-label">Reg. No. (New)</label>
+                                          <div class="col-xl-6 col-xl-6">
+                                             <input type="text" readonly class="form-control-plaintext" value="KA1489 ">
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="singleInfo">
+                                       <div class="row">
+                                          <label class="col-xl-6 col-xl-6 col-form-label">Chassis No.</label>
+                                          <div class="col-xl-6 col-xl-6">
+                                             <input type="text" readonly class="form-control-plaintext" value="5UXXW3C53J0T80683">
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="singleInfo">
+                                       <div class="row">
+                                          <label class="col-xl-6 col-xl-6 col-form-label">Source Type</label>
+                                          <div class="col-xl-6 col-xl-6">
+                                             <input type="text" readonly class="form-control-plaintext" value="Used Car">
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="singleInfo">
+                                       <div class="row">
+                                          <label class="col-xl-6 col-xl-6 col-form-label">SC Code</label>
+                                          <div class="col-xl-6 col-xl-6">
+                                             <input type="text" readonly class="form-control-plaintext" value="SC 601">
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="singleInfo">
+                                       <div class="row">
+                                          <label class="col-xl-6 col-xl-6 col-form-label">Make</label>
+                                          <div class="col-xl-6 col-xl-6">
+                                             <input type="text" readonly class="form-control-plaintext" value="Toyota">
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="singleInfo">
+                                       <div class="row">
+                                          <label class="col-xl-6 col-xl-6 col-form-label">Model</label>
+                                          <div class="col-xl-6 col-xl-6">
+                                             <input type="text" readonly class="form-control-plaintext" value="Vios">
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="singleInfo">
+                                       <div class="row">
+                                          <label class="col-xl-6 col-xl-6 col-form-label">Year</label>
+                                          <div class="col-xl-6 col-xl-6">
+                                             <input type="text" readonly class="form-control-plaintext" value="2018">
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="singleInfo">
+                                       <div class="row">
+                                          <label class="col-xl-6 col-xl-6 col-form-label">Color</label>
+                                          <div class="col-xl-6 col-xl-6">
+                                             <input type="text" readonly class="form-control-plaintext" value="Red">
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="singleInfo">
+                                       <div class="row">
+                                          <label class="col-xl-6 col-xl-6 col-form-label">Early Settlement Price</label>
+                                          <div class="col-xl-6 col-xl-6">
+                                             <input type="text" readonly class="form-control-plaintext" value="$5,500">
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="singleInfo">
+                                       <div class="row">
+                                          <label class="col-xl-6 col-xl-6 col-form-label">Offer Price 1</label>
+                                          <div class="col-xl-6 col-xl-6">
+                                             <input type="text" readonly class="form-control-plaintext" value="$5,500">
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="singleInfo">
+                                       <div class="row">
+                                          <label class="col-xl-6 col-xl-6 col-form-label">Offer Price 2</label>
+                                          <div class="col-xl-6 col-xl-6">
+                                             <input type="text" readonly class="form-control-plaintext" value="-">
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="singleInfo">
+                                       <div class="row">
+                                          <label class="col-xl-6 col-xl-6 col-form-label">Purchase Price</label>
+                                          <div class="col-xl-6 col-xl-6">
+                                             <input type="text" readonly class="form-control-plaintext" value="-">
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-xl-6 col-lg-6 col-12">
+                                 <div class="rightInfo">
+                                    <div class="topInfo">
+                                       <div class="headingArea">
+                                          <h4 class="text-danger">R-Done</h4>
+                                       </div>
+                                       <div class="rdoneform">
+                                          <p>Which P-Success car do you want <br> to change to R-Pending? </p>
+                                          <div class="choseButton">
+                                             <button type="button" class="btn btn-outline-danger">
+                                                Choose car
+                                                <span>
+                                                   <img class="inject" src="../asset/img/icons/sidebar/car.svg" alt="">
+                                                </span>
+                                             </button>
+                                          </div>
+                                          <div class="formCheckBox">
+                                             <h6>Has the car arrived to stockyard?</h6>
+                                             <div class="wrapperBox">
+                                                <div class="form-check squareRadio d-flex justify-content-center">
+                                                   <input class="form-check-input" id="Yes" name="windshield" type="radio" value="">
+                                                   <label class="form-label" for="Yes">YES</label>
+                                                </div>
+                                                <div class="form-check squareRadio d-flex justify-content-center">
+                                                   <input class="form-check-input" id="No" name="windshield" type="radio" value="">
+                                                   <label class="form-label" for="No">NO</label>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="chartBox">
+                                          <div class="bottomInfo">
+                                             <h4 class="text-danger" style="font-style: italic;">By clicking save, the status will change to: R-Pending</h4>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="col-xl-3 col-lg-3 col-12"></div>
+                              <div class="col-xl-9 col-lg-9 col-12 ml-auto">
+                                 <div class="chartBox">
+                                    <div class="bottomInfo">
+                                       <div class="saveButton">
+                                          <button class="btn btn-outline-primary">Save</button>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                   </div>
                </div>
             </div>
