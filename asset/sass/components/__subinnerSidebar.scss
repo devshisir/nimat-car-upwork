@@ -3,18 +3,25 @@
     border-radius: 5px;
 
     ul {
+        display: block;
+
         li {
             margin-bottom: 7px;
 
-            a {
+            a,
+            button {
                 display: block;
                 color: #4F4F51;
                 padding: 9px 0px;
                 position: relative;
+                background-color: transparent;
+                border: none;
+                width: 100%;
+                text-align: left;
 
                 &::after {
                     height: 3px;
-                    width: 100%;
+                    width: 0%;
                     content: "";
                     position: absolute;
                     bottom: -4px;
@@ -33,8 +40,12 @@
             .active {
                 &::after {
                     opacity: 1;
+                    width: 100%;
                     visibility: visible;
+                    transition: 0.4s;
                 }
+
+                color: $brand;
             }
         }
     }

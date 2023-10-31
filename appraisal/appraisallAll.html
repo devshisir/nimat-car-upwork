@@ -1,0 +1,2006 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+   <meta charset="utf-8">
+   <title>Car - Appraisal All</title>
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- Favicons -->
+   <link rel="apple-touch-icon" href="../asset/img/favicons/apple-touch-icon.png" sizes="180x180">
+   <link rel="icon" href="../asset/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+   <link rel="icon" href="../asset/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+   <!-- global styles link -->
+   <link rel="stylesheet" href="../asset/css/bootstrap.min.css">
+   <link rel="stylesheet" href="../asset/css/fontawsome.min.css">
+   <link rel="stylesheet" href="../asset/css/style.css">
+   <link rel="stylesheet" href="../asset/css/responsive.css">
+   <!-- this is for mordanizar js link -->
+   <script src="../asset/js/vendor/modernizr-3.6.0.min.js"></script>
+</head>
+
+<body>
+   <!-- main wrapper -->
+   <div id="mainWrapper">
+      <!-- sidebar -->
+      <div class="sidebar">
+         <div class="top_primary_link">
+            <ul>
+               <li>
+                  <a href="/">
+                     <span class="icon">
+                        <img class="inject" src="../asset/img/icons/sidebar/dashboard.svg" alt="">
+                     </span>
+                     <span class="menu_content">Dashboard</span>
+                  </a>
+               </li>
+            </ul>
+         </div>
+         <!-- main menu link -->
+         <div class="main_menu_link">
+            <div class="label_menu">
+               <h4>MENU</h4>
+            </div>
+            <!-- menu with acordion -->
+            <div class="accordion sidebarMenuWrapper" id="menuAcordion">
+               <li class="sidebarMenuLink">
+                  <a href="./car-database.html">
+                     <span class="icon">
+                        <img class="inject" src="./../asset/img/icons/sidebar/car.svg" alt="">
+                     </span>
+                     <span class="menu_content">Car Database</span>
+                  </a>
+               </li>
+               <!-- toggle menu -->
+               <div class="accordion-item mainAcordionItem">
+                  <h2 class="accordion-header">
+                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#menu1" aria-expanded="true" aria-controls="collapseTwo">
+                        <span class="icon">
+                           <img class="inject" src="./../asset/img/icons/sidebar/appraisal.svg" alt="">
+                        </span>
+                        <span class="menu_content">Appraisal</span>
+                     </button>
+                  </h2>
+                  <div id="menu1" class="accordion-collapse collapse show" data-bs-parent="#menuAcordion">
+                     <div class="sub_menu">
+                        <ul>
+                           <li>
+                              <a href="#">
+                                 <span>-</span>
+                                 <div class="right_content">
+                                    <p>Inspection log</p>
+                                 </div>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <li class="sidebarMenuLink">
+                  <a href="/">
+                     <span class="icon">
+                        <img class="inject" src="./../asset/img/icons/sidebar/card-purches.svg" alt="">
+                     </span>
+                     <span class="menu_content">Purchase</span>
+                  </a>
+               </li>
+               <li class="sidebarMenuLink">
+                  <a href="/">
+                     <span class="icon">
+                        <img class="inject" src="./../asset/img/icons/sidebar/repair.svg" alt="">
+                     </span>
+                     <span class="menu_content">Repair</span>
+                  </a>
+               </li>
+               <!-- toggle menu -->
+               <div class="accordion-item mainAcordionItem">
+                  <h2 class="accordion-header">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu2" aria-expanded="false" aria-controls="collapseTwo">
+                        <span class="icon">
+                           <img class="inject" src="./../asset/img/icons/sidebar/sales.svg" alt="">
+                        </span>
+                        <span class="menu_content">Sales</span>
+                     </button>
+                  </h2>
+                  <div id="menu2" class="accordion-collapse collapse" data-bs-parent="#menuAcordion">
+                     <div class="sub_menu">
+                        <ul>
+                           <li>
+                              <a href="#">
+                                 <span>-</span>
+                                 <div class="right_content">
+                                    <p>WIP</p>
+                                 </div>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <li class="sidebarMenuLink">
+                  <a href="/">
+                     <span class="icon">
+                        <img class="inject" src="./../asset/img/icons/sidebar/tax.svg" alt="">
+                     </span>
+                     <span class="menu_content">Road Tax expiry</span>
+                  </a>
+               </li>
+               <!-- toggle menu -->
+               <div class="accordion-item mainAcordionItem">
+                  <h2 class="accordion-header">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu3" aria-expanded="false" aria-controls="collapseTwo">
+                        <span class="icon">
+                           <img class="inject" src="./../asset/img/icons/sidebar/accounting.svg" alt="">
+                        </span>
+                        <span class="menu_content">Accounting</span>
+                     </button>
+                  </h2>
+                  <div id="menu3" class="accordion-collapse collapse" data-bs-parent="#menuAcordion">
+                     <div class="sub_menu">
+                        <ul>
+                           <li>
+                              <a href="#">
+                                 <span>-</span>
+                                 <div class="right_content">
+                                    <p>Expenses</p>
+                                 </div>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#">
+                                 <span>-</span>
+                                 <div class="right_content">
+                                    <p>Income</p>
+                                 </div>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#">
+                                 <span>-</span>
+                                 <div class="right_content">
+                                    <p>Commission</p>
+                                 </div>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <li class="sidebarMenuLink">
+                  <a href="/">
+                     <span class="icon">
+                        <img class="inject" src="./../asset/img/icons/sidebar/notification.svg" alt="">
+                     </span>
+                     <span class="menu_content">Notification</span>
+                  </a>
+               </li>
+               <li class="sidebarMenuLink">
+                  <a href="/">
+                     <span class="icon">
+                        <img class="inject" src="./../asset/img/icons/sidebar/search-inquary.svg" alt="">
+                     </span>
+                     <span class="menu_content">Audit Trial</span>
+                  </a>
+               </li>
+               <li class="sidebarMenuLink">
+                  <a href="/">
+                     <span class="icon">
+                        <img class="inject" src="./../asset/img/icons/sidebar/reports.svg" alt="">
+                     </span>
+                     <span class="menu_content">Reports</span>
+                  </a>
+               </li>
+               <!-- toggle menu -->
+               <div class="accordion-item mainAcordionItem">
+                  <h2 class="accordion-header">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu4" aria-expanded="false" aria-controls="collapseTwo">
+                        <span class="icon">
+                           <img class="inject" src="./../asset/img/icons/sidebar/settings.svg" alt="">
+                        </span>
+                        <span class="menu_content">Settings</span>
+                     </button>
+                  </h2>
+                  <div id="menu4" class="accordion-collapse collapse" data-bs-parent="#menuAcordion">
+                     <div class="sub_menu">
+                        <ul>
+                           <li>
+                              <a href="#">
+                                 <span>-</span>
+                                 <div class="right_content">
+                                    <p>User Role</p>
+                                 </div>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#">
+                                 <span>-</span>
+                                 <div class="right_content">
+                                    <p>User Master</p>
+                                 </div>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#">
+                                 <span>-</span>
+                                 <div class="right_content">
+                                    <p>Permission</p>
+                                 </div>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <!-- toggle menu -->
+               <div class="accordion-item mainAcordionItem">
+                  <h2 class="accordion-header">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu5" aria-expanded="false" aria-controls="collapseTwo">
+                        <span class="icon">
+                           <img class="inject" src="./../asset/img/icons/sidebar/user.svg" alt="">
+                        </span>
+                        <span class="menu_content">Master</span>
+                     </button>
+                  </h2>
+                  <div id="menu5" class="accordion-collapse collapse" data-bs-parent="#menuAcordion">
+                     <div class="sub_menu">
+                        <ul>
+                           <li>
+                              <a href="/">
+                                 <span>-</span>
+                                 <div class="right_content">
+                                    <p>Brand & Model list</p>
+                                 </div>
+                              </a>
+                           </li>
+                           <div class="subAcordionMenu">
+                              <div class="accordion" id="subAcordion">
+                                 <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#subacor1" aria-expanded="false" aria-controls="collapseTwo">
+                                          <span>-</span>
+                                          <div class="right_content">
+                                             <p>Repair</p>
+                                          </div>
+                                       </button>
+                                    </h2>
+                                    <div id="subacor1" class="accordion-collapse collapse" data-bs-parent="#subAcordion">
+                                       <div class="subacorMenu">
+                                          <ul>
+                                             <li>
+                                                <a href="#">
+                                                   <span>-</span>
+                                                   <div class="right_content">
+                                                      <p>Company Name listing</p>
+                                                   </div>
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="#">
+                                                   <span>-</span>
+                                                   <div class="right_content">
+                                                      <p>Repair Type listing</p>
+                                                   </div>
+                                                </a>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <li>
+                              <a href="../sg-management/sg-manageent.html">
+                                 <span>-</span>
+                                 <div class="right_content">
+                                    <p>SC Management</p>
+                                 </div>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         
+      </div>
+      <div class="app_wrapper">
+         <!-- header -->
+         <header class="appHeader">
+            <div class="row align-items-center">
+               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                  <div class="header_left">
+                     <div class="toggleArrow">
+                        <button class="toggleButton" type="button">
+                           <i class="fa-regular fa-bars-sort"></i>
+                        </button>
+                     </div>
+                     <div class="search_form">
+                        <div class="input-group">
+                           <input type="text" class="form-control" placeholder="Search...">
+                           <span class="input-group-text">
+                              <button type="button">
+                                 <i class="fa-sharp fa-regular fa-magnifying-glass"></i>
+                              </button>
+                           </span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                  <div class="header_right text-end">
+                     <ul>
+                        <li class="notificationButton">
+                           <a href="#"><i class="fa-regular fa-bell"></i></a>
+                        </li>
+                        <li class="userInfo">
+                           <div class="btn-group">
+                              <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                 <span><i class="fa-solid fa-user"></i></span>
+                                 <p>Michael</p>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-end">
+                                 <li>
+                                    <a href="#" class="dropdown-item">Profile</a>
+                                 </li>
+                                 <li>
+                                    <a href="#" class="dropdown-item">Settings</a>
+                                 </li>
+                                 <li>
+                                    <a href="#" class="dropdown-item">Another Link</a>
+                                 </li>
+                                 <li>
+                                    <a href="#" class="dropdown-item">Logout</a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </header>
+         <!-- breadcome area -->
+         <div class="breadComeArea">
+            <div class="row">
+               <div class="col-xl-6 col-lg-6">
+                  <div class="pageTitle">
+                     <h4>Add/Edit Appraisal Page</h4>
+                  </div>
+               </div>
+               <div class="col-xl-6 col-lg-6">
+                  <div class="pageHistory text-end">
+                     <ul>
+                        <li>
+                           <a href="#">Home page</a>
+                        </li>
+                        <li>
+                           <a href="#"><i class="fa-sharp fa-regular fa-angle-right"></i></a>
+                        </li>
+                        <li>
+                           <a href="#">Appraisal Page</a>
+                        </li>
+                        <li class="active">
+                           <a href="#"><i class="fa-sharp fa-regular fa-angle-right"></i></a>
+                        </li>
+                        <li class="active">
+                           <a href="#">Add/Edit Appraisal Page</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="subInnerLayout">
+            <div class="leftSubSidebar">
+               <ul class="nav" role="tablist">
+                  <li role="presentation">
+                     <button class="active" type="button" data-bs-toggle="tab" data-bs-target="#inquiry" role="tab">Inquiry</button>
+                  </li>
+                  <li>
+                     <button type="button" data-bs-toggle="tab" data-bs-target="#inspection-pending" role="tab">Inspection pending</button>
+                  </li>
+                  <li>
+                     <button type="button" data-bs-toggle="tab" data-bs-target="#inspection-done" role="tab">Inspection Done</button>
+                  </li>
+                  <li>
+                     <button type="button" data-bs-toggle="tab" data-bs-target="#hot-prospect" role="tab">Hot Prospect</button>
+                  </li>
+                  <li>
+                     <button type="button" data-bs-toggle="tab" data-bs-target="#in-progress" role="tab">In Progress</button>
+                  </li>
+                  <li>
+                     <button type="button" data-bs-toggle="tab" data-bs-target="#success-lost" role="tab">Success or Lost</button>
+                  </li>
+               </ul>
+            </div>
+            <div class="RightMainPreview">
+               <!-- page inner card -->
+               <div class="appInnerCard">
+                  <!-- bottom card -->
+                  <div class="card">
+                     <div class="card-header">
+                        <div class="cardPageTititle">
+                           <h3>Add/Edit Appraisal Page</h3>
+                        </div>
+                     </div>
+                     <div class="card-body">
+                        <div class="tab-content apprasialMainTabWrapper" id="apprasialTab">
+
+
+                           <div class="tab-pane fade show active" id="inquiry" role="tabpanel" tabindex="0">
+                              <div class="row">
+                                 <div class="col-xl-6 col-lg-6 col-12">
+                                    <div class="leftContent">
+                                       <div class="choseCarButtonG">
+                                          <button type="button" class="btn btn-outline-danger">
+                                             Choose car
+                                             <span>
+                                                <img class="inject" src="../asset/img/icons/sidebar/car.svg" alt="">
+                                             </span>
+                                          </button>
+                                       </div>
+                                       <div class="leftForm mt-3">
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Car_ID</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="C028405 ">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Reg. No.</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="KA1489">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Reg. No. (New)</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="KA1489">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Chassis No.</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="5UXXW3C53J0T80683">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Source Type</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="Used Car">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">SC Code</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="SC 601">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Salesman Name</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="Robert">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Make</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="Toyota">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Model</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="Vios">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Model Year</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="2018">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Registration Year</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="2018">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Color</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="Red">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Early Settlement Price</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="$5,500">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Offer Price 1</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="$5,500">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Customer Expected Amount</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="-">
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="noticeInfo mt-5">
+                                          <p class="text-danger">By clicking save, the status will change to: P-Inquiry	</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-xl-6 col-lg-6 col-12">
+                                    <div class="rightForm">
+                                       <div class="topInfo">
+                                          <p class="text-danger">Customer detail</p>
+                                       </div>
+                                       <div class="formWrapper mt-3">
+                                          <div class="singleBox">
+                                             <div class="row align-items-center">
+                                                <div class="col-auto">
+                                                   <label class="col-form-label">Name</label>
+                                                </div>
+                                                <div class="col-auto flex-grow-1">
+                                                   <input type="text" class="form-control">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleBox">
+                                             <div class="row align-items-center">
+                                                <div class="col-auto">
+                                                   <label class="col-form-label">Address</label>
+                                                </div>
+                                                <div class="col-auto flex-grow-1">
+                                                   <input type="text" class="form-control">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleBox">
+                                             <div class="row align-items-center">
+                                                <div class="col-auto">
+                                                   <label class="col-form-label">SC Code</label>
+                                                </div>
+                                                <div class="col-auto flex-grow-1">
+                                                   <div class="selectBox">
+                                                      <select class="form-select">
+                                                         <option value="0">Select</option>
+                                                         <option value="1">option 1</option>
+                                                         <option value="2">option 2</option>
+                                                         <option value="3">option 3</option>
+                                                      </select>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleBox">
+                                             <div class="row align-items-center">
+                                                <div class="col-auto">
+                                                   <label class="col-form-label">Tel No.</label>
+                                                </div>
+                                                <div class="col-auto flex-grow-1">
+                                                   <input type="text" class="form-control">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleBox">
+                                             <div class="row align-items-center">
+                                                <div class="col-auto">
+                                                   <label class="col-form-label">Offer price 1</label>
+                                                </div>
+                                                <div class="col-auto flex-grow-1">
+                                                   <input type="text" class="form-control">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="devider"></div>
+                                          <div class="singleBox blockForm">
+                                             <label class="form-label">Early Settlement Price</label>
+                                             <input type="text" class="form-control">
+                                          </div>
+                                          <div class="singleBox blockForm">
+                                             <label class="form-label">Early Settlement Date</label>
+                                             <input type="date" class="form-control">
+                                          </div>
+                                          <div class="singleBox blockForm">
+                                             <label class="form-label">Customer Expected Price</label>
+                                             <input type="text" class="form-control">
+                                          </div>
+                                          <div class="singleBox blockForm">
+                                             <label class="form-label">Upload Blue Card</label>
+                                             <div class="uplodFormBox">
+                                                <div class="singleFileUpload fileUploadInput small-size">
+                                                   <input type="file" id="selectfile1">
+                                                   <label for="selectfile1">
+                                                      <img src="../asset/img/icons/select-file.png" alt="">
+                                                   </label>
+                                                </div>
+                                                <div class="singleFileUpload fileUploadInput small-size">
+                                                   <input type="file" id="selectfile2">
+                                                   <label for="selectfile2">
+                                                      <img src="../asset/img/icons/select-file.png" alt="">
+                                                   </label>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleBox blockForm">
+                                             <label class="form-label">Upload Mileage</label>
+                                             <div class="uplodFormBox">
+                                                <div class="singleFileUpload fileUploadInput small-size">
+                                                   <input type="file" id="selectfile3">
+                                                   <label for="selectfile3">
+                                                      <img src="../asset/img/icons/select-file.png" alt="">
+                                                   </label>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleBox blockForm">
+                                             <label class="form-label">Upload Car Photos</label>
+                                             <div class="uplodFormBox">
+                                                <div class="singleFileUpload fileUploadInput small-size">
+                                                   <input type="file" id="selectfile4">
+                                                   <label for="selectfile4">
+                                                      <img src="../asset/img/icons/select-file.png" alt="">
+                                                   </label>
+                                                </div>
+                                                <div class="singleFileUpload fileUploadInput small-size">
+                                                   <input type="file" id="selectfile5">
+                                                   <label for="selectfile5">
+                                                      <img src="../asset/img/icons/select-file.png" alt="">
+                                                   </label>
+                                                </div>
+                                                <div class="singleFileUpload fileUploadInput small-size">
+                                                   <input type="file" id="selectfile6">
+                                                   <label for="selectfile6">
+                                                      <img src="../asset/img/icons/select-file.png" alt="">
+                                                   </label>
+                                                </div>
+                                                <div class="singleFileUpload fileUploadInput small-size">
+                                                   <input type="file" id="selectfile7">
+                                                   <label for="selectfile7">
+                                                      <img src="../asset/img/icons/select-file.png" alt="">
+                                                   </label>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="saveButton mt-5 d-flex justify-content-end">
+                                          <button type="button" class="btn btn-primary">Save</button>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+
+                           <div class="tab-pane fade" id="inspection-pending" role="tabpanel" tabindex="0">
+                              <div class="row">
+                                 <div class="col-xl-6 col-lg-6 col-12">
+                                    <div class="leftContent">
+                                       <div class="leftForm mt-3">
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Car_ID</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="C028405 ">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Reg. No.</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="KA1489">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Reg. No. (New)</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="KA1489">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Chassis No.</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="5UXXW3C53J0T80683">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Source Type</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="Used Car">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">SC Code</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="SC 601">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Salesman Name</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="Robert">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Make</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="Toyota">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Model</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="Vios">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Model Year</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="2018">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Registration Year</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="2018">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Color</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="Red">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Early Settlement Price</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="$5,500">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Offer Price 1</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="$5,500">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Offer Price 2</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="-">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Purchase Price</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="-">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Customer Expected Amount</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="-">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Total Estimated other costs</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="-">
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-xl-6 col-lg-6 col-12">
+                                    <div class="rightForm">
+                                       <div class="topInfo">
+                                          <p class="text-danger">Inspection pending</p>
+                                       </div>
+                                       <div class="formWrapper mt-3">
+                                          <div class="singleBox blockForm">
+                                             <label class="form-label">To be inspected by</label>
+                                             <div class="selectBox">
+                                                <select class="form-select">
+                                                   <option value="0">Select</option>
+                                                   <option value="1">option 1</option>
+                                                   <option value="2">option 2</option>
+                                                   <option value="3">option 3</option>
+                                                </select>
+                                             </div>
+                                          </div>
+                                          <div class="singleBox blockForm">
+                                             <label class="form-label">To be inspected by</label>
+                                             <input type="date" class="form-control">
+                                          </div>
+                                          <div class="singleBox blockForm">
+                                             <label class="form-label">Time</label>
+                                             <div class="selectBox">
+                                                <select class="form-select">
+                                                   <option value="0">Select</option>
+                                                   <option value="1">option 1</option>
+                                                   <option value="2">option 2</option>
+                                                   <option value="3">option 3</option>
+                                                </select>
+                                             </div>
+                                          </div>
+                                          <div class="noticeInfo mt-4">
+                                             <p class="text-danger">By clicking save, the status will change to: P-Inspection Pending <br> SMS & e-mail will be notified to the inspector</p>
+                                          </div>
+                                          <div class="saveButton mt-5 d-flex justify-content-end">
+                                             <button type="button" class="btn btn-outline-primary">Save</button>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="tab-pane fade" id="inspection-done" role="tabpanel" tabindex="0">
+                              <div class="row">
+                                 <div class="col-xl-6 col-lg-6 col-12">
+                                    <div class="leftContent">
+                                       <div class="leftForm mt-3">
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Car_ID</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="C028405 ">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Reg. No.</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="KA1489">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Reg. No. (New)</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="KA1489">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Chassis No.</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="5UXXW3C53J0T80683">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Source Type</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="Used Car">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">SC Code</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="SC 601">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Salesman Name</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="Robert">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Make</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="Toyota">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Model</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="Vios">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Model Year</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="2018">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Registration Year</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="2018">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Color</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="Red">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Early Settlement Price</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="$5,500">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Offer Price 1</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="$5,500">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Offer Price 2</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="-">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Purchase Price</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="-">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Customer Expected Amount</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="-">
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-xl-6 col-lg-6 col-12">
+                                    <div class="rightForm">
+                                       <div class="topInfo">
+                                          <p class="text-danger">Inspection Done</p>
+                                       </div>
+                                       <div class="formWrapper mt-3">
+                                          <div class="singleBox">
+                                             <div class="checkBoxWrapper">
+                                                <div class="form-check squareRadio d-flex justify-content-center">
+                                                   <input class="form-check-input" id="Inspected" type="checkbox" value="">
+                                                   <label class="form-label" for="Inspected">Inspected</label>
+                                                </div>
+                                                <div class="form-check squareRadio d-flex justify-content-center">
+                                                   <input class="form-check-input" id="Verified" type="checkbox" value="">
+                                                   <label class="form-label" for="Verified">Verified</label>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleBox blockForm mt-3">
+                                             <label class="form-label mb-0">To be inspected by</label>
+                                             <input readonly type="text" class="form-control-plaintext p-0" value="Lorem Ipsum">
+                                          </div>
+                                          <div class="singleBox blockForm mt-2">
+                                             <label class="form-label mb-0">Verified by</label>
+                                             <input readonly type="text" class="form-control-plaintext p-0" value="Lorem Ipsum">
+                                          </div>
+                                          <div class="singleBox blockForm mt-2">
+                                             <label class="form-label mb-0">Date of Inspection</label>
+                                             <input readonly type="text" class="form-control-plaintext p-0" value="10-November-2023">
+                                          </div>
+                                          <div class="singleBox blockForm mt-3">
+                                             <label class="form-label">To be inspected by</label>
+                                             <input type="text" class="form-control" value="">
+                                          </div>
+                                          <div class="singleBox blockForm mt-3">
+                                             <label class="form-label">Remarks</label>
+                                             <input type="text" class="form-control" value="">
+                                          </div>
+                                       </div>
+                                       <div class="noticeInfo mt-4">
+                                          <p class="text-danger">By clicking save, the status will change to: P-Inspection Done</p>
+                                       </div>
+                                       <div class="saveButton mt-5 d-flex justify-content-end">
+                                          <button type="button" class="btn btn-outline-primary">Save</button>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+
+                           <div class="tab-pane fade" id="hot-prospect" role="tabpanel" tabindex="0">
+                              <div class="row">
+                                 <div class="col-xl-6 col-lg-6 col-12">
+                                    <div class="leftContent">
+                                       <div class="leftForm mt-3">
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Car_ID</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="C028405 ">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Reg. No.</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="KA1489">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Reg. No. (New)</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="KA1489">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Chassis No.</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="5UXXW3C53J0T80683">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Source Type</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="Used Car">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">SC Code</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="SC 601">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Salesman Name</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="Robert">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Make</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="Toyota">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Model</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="Vios">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Model Year</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="2018">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Registration Year</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="2018">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Color</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="Red">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Early Settlement Price</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="$5,500">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Offer Price 1</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="$5,500">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Offer Price 2</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="-">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Purchase Price</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="-">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Customer Expected Amount</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="-">
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-xl-6 col-lg-6 col-12">
+                                    <div class="rightForm">
+                                       <div class="topInfo">
+                                          <p class="text-danger">Hot Prospect</p>
+                                       </div>
+                                       <div class="formWrapper mt-3">
+                                          <div class="singleBox">
+                                             <p style="font-size: 15px;" class="mb-2">Is this a Hot prospect?</p>
+                                             <div class="checkBoxWrapper">
+                                                <div class="form-check squareRadio d-flex justify-content-center">
+                                                   <input class="form-check-input" id="Hotprospect1" name="Hotprospect" type="radio" value="">
+                                                   <label class="form-label" for="Hotprospect1">This is a Hot prospect</label>
+                                                </div>
+                                                <div class="form-check squareRadio d-flex justify-content-center">
+                                                   <input class="form-check-input" id="Hotprospect2" name="Hotprospect" type="radio" value="">
+                                                   <label class="form-label" for="Hotprospect2">This case is lost</label>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleBox blockForm mt-3">
+                                             <label class="form-label">Remarks</label>
+                                             <div class="selectBox">
+                                                <select class="form-select">
+                                                   <option value="0">Select</option>
+                                                   <option value="1">High settlement</option>
+                                                   <option value="2">Car condition</option>
+                                                   <option value="3">Age of car</option>
+                                                   <option value="4">Car Loan declined</option>
+                                                   <option value="5">High expectation</option>
+                                                   <option value="6">Others</option>
+                                                </select>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="noticeInfo mt-4">
+                                          <p class="text-danger">By clicking save, the status will change to: P-Hot Prospect</p>
+                                       </div>
+                                       <div class="saveButton mt-5 d-flex justify-content-end">
+                                          <button type="button" class="btn btn-outline-primary">Save</button>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+
+                           <div class="tab-pane fade" id="in-progress" role="tabpanel" tabindex="0">
+                              <div class="row">
+                                 <div class="col-xl-6 col-lg-6 col-12">
+                                    <div class="leftContent">
+                                       <div class="leftForm mt-3">
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Car_ID</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="C028405 ">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Reg. No.</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="KA1489">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Reg. No. (New)</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="KA1489">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Chassis No.</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="5UXXW3C53J0T80683">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Source Type</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="Used Car">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">SC Code</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="SC 601">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Salesman Name</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="Robert">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Make</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="Toyota">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Model</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="Vios">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Model Year</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="2018">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Registration Year</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="2018">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Color</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="Red">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Early Settlement Price</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="$5,500">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Offer Price 1</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="$5,500">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Offer Price 2</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="-">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Purchase Price</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="-">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Customer Expected Amount</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="-">
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-xl-6 col-lg-6 col-12">
+                                    <div class="rightForm">
+                                       <div class="topInfo">
+                                          <p class="text-danger">In Progress</p>
+                                       </div>
+                                       <div class="formWrapper mt-3">
+                                          <div class="singleBox">
+                                             <p style="font-size: 15px;" class="mb-2">Has the customer agreed?</p>
+                                             <div class="checkBoxWrapper">
+                                                <div class="form-check squareRadio d-flex justify-content-center">
+                                                   <input class="form-check-input" id="customeragreed1" name="customeragreed" type="radio" value="">
+                                                   <label class="form-label" for="customeragreed1">YES</label>
+                                                </div>
+                                                <div class="form-check squareRadio d-flex justify-content-center">
+                                                   <input class="form-check-input" id="customeragreed2" name="customeragreed" type="radio" value="">
+                                                   <label class="form-label" for="customeragreed2">NO</label>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleBox blockForm mt-3">
+                                             <label class="form-label">Remarks</label>
+                                             <input type="text" class="form-control" placeholder="Waiting for new car approval">
+                                          </div>
+                                          <div class="singleBox blockForm">
+                                             <label class="form-label">Estimated day for car handover</label>
+                                             <input type="date" class="form-control">
+                                          </div>
+                                          <div class="singleBox blockForm">
+                                             <label class="form-label">
+                                                <span class="required">*</span>
+                                                Purchase Price
+                                             </label>
+                                             <input type="date" class="form-control">
+                                          </div>
+                                          <div class="singleBox blockForm">
+                                             <label class="form-label">Remarks</label>
+                                             <input type="text" class="form-control">
+                                          </div>
+                                          <div class="singleBox blockForm">
+                                             <label class="form-label">Total Transaction Value</label>
+                                             <input type="text" class="form-control">
+                                          </div>
+                                          <div class="singleBox blockForm">
+                                             <label class="form-label">Overtrade</label>
+                                             <input type="text" class="form-control">
+                                          </div>
+                                          <div class="singleBox blockForm">
+                                             <label class="form-label">Top up from Shopping Voucher</label>
+                                             <input type="text" class="form-control">
+                                          </div>
+                                          <div class="singleBox blockForm">
+                                             <label class="form-label">Top up from deposit</label>
+                                             <input type="text" class="form-control">
+                                          </div>
+                                          <div class="singleBox blockForm">
+                                             <label class="form-label">QUCC Purchase Price</label>
+                                             <input type="text" class="form-control">
+                                          </div>
+                                       </div>
+                                       <div class="noticeInfo mt-4">
+                                          <p class="text-danger">By clicking save, the status will change to: P-Inprogress</p>
+                                       </div>
+                                       <div class="saveButton mt-5 d-flex justify-content-end">
+                                          <button type="button" class="btn btn-outline-primary">Save</button>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+
+                           <div class="tab-pane fade" id="success-lost" role="tabpanel" tabindex="0">
+                              <div class="row">
+                                 <div class="col-xl-6 col-lg-6 col-12">
+                                    <div class="leftContent">
+                                       <div class="leftForm mt-3">
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Car_ID</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="C028405 ">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Reg. No.</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="KA1489">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Reg. No. (New)</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="KA1489">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Chassis No.</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="5UXXW3C53J0T80683">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Source Type</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="Used Car">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">SC Code</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="SC 601">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Salesman Name</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="Robert">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Make</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="Toyota">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Model</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="Vios">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Model Year</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="2018">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Registration Year</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="2018">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Color</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="Red">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Early Settlement Price</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="$5,500">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Offer Price 1</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="$5,500">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Offer Price 2</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="-">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Purchase Price</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="-">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleInfo">
+                                             <div class="row">
+                                                <label class="col-sm-5 col-form-label">Customer Expected Amount</label>
+                                                <div class="col-sm-7">
+                                                   <input type="text" readonly class="form-control-plaintext" value="-">
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-xl-6 col-lg-6 col-12">
+                                    <div class="rightForm">
+                                       <div class="topInfo">
+                                          <p class="text-danger">Success or lost?</p>
+                                       </div>
+                                       <div class="formWrapper mt-3">
+                                          <div class="singleBox">
+                                             <p style="font-size: 15px;" class="mb-2">Is the car P-Success or P-Lost</p>
+                                             <div class="checkBoxWrapper">
+                                                <div class="form-check squareRadio d-flex justify-content-center">
+                                                   <input class="form-check-input" id="P-Success1" name="P-Success" type="radio" value="">
+                                                   <label class="form-label" for="P-Success1">YES</label>
+                                                </div>
+                                                <div class="form-check squareRadio d-flex justify-content-center">
+                                                   <input class="form-check-input" id="P-Success2" name="P-Success" type="radio" value="">
+                                                   <label class="form-label" for="P-Success2">P-LOST</label>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleBox blockForm">
+                                             <label class="form-label">Remarks</label>
+                                             <div class="selectBox">
+                                                <select class="form-select">
+                                                   <option value="0">Select</option>
+                                                   <option value="1">High settlement</option>
+                                                   <option value="2">Car condition</option>
+                                                   <option value="3">Age of car</option>
+                                                   <option value="4">Car Loan declined</option>
+                                                   <option value="5">High expectation</option>
+                                                   <option value="6">Others</option>
+                                                </select>
+                                             </div>
+                                          </div>
+                                          <div class="singleBox mt-3">
+                                             <p style="font-size: 15px;" class="mb-2">Has the customer surrendered the car?</p>
+                                             <div class="checkBoxWrapper">
+                                                <div class="form-check squareRadio d-flex justify-content-center">
+                                                   <input class="form-check-input" id="surrendered" type="checkbox" value="">
+                                                   <label class="form-label" for="surrendered">YES</label>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleBox">
+                                             <p style="font-size: 15px;" class="mb-2">Has the customer signed the Release <br> Of Ownership agreement?</p>
+                                             <div class="checkBoxWrapper">
+                                                <div class="form-check squareRadio d-flex justify-content-center">
+                                                   <input class="form-check-input" id="Ownership1" name="Ownership" type="radio" value="">
+                                                   <label class="form-label" for="Ownership1">YES</label>
+                                                </div>
+                                                <div class="form-check squareRadio d-flex justify-content-center">
+                                                   <input class="form-check-input" id="Ownership2" name="Ownership" type="radio" value="">
+                                                   <label class="form-label" for="Ownership2">NO</label>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleBox blockForm">
+                                             <label class="form-label">Date Customer signed the agreement</label>
+                                             <input type="date" class="form-control">
+                                          </div>
+                                          <div class="singleBox blockForm">
+                                             <label class="form-label">Date field</label>
+                                             <input type="date" class="form-control">
+                                          </div>
+                                       </div>
+                                       <div class="noticeInfo mt-4">
+                                          <p class="text-danger">By clicking save, the status will change to: P-Success</p>
+                                       </div>
+                                       <div class="saveButton mt-5 d-flex justify-content-end">
+                                          <button type="button" class="btn btn-outline-primary">Save</button>
+                                       </div>
+                                       <div class="devider"></div>
+                                       <div class="formWrapper">
+                                          <div class="topInfo mb-3">
+                                             <p class="text-danger">WIP Checklist</p>
+                                          </div>
+                                          <div class="singleBox d-flex justify-content-between">
+                                             <div>
+                                                <p style="font-size: 15px;" class="mb-2">Insurance policy</p>
+                                                <div class="checkBoxWrapper">
+                                                   <div class="form-check squareRadio d-flex justify-content-center">
+                                                      <input class="form-check-input" id="Insurance" type="checkbox" value="">
+                                                      <label class="form-label" for="Insurance">YES</label>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div>
+                                                <div class="uplodFormBox">
+                                                   <div class="singleFileUpload fileUploadInput small-size">
+                                                      <input type="file" id="Insuranceup">
+                                                      <label for="Insuranceup">
+                                                         <img src="../asset/img/icons/select-file.png" alt="">
+                                                      </label>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleBox d-flex justify-content-between">
+                                             <div>
+                                                <p style="font-size: 15px;" class="mb-2">Surat Pembatalan</p>
+                                                <div class="checkBoxWrapper">
+                                                   <div class="form-check squareRadio d-flex justify-content-center">
+                                                      <input class="form-check-input" id="Pembatalan" type="checkbox" value="">
+                                                      <label class="form-label" for="Pembatalan">YES</label>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div>
+                                                <div class="uplodFormBox">
+                                                   <div class="singleFileUpload fileUploadInput small-size">
+                                                      <input type="file" id="Pembatalanup">
+                                                      <label for="Pembatalanup">
+                                                         <img src="../asset/img/icons/select-file.png" alt="">
+                                                      </label>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleBox d-flex justify-content-between">
+                                             <div>
+                                                <p style="font-size: 15px;" class="mb-2">Transform Form</p>
+                                                <div class="checkBoxWrapper">
+                                                   <div class="form-check squareRadio d-flex justify-content-center">
+                                                      <input class="form-check-input" id="Transform" type="checkbox" value="">
+                                                      <label class="form-label" for="Transform">YES</label>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div>
+                                                <div class="uplodFormBox">
+                                                   <div class="singleFileUpload fileUploadInput small-size">
+                                                      <input type="file" id="Transformup">
+                                                      <label for="Transformup">
+                                                         <img src="../asset/img/icons/select-file.png" alt="">
+                                                      </label>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleBox d-flex justify-content-between">
+                                             <div>
+                                                <p style="font-size: 15px;" class="mb-2">Valid IC with Owner’s signature</p>
+                                                <div class="checkBoxWrapper">
+                                                   <div class="form-check squareRadio d-flex justify-content-center">
+                                                      <input class="form-check-input" id="ValidIC" type="checkbox" value="">
+                                                      <label class="form-label" for="ValidIC">YES</label>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div>
+                                                <div class="uplodFormBox">
+                                                   <div class="singleFileUpload fileUploadInput small-size">
+                                                      <input type="file" id="ValidICup">
+                                                      <label for="ValidICup">
+                                                         <img src="../asset/img/icons/select-file.png" alt="">
+                                                      </label>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleBox d-flex justify-content-between">
+                                             <div>
+                                                <p style="font-size: 15px;" class="mb-2">Business ROC</p>
+                                                <div class="checkBoxWrapper">
+                                                   <div class="form-check squareRadio d-flex justify-content-center">
+                                                      <input class="form-check-input" id="ROC1" name="ROC" type="radio" value="">
+                                                      <label class="form-label" for="ROC1">YES</label>
+                                                   </div>
+                                                   <div class="form-check squareRadio d-flex justify-content-center">
+                                                      <input class="form-check-input" id="ROC2" name="ROC" type="radio" value="">
+                                                      <label class="form-label" for="ROC2">N/A</label>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div>
+                                                <div class="uplodFormBox">
+                                                   <div class="singleFileUpload fileUploadInput small-size">
+                                                      <input type="file" id="ROCup">
+                                                      <label for="ROCup">
+                                                         <img src="../asset/img/icons/select-file.png" alt="">
+                                                      </label>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleBox d-flex justify-content-between">
+                                             <div>
+                                                <p style="font-size: 15px;" class="mb-2">Company letter to JPD</p>
+                                                <div class="checkBoxWrapper">
+                                                   <div class="form-check squareRadio d-flex justify-content-center">
+                                                      <input class="form-check-input" id="JPD1" name="JPD" type="radio" value="">
+                                                      <label class="form-label" for="JPD1">YES</label>
+                                                   </div>
+                                                   <div class="form-check squareRadio d-flex justify-content-center">
+                                                      <input class="form-check-input" id="JPD2" name="JPD" type="radio" value="">
+                                                      <label class="form-label" for="JPD2">N/A</label>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div>
+                                                <div class="uplodFormBox">
+                                                   <div class="singleFileUpload fileUploadInput small-size">
+                                                      <input type="file" id="JPDup">
+                                                      <label for="JPDup">
+                                                         <img src="../asset/img/icons/select-file.png" alt="">
+                                                      </label>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleBox blockForm">
+                                             <label class="form-label">Road tax expiry</label>
+                                             <input type="date" class="form-control">
+                                          </div>
+                                          <div class="singleBox m-0 d-flex justify-content-between align-items-center">
+                                             <div>
+                                                <p style="font-size: 15px;" class="mb-2">No. Of Key</p>
+                                                <div class="checkBoxWrapper" style="column-gap: 15px;">
+                                                   <div class="form-check squareRadio d-flex justify-content-center">
+                                                      <input class="form-check-input" id="Key1" name="Key" type="radio" value="">
+                                                      <label class="form-label" for="Key1">1</label>
+                                                   </div>
+                                                   <div class="form-check squareRadio d-flex justify-content-center">
+                                                      <input class="form-check-input" id="Key2" name="Key" type="radio" value="">
+                                                      <label class="form-label" for="Key2">2</label>
+                                                   </div>
+                                                   <div class="form-check squareRadio d-flex justify-content-center">
+                                                      <input class="form-check-input" id="Key3" name="Key" type="radio" value="">
+                                                      <label class="form-label" for="Key3">3</label>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div>
+                                                <div class="singleBox blockForm m-0">
+                                                   <label class="form-label">Key remark</label>
+                                                   <input type="text" class="form-control">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleBox mt-4">
+                                             <p style="font-size: 15px;" class="mb-2">Vehicle under hire purchase: <br> To settle Bank</p>
+                                             <div class="checkBoxWrapper">
+                                                <div class="form-check squareRadio d-flex justify-content-center">
+                                                   <input class="form-check-input" id="BFB" name="settleBank" type="radio" value="">
+                                                   <label class="form-label" for="BFB">BFB</label>
+                                                </div>
+                                                <div class="form-check squareRadio d-flex justify-content-center">
+                                                   <input class="form-check-input" id="BIBD" name="settleBank" type="radio" value="">
+                                                   <label class="form-label" for="BIBD">BIBD</label>
+                                                </div>
+                                                <div class="form-check squareRadio d-flex justify-content-center">
+                                                   <input class="form-check-input" id="GL" name="settleBank" type="radio" value="">
+                                                   <label class="form-label" for="GL">GL</label>
+                                                </div>
+                                                <div class="form-check squareRadio d-flex justify-content-center">
+                                                   <input class="form-check-input" id="NA" name="settleBank" type="radio" value="">
+                                                   <label class="form-label" for="NA">N/A</label>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleBox">
+                                             <p style="font-size: 15px;" class="mb-2">Certificate of Balance</p>
+                                             <div class="checkBoxWrapper">
+                                                <div class="form-check squareRadio d-flex justify-content-center">
+                                                   <input class="form-check-input" id="Certificate" name="Certificate" type="radio" value="">
+                                                   <label class="form-label" for="Certificate">YES</label>
+                                                </div>
+                                                <div class="form-check squareRadio d-flex justify-content-center">
+                                                   <input class="form-check-input" id="Certificate2" name="Certificate" type="radio" value="">
+                                                   <label class="form-label" for="Certificate2">N/A</label>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleBox">
+                                             <p style="font-size: 15px;" class="mb-2">Cheque for hire purchase settlement</p>
+                                             <div class="checkBoxWrapper">
+                                                <div class="form-check squareRadio d-flex justify-content-center">
+                                                   <input class="form-check-input" id="hirepurchase1" name="hirepurchase" type="radio" value="">
+                                                   <label class="form-label" for="hirepurchase1">YES</label>
+                                                </div>
+                                                <div class="form-check squareRadio d-flex justify-content-center">
+                                                   <input class="form-check-input" id="hirepurchase2" name="hirepurchase" type="radio" value="">
+                                                   <label class="form-label" for="hirepurchase2">N/A</label>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleBox">
+                                             <p style="font-size: 15px;" class="mb-2">Ceased Letter</p>
+                                             <div class="checkBoxWrapper">
+                                                <div class="form-check squareRadio d-flex justify-content-center">
+                                                   <input class="form-check-input" id="CeasedLetter1" name="CeasedLetter" type="radio" value="">
+                                                   <label class="form-label" for="CeasedLetter1">YES</label>
+                                                </div>
+                                                <div class="form-check squareRadio d-flex justify-content-center">
+                                                   <input class="form-check-input" id="CeasedLetter2" name="CeasedLetter" type="radio" value="">
+                                                   <label class="form-label" for="CeasedLetter2">N/A</label>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="singleBox">
+                                             <p style="font-size: 15px;" class="mb-2">Original logbook</p>
+                                             <div class="checkBoxWrapper">
+                                                <div class="form-check squareRadio d-flex justify-content-center">
+                                                   <input class="form-check-input" id="Originallogbook1" name="Originallogbook" type="radio" value="">
+                                                   <label class="form-label" for="Originallogbook1">YES</label>
+                                                </div>
+                                                <div class="form-check squareRadio d-flex justify-content-center">
+                                                   <input class="form-check-input" id="Originallogbook2" name="Originallogbook" type="radio" value="">
+                                                   <label class="form-label" for="Originallogbook2">N/A</label>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="col-12">
+                                    <div class="mainSaveButton">
+                                       <div class="row">
+                                          <div class="col-xl-6 col-lg-6 col-12">
+                                             <button type="button" class="btn btn-outline-primary">Save & Continue later</button>
+                                             <button type="button" class="btn btn-outline-primary">Print Release of ownership</button>
+                                          </div>
+                                          <div class="col-xl-6 col-lg-6 col-12 text-end">
+                                             <div class="saveButton">
+                                                <button type="button" class="btn btn-outline-primary">Save</button>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+
+         
+      </div>
+   </div>
+   
+   <!-- all javascript load here -->
+   <script src="../asset/js/vendor/jquery-3.3.1.min.js"></script>
+   <script src="../asset/js/bootstrap.bundle.min.js"></script>
+   <script src="../asset/js/plugin/jquery.svginject.js"></script>
+   <script src="../asset/js/custom.js"></script>
+</body>
+
+</html>

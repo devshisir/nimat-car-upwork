@@ -9,3 +9,53 @@
         }
     }
 }
+
+.apprasialMainTabWrapper {
+    padding: 0px 20px;
+
+    .leftForm {
+        .singleInfo {}
+    }
+
+    .rightForm {
+        .formWrapper {
+            .singleBox {
+                margin-bottom: 8px;
+
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+
+                .col-form-label {
+                    min-width: 170px;
+                }
+            }
+
+            .checkBoxWrapper {
+                display: flex;
+                column-gap: 40px;
+
+                .form-label {
+                    margin-left: 10px;
+                    cursor: pointer;
+                    position: relative;
+                    top: 1px;
+                }
+            }
+
+            .blockForm {
+
+                .form-control,
+                .form-select {
+                    width: 300px !important;
+                }
+            }
+
+            .uplodFormBox {
+                display: flex;
+                justify-content: flex-start;
+                column-gap: 10px;
+            }
+        }
+    }
+}
