@@ -553,7 +553,7 @@
                                        <div class="rdoneform">
                                           <p>Which P-Success car do you want <br> to change to R-Pending? </p>
                                           <div class="choseButton">
-                                             <button type="button" class="btn btn-outline-danger">
+                                             <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#choseCarModal">
                                                 Choose car
                                                 <span>
                                                    <img class="inject" src="../asset/img/icons/sidebar/car.svg" alt="">
@@ -603,7 +603,199 @@
          </div>
       </div>
    </div>
-   
+   <!-- chose car modal -->
+   <div class="modal fade" id="choseCarModal" tabindex="-1" aria-hidden="true" data-bs-backdrop="static">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+         <div class="modal-content">
+            <div class="modal-header d-flex justify-content-end">
+               <button class="modalCloseButton" type="button" data-bs-dismiss="modal">
+                  <i class="fa-regular fa-xmark"></i>
+               </button>
+            </div>
+            <div class="modal-body">
+               <div class="choseCarModalBody">
+                  <div class="topInfo">
+                     <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-12">
+                           <div class="singleInputBox">
+                              <div class="row align-items-center singleBox">
+                                 <div class="col-auto">
+                                    <label class="col-form-label text-danger">Model</label>
+                                 </div>
+                                 <div class="col-auto flex-grow-1">
+                                    <div class="input-group inputWithIconRight">
+                                       <input type="text" class="form-control">
+                                       <span class="input-group-text">
+                                          <i class="fa-light fa-magnifying-glass"></i>
+                                       </span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="singleInputBox">
+                              <div class="row align-items-center singleBox">
+                                 <div class="col-auto">
+                                    <label class="col-form-label text-danger">Make</label>
+                                 </div>
+                                 <div class="col-auto flex-grow-1">
+                                    <div class="input-group inputWithIconRight">
+                                       <input type="text" class="form-control">
+                                       <span class="input-group-text">
+                                          <i class="fa-light fa-magnifying-glass"></i>
+                                       </span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="singleInputBox">
+                              <div class="row align-items-center singleBox">
+                                 <div class="col-auto">
+                                    <label class="col-form-label text-danger">Reg No</label>
+                                 </div>
+                                 <div class="col-auto flex-grow-1">
+                                    <div class="input-group inputWithIconRight">
+                                       <input type="text" class="form-control">
+                                       <span class="input-group-text">
+                                          <i class="fa-light fa-magnifying-glass"></i>
+                                       </span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-12">
+                           <div class="singleInputBox">
+                              <div class="row align-items-center singleBox">
+                                 <div class="col-auto">
+                                    <label class="col-form-label text-danger">Reg No (Old)</label>
+                                 </div>
+                                 <div class="col-auto flex-grow-1">
+                                    <div class="input-group inputWithIconRight">
+                                       <input type="text" class="form-control">
+                                       <span class="input-group-text">
+                                          <i class="fa-light fa-magnifying-glass"></i>
+                                       </span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="singleInputBox">
+                              <div class="row align-items-center singleBox">
+                                 <div class="col-auto">
+                                    <label class="col-form-label text-danger">Car ID</label>
+                                 </div>
+                                 <div class="col-auto flex-grow-1">
+                                    <div class="input-group inputWithIconRight">
+                                       <input type="text" class="form-control">
+                                       <span class="input-group-text">
+                                          <i class="fa-light fa-magnifying-glass"></i>
+                                       </span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="bottomTable">
+                     <div class="table-responsive">
+                        <table class="table m-0 table-striped table-sm table-hover">
+                           <thead>
+                              <tr>
+                                 <td scope="col">
+                                    <div class="form-check squareRadio d-flex justify-content-center">
+                                       <input class="form-check-input" name="windshield" type="checkbox" value="">
+                                    </div>
+                                 </td>
+                                 <td scope="col" class="text-danger">Model</td>
+                                 <td scope="col" class="text-danger">Make</td>
+                                 <td scope="col" class="text-danger">Reg. No.</td>
+                                 <td scope="col" class="text-danger">Reg. No. (Old)</td>
+                                 <td scope="col" class="text-danger">Car ID</td>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td>
+                                    <div class="form-check squareRadio d-flex justify-content-center">
+                                       <input class="form-check-input" name="windshield" type="checkbox" value="">
+                                    </div>
+                                 </td>
+                                 <td>Vios</td>
+                                 <td>Toyota</td>
+                                 <td>KA1489</td>
+                                 <td>KA1489</td>
+                                 <td>C027918</td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <div class="form-check squareRadio d-flex justify-content-center">
+                                       <input class="form-check-input" name="windshield" type="checkbox" value="">
+                                    </div>
+                                 </td>
+                                 <td>Jazz</td>
+                                 <td>Honda</td>
+                                 <td>KG124</td>
+                                 <td>KG124</td>
+                                 <td>C027918</td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <div class="form-check squareRadio d-flex justify-content-center">
+                                       <input class="form-check-input" name="windshield" type="checkbox" value="">
+                                    </div>
+                                 </td>
+                                 <td>Alto</td>
+                                 <td>Suzuki</td>
+                                 <td>KG124</td>
+                                 <td>KG124</td>
+                                 <td>C027918</td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <div class="form-check squareRadio d-flex justify-content-center">
+                                       <input class="form-check-input" name="windshield" type="checkbox" value="">
+                                    </div>
+                                 </td>
+                                 <td>CRV</td>
+                                 <td>Honda</td>
+                                 <td>KG124</td>
+                                 <td>KG124</td>
+                                 <td>C027918</td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <div class="form-check squareRadio d-flex justify-content-center">
+                                       <input class="form-check-input" name="windshield" type="checkbox" value="">
+                                    </div>
+                                 </td>
+                                 <td>Jeep</td>
+                                 <td>Suzuki</td>
+                                 <td>KG124</td>
+                                 <td>KG124</td>
+                                 <td>C027918</td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <div class="form-check squareRadio d-flex justify-content-center">
+                                       <input class="form-check-input" name="windshield" type="checkbox" value="">
+                                    </div>
+                                 </td>
+                                 <td>Civic</td>
+                                 <td>Honda</td>
+                                 <td>KG124</td>
+                                 <td>KG124</td>
+                                 <td>C027918</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
 
 
    <!-- all javascript load here -->
