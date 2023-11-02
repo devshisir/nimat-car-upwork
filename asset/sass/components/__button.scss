@@ -12,9 +12,9 @@
 
     &:hover,
     &:focus {
-        background-color: $brand;
+        background-color: #C1C0C0;
         color: #fff;
-        border-color: $brand;
+        border-color: #C1C0C0;
     }
 }
 
@@ -31,6 +31,60 @@
     }
 }
 
+.btn-success {
+    background-color: #6AB123;
+    border-color: #6AB123;
+    font-size: 15px;
+
+    &:hover,
+    &:focus {
+        background-color: #6AB123;
+        color: #fff;
+        border-color: #6AB123;
+    }
+}
+
+.btn-danger {
+    background-color: #C82226;
+    border-color: #C82226;
+    font-size: 15px;
+
+    &:hover,
+    &:focus {
+        background-color: #C82226;
+        color: #fff;
+        border-color: #C82226;
+    }
+}
+
+.btn-info {
+    background-color: #B1239B;
+    border-color: #B1239B;
+    font-size: 15px;
+    color: #fff;
+
+    &:hover,
+    &:focus {
+        background-color: #B1239B;
+        color: #fff;
+        border-color: #B1239B;
+    }
+}
+
+.btn-warning {
+    background-color: #E89919;
+    border-color: #E89919;
+    font-size: 15px;
+    color: #fff;
+
+    &:hover,
+    &:focus {
+        background-color: #E89919;
+        color: #fff;
+        border-color: #E89919;
+    }
+}
+
 .btn-primary:active {
     background-color: $titleColor !important;
     color: #fff !important;
@@ -38,9 +92,33 @@
 }
 
 .btn-secondary:active {
-    background-color: $brand !important;
+    background-color: #C1C0C0 !important;
     color: #fff !important;
-    border-color: $brand !important;
+    border-color: #C1C0C0 !important;
+}
+
+.btn-success:active {
+    background-color: #6AB123 !important;
+    color: #fff !important;
+    border-color: #6AB123 !important;
+}
+
+.btn-danger:active {
+    background-color: #C82226 !important;
+    color: #fff !important;
+    border-color: #C82226 !important;
+}
+
+.btn-info:active {
+    background-color: #B1239B !important;
+    color: #fff !important;
+    border-color: #B1239B !important;
+}
+
+.btn-warning:active {
+    background-color: #E89919 !important;
+    color: #fff !important;
+    border-color: #E89919 !important;
 }
 
 .btn-dark {

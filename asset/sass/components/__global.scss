@@ -143,8 +143,18 @@
     display: block;
     text-align: center;
     height: 26px;
-    padding: 0px;
+    padding: 0px 20px;
     line-height: 25px;
+}
+
+.badge-primary-outline {
+    border-color: $titleColor;
+    color: $titleColor;
+}
+
+.badge-secondary-outline {
+    border-color: #C1C0C0;
+    color: #C1C0C0;
 }
 
 .badge-success-outline {
@@ -160,6 +170,11 @@
 .badge-warning-outline {
     border-color: $warning;
     color: $warning;
+}
+
+.badge-danger-outline {
+    border-color: #C82226;
+    color: #C82226;
 }
 
 .dropdown-menu {
