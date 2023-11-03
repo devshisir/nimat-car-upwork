@@ -1,0 +1,769 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+   <meta charset="utf-8">
+   <title>Car - S-FREE-STOCK</title>
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- Favicons -->
+   <link rel="apple-touch-icon" href="../asset/img/favicons/apple-touch-icon.png" sizes="180x180">
+   <link rel="icon" href="../asset/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+   <link rel="icon" href="../asset/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+   <!-- global styles link -->
+   <link rel="stylesheet" href="../asset/css/bootstrap.min.css">
+   <link rel="stylesheet" href="../asset/css/fontawsome.min.css">
+   <link rel="stylesheet" href="../asset/css/style.css">
+   <link rel="stylesheet" href="../asset/css/responsive.css">
+   <!-- this is for mordanizar js link -->
+   <script src="../asset/js/vendor/modernizr-3.6.0.min.js"></script>
+</head>
+
+<body>
+   <!-- main wrapper -->
+   <div id="mainWrapper">
+      <!-- sidebar -->
+      <div class="sidebar">
+         <div class="top_primary_link">
+            <ul>
+               <li>
+                  <a href="/">
+                     <span class="icon">
+                        <img class="inject" src="./../asset/img/icons/sidebar/dashboard.svg" alt="">
+                     </span>
+                     <span class="menu_content">Dashboard</span>
+                  </a>
+               </li>
+            </ul>
+         </div>
+         <!-- main menu link -->
+         <div class="main_menu_link">
+            <div class="label_menu">
+               <h4>MENU</h4>
+            </div>
+            <!-- menu with acordion -->
+            <div class="accordion sidebarMenuWrapper" id="menuAcordion">
+               <li class="sidebarMenuLink">
+                  <a href="./car-database.html">
+                     <span class="icon">
+                        <img class="inject" src="./../asset/img/icons/sidebar/car.svg" alt="">
+                     </span>
+                     <span class="menu_content">Car Database</span>
+                  </a>
+               </li>
+               <!-- toggle menu -->
+               <div class="accordion-item mainAcordionItem">
+                  <h2 class="accordion-header">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu1" aria-expanded="false" aria-controls="collapseTwo">
+                        <span class="icon">
+                           <img class="inject" src="./../asset/img/icons/sidebar/appraisal.svg" alt="">
+                        </span>
+                        <span class="menu_content">Appraisal</span>
+                     </button>
+                  </h2>
+                  <div id="menu1" class="accordion-collapse collapse" data-bs-parent="#menuAcordion">
+                     <div class="sub_menu">
+                        <ul>
+                           <li>
+                              <a href="#">
+                                 <span>-</span>
+                                 <div class="right_content">
+                                    <p>Inspection log</p>
+                                 </div>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <li class="sidebarMenuLink">
+                  <a href="/">
+                     <span class="icon">
+                        <img class="inject" src="./../asset/img/icons/sidebar/card-purches.svg" alt="">
+                     </span>
+                     <span class="menu_content">Purchase</span>
+                  </a>
+               </li>
+               <li class="sidebarMenuLink">
+                  <a href="/">
+                     <span class="icon">
+                        <img class="inject" src="./../asset/img/icons/sidebar/repair.svg" alt="">
+                     </span>
+                     <span class="menu_content">Repair</span>
+                  </a>
+               </li>
+               <!-- toggle menu -->
+               <div class="accordion-item mainAcordionItem">
+                  <h2 class="accordion-header">
+                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#menu2" aria-expanded="true" aria-controls="collapseTwo">
+                        <span class="icon">
+                           <img class="inject" src="./../asset/img/icons/sidebar/sales.svg" alt="">
+                        </span>
+                        <span class="menu_content">Sales</span>
+                     </button>
+                  </h2>
+                  <div id="menu2" class="accordion-collapse collapse show" data-bs-parent="#menuAcordion">
+                     <div class="sub_menu">
+                        <ul>
+                           <li>
+                              <a href="#">
+                                 <span>-</span>
+                                 <div class="right_content">
+                                    <p>WIP</p>
+                                 </div>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <li class="sidebarMenuLink">
+                  <a href="/">
+                     <span class="icon">
+                        <img class="inject" src="./../asset/img/icons/sidebar/tax.svg" alt="">
+                     </span>
+                     <span class="menu_content">Road Tax expiry</span>
+                  </a>
+               </li>
+               <!-- toggle menu -->
+               <div class="accordion-item mainAcordionItem">
+                  <h2 class="accordion-header">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu3" aria-expanded="false" aria-controls="collapseTwo">
+                        <span class="icon">
+                           <img class="inject" src="./../asset/img/icons/sidebar/accounting.svg" alt="">
+                        </span>
+                        <span class="menu_content">Accounting</span>
+                     </button>
+                  </h2>
+                  <div id="menu3" class="accordion-collapse collapse" data-bs-parent="#menuAcordion">
+                     <div class="sub_menu">
+                        <ul>
+                           <li>
+                              <a href="#">
+                                 <span>-</span>
+                                 <div class="right_content">
+                                    <p>Expenses</p>
+                                 </div>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#">
+                                 <span>-</span>
+                                 <div class="right_content">
+                                    <p>Income</p>
+                                 </div>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#">
+                                 <span>-</span>
+                                 <div class="right_content">
+                                    <p>Commission</p>
+                                 </div>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <li class="sidebarMenuLink">
+                  <a href="/">
+                     <span class="icon">
+                        <img class="inject" src="./../asset/img/icons/sidebar/notification.svg" alt="">
+                     </span>
+                     <span class="menu_content">Notification</span>
+                  </a>
+               </li>
+               <li class="sidebarMenuLink">
+                  <a href="/">
+                     <span class="icon">
+                        <img class="inject" src="./../asset/img/icons/sidebar/search-inquary.svg" alt="">
+                     </span>
+                     <span class="menu_content">Audit Trial</span>
+                  </a>
+               </li>
+               <li class="sidebarMenuLink">
+                  <a href="/">
+                     <span class="icon">
+                        <img class="inject" src="./../asset/img/icons/sidebar/reports.svg" alt="">
+                     </span>
+                     <span class="menu_content">Reports</span>
+                  </a>
+               </li>
+               <!-- toggle menu -->
+               <div class="accordion-item mainAcordionItem">
+                  <h2 class="accordion-header">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu4" aria-expanded="false" aria-controls="collapseTwo">
+                        <span class="icon">
+                           <img class="inject" src="./../asset/img/icons/sidebar/settings.svg" alt="">
+                        </span>
+                        <span class="menu_content">Settings</span>
+                     </button>
+                  </h2>
+                  <div id="menu4" class="accordion-collapse collapse" data-bs-parent="#menuAcordion">
+                     <div class="sub_menu">
+                        <ul>
+                           <li>
+                              <a href="#">
+                                 <span>-</span>
+                                 <div class="right_content">
+                                    <p>User Role</p>
+                                 </div>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#">
+                                 <span>-</span>
+                                 <div class="right_content">
+                                    <p>User Master</p>
+                                 </div>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#">
+                                 <span>-</span>
+                                 <div class="right_content">
+                                    <p>Permission</p>
+                                 </div>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <!-- toggle menu -->
+               <div class="accordion-item mainAcordionItem">
+                  <h2 class="accordion-header">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu5" aria-expanded="false" aria-controls="collapseTwo">
+                        <span class="icon">
+                           <img class="inject" src="./../asset/img/icons/sidebar/user.svg" alt="">
+                        </span>
+                        <span class="menu_content">Master</span>
+                     </button>
+                  </h2>
+                  <div id="menu5" class="accordion-collapse collapse" data-bs-parent="#menuAcordion">
+                     <div class="sub_menu">
+                        <ul>
+                           <li>
+                              <a href="/">
+                                 <span>-</span>
+                                 <div class="right_content">
+                                    <p>Brand & Model list</p>
+                                 </div>
+                              </a>
+                           </li>
+                           <div class="subAcordionMenu">
+                              <div class="accordion" id="subAcordion">
+                                 <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#subacor1" aria-expanded="false" aria-controls="collapseTwo">
+                                          <span>-</span>
+                                          <div class="right_content">
+                                             <p>Repair</p>
+                                          </div>
+                                       </button>
+                                    </h2>
+                                    <div id="subacor1" class="accordion-collapse collapse" data-bs-parent="#subAcordion">
+                                       <div class="subacorMenu">
+                                          <ul>
+                                             <li>
+                                                <a href="#">
+                                                   <span>-</span>
+                                                   <div class="right_content">
+                                                      <p>Company Name listing</p>
+                                                   </div>
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="#">
+                                                   <span>-</span>
+                                                   <div class="right_content">
+                                                      <p>Repair Type listing</p>
+                                                   </div>
+                                                </a>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <li>
+                              <a href="../sg-management/sg-manageent.html">
+                                 <span>-</span>
+                                 <div class="right_content">
+                                    <p>SC Management</p>
+                                 </div>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         
+      </div>
+      <div class="app_wrapper">
+         <!-- header -->
+         <header class="appHeader">
+            <div class="row align-items-center">
+               <div class="col-xl-6 col-lg-6">
+                  <div class="header_left">
+                     <div class="toggleArrow">
+                        <button class="toggleButton" type="button">
+                           <i class="fa-regular fa-bars-sort"></i>
+                        </button>
+                     </div>
+                     <div class="search_form">
+                        <div class="input-group">
+                           <input type="text" class="form-control" placeholder="Search...">
+                           <span class="input-group-text">
+                              <button type="button">
+                                 <i class="fa-sharp fa-regular fa-magnifying-glass"></i>
+                              </button>
+                           </span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-6 col-lg-6">
+                  <div class="header_right text-end">
+                     <ul>
+                        <li class="notificationButton">
+                           <a href="#"><i class="fa-regular fa-bell"></i></a>
+                        </li>
+                        <li class="userInfo">
+                           <div class="btn-group">
+                              <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                 <span><i class="fa-solid fa-user"></i></span>
+                                 <p>Michael</p>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-end">
+                                 <li>
+                                    <a href="#" class="dropdown-item">Profile</a>
+                                 </li>
+                                 <li>
+                                    <a href="#" class="dropdown-item">Settings</a>
+                                 </li>
+                                 <li>
+                                    <a href="#" class="dropdown-item">Another Link</a>
+                                 </li>
+                                 <li>
+                                    <a href="#" class="dropdown-item">Logout</a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </header>
+         <!-- breadcome area -->
+         <div class="breadComeArea">
+            <div class="row">
+               <div class="col-xl-6 col-lg-6">
+                  <div class="pageTitle">
+                     <h4>S-Free Stock Page</h4>
+                  </div>
+               </div>
+               <div class="col-xl-6 col-lg-6">
+                  <div class="pageHistory text-end">
+                     <ul>
+                        <li>
+                           <a href="#">Home page</a>
+                        </li>
+                        <li>
+                           <a href="#"><i class="fa-sharp fa-regular fa-angle-right"></i></a>
+                        </li>
+                        <li>
+                           <a href="#">Sales page</a>
+                        </li>
+                        <li class="active">
+                           <a href="#"><i class="fa-sharp fa-regular fa-angle-right"></i></a>
+                        </li>
+                        <li class="active">
+                           <a href="#">S-Free Stock Page</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         
+         <!-- page inner card -->
+         <div class="appInnerCard">
+            <!-- bottom card -->
+            <div class="card">
+               <div class="card-header">
+                  <div class="cardPageTititle">
+                     <h3>S-Free Stock Page</h3>
+                  </div>
+               </div>
+               <div class="card-body">
+                  <div class="refurbishmentpageCard">
+                     <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-12">
+                           <div class="leftInfo">
+                              <div class="singleInfo">
+                                 <div class="row">
+                                    <label class="col-xl-6 col-xl-6 col-form-label">Car_ID</label>
+                                    <div class="col-xl-6 col-xl-6">
+                                       <input type="text" readonly="" class="form-control-plaintext" value="C028405 ">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="singleInfo">
+                                 <div class="row">
+                                    <label class="col-xl-6 col-xl-6 col-form-label">Reg. No.</label>
+                                    <div class="col-xl-6 col-xl-6">
+                                       <input type="text" readonly="" class="form-control-plaintext" value="KA1489 ">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="singleInfo">
+                                 <div class="row">
+                                    <label class="col-xl-6 col-xl-6 col-form-label">Reg. No. (New)</label>
+                                    <div class="col-xl-6 col-xl-6">
+                                       <input type="text" readonly="" class="form-control-plaintext" value="KA1489 ">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="singleInfo">
+                                 <div class="row">
+                                    <label class="col-xl-6 col-xl-6 col-form-label">Chassis No.</label>
+                                    <div class="col-xl-6 col-xl-6">
+                                       <input type="text" readonly="" class="form-control-plaintext" value="5UXXW3C53J0T80683">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="singleInfo">
+                                 <div class="row">
+                                    <label class="col-xl-6 col-xl-6 col-form-label">Source Type</label>
+                                    <div class="col-xl-6 col-xl-6">
+                                       <input type="text" readonly="" class="form-control-plaintext" value="Used Car">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="singleInfo">
+                                 <div class="row">
+                                    <label class="col-xl-6 col-xl-6 col-form-label">SC Code</label>
+                                    <div class="col-xl-6 col-xl-6">
+                                       <input type="text" readonly="" class="form-control-plaintext" value="SC 601">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="singleInfo">
+                                 <div class="row">
+                                    <label class="col-xl-6 col-xl-6 col-form-label">Make</label>
+                                    <div class="col-xl-6 col-xl-6">
+                                       <input type="text" readonly="" class="form-control-plaintext" value="Toyota">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="singleInfo">
+                                 <div class="row">
+                                    <label class="col-xl-6 col-xl-6 col-form-label">Model</label>
+                                    <div class="col-xl-6 col-xl-6">
+                                       <input type="text" readonly="" class="form-control-plaintext" value="Vios">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="singleInfo">
+                                 <div class="row">
+                                    <label class="col-xl-6 col-xl-6 col-form-label">Year</label>
+                                    <div class="col-xl-6 col-xl-6">
+                                       <input type="text" readonly="" class="form-control-plaintext" value="2018">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="singleInfo">
+                                 <div class="row">
+                                    <label class="col-xl-6 col-xl-6 col-form-label">Color</label>
+                                    <div class="col-xl-6 col-xl-6">
+                                       <input type="text" readonly="" class="form-control-plaintext" value="Red">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="singleInfo">
+                                 <div class="row">
+                                    <label class="col-xl-6 col-xl-6 col-form-label">Early Settlement Price</label>
+                                    <div class="col-xl-6 col-xl-6">
+                                       <input type="text" readonly="" class="form-control-plaintext" value="$5,500">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="singleInfo">
+                                 <div class="row">
+                                    <label class="col-xl-6 col-xl-6 col-form-label">Offer Price 1</label>
+                                    <div class="col-xl-6 col-xl-6">
+                                       <input type="text" readonly="" class="form-control-plaintext" value="$5,500">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="singleInfo">
+                                 <div class="row">
+                                    <label class="col-xl-6 col-xl-6 col-form-label">Offer Price 2</label>
+                                    <div class="col-xl-6 col-xl-6">
+                                       <input type="text" readonly="" class="form-control-plaintext" value="-">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="singleInfo">
+                                 <div class="row">
+                                    <label class="col-xl-6 col-xl-6 col-form-label">Purchase Price</label>
+                                    <div class="col-xl-6 col-xl-6">
+                                       <input type="text" readonly="" class="form-control-plaintext" value="-">
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-12">
+                           <div class="rightInfo">
+                              <div class="topInfo">
+                                 <div class="headingArea">
+                                    <h4 class="text-danger">Inspection Done</h4>
+                                 </div>
+                                 <div class="rdoneform">
+                                    <p>Which R-Done car would you like to mark as <br> S-Free Stock?</p>
+                                    <div class="choseButton">
+                                       <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#choseCarModal">
+                                          Choose car
+                                          <span>
+                                             <img class="inject" src="../asset/img/icons/sidebar/car.svg" alt="" style="visibility: hidden;">
+                                          </span>
+                                       </button>
+                                    </div>
+                                 </div>
+                                 <div class="chartBox">
+                                    <div class="bottomInfo">
+                                       <h4 class="text-danger" style="font-style: italic;">By clicking save, the status will change to: S-Free Stock</h4>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-xl-3 col-lg-3 col-12"></div>
+                        <div class="col-xl-9 col-lg-9 col-12 ml-auto">
+                           <div class="chartBox">
+                              <div class="bottomInfo">
+                                 <div class="saveButton">
+                                    <button class="btn btn-outline-primary">Save</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- chose car modal -->
+   <div class="modal fade" id="choseCarModal" tabindex="-1" aria-hidden="true" data-bs-backdrop="static">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+         <div class="modal-content">
+            <div class="modal-header d-flex justify-content-end">
+               <button class="modalCloseButton" type="button" data-bs-dismiss="modal">
+                  <i class="fa-regular fa-xmark"></i>
+               </button>
+            </div>
+            <div class="modal-body">
+               <div class="choseCarModalBody">
+                  <div class="topInfo">
+                     <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-12">
+                           <div class="singleInputBox">
+                              <div class="row align-items-center singleBox">
+                                 <div class="col-auto">
+                                    <label class="col-form-label text-danger">Model</label>
+                                 </div>
+                                 <div class="col-auto flex-grow-1">
+                                    <div class="input-group inputWithIconRight">
+                                       <input type="text" class="form-control">
+                                       <span class="input-group-text">
+                                          <i class="fa-light fa-magnifying-glass"></i>
+                                       </span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="singleInputBox">
+                              <div class="row align-items-center singleBox">
+                                 <div class="col-auto">
+                                    <label class="col-form-label text-danger">Make</label>
+                                 </div>
+                                 <div class="col-auto flex-grow-1">
+                                    <div class="input-group inputWithIconRight">
+                                       <input type="text" class="form-control">
+                                       <span class="input-group-text">
+                                          <i class="fa-light fa-magnifying-glass"></i>
+                                       </span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="singleInputBox">
+                              <div class="row align-items-center singleBox">
+                                 <div class="col-auto">
+                                    <label class="col-form-label text-danger">Reg No</label>
+                                 </div>
+                                 <div class="col-auto flex-grow-1">
+                                    <div class="input-group inputWithIconRight">
+                                       <input type="text" class="form-control">
+                                       <span class="input-group-text">
+                                          <i class="fa-light fa-magnifying-glass"></i>
+                                       </span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-12">
+                           <div class="singleInputBox">
+                              <div class="row align-items-center singleBox">
+                                 <div class="col-auto">
+                                    <label class="col-form-label text-danger">Reg No (Old)</label>
+                                 </div>
+                                 <div class="col-auto flex-grow-1">
+                                    <div class="input-group inputWithIconRight">
+                                       <input type="text" class="form-control">
+                                       <span class="input-group-text">
+                                          <i class="fa-light fa-magnifying-glass"></i>
+                                       </span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="singleInputBox">
+                              <div class="row align-items-center singleBox">
+                                 <div class="col-auto">
+                                    <label class="col-form-label text-danger">Car ID</label>
+                                 </div>
+                                 <div class="col-auto flex-grow-1">
+                                    <div class="input-group inputWithIconRight">
+                                       <input type="text" class="form-control">
+                                       <span class="input-group-text">
+                                          <i class="fa-light fa-magnifying-glass"></i>
+                                       </span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="bottomTable">
+                     <div class="table-responsive">
+                        <table class="table m-0 table-striped table-sm table-hover">
+                           <thead>
+                              <tr>
+                                 <td scope="col">
+                                    <div class="form-check squareRadio d-flex justify-content-center">
+                                       <input class="form-check-input" name="windshield" type="checkbox" value="">
+                                    </div>
+                                 </td>
+                                 <td scope="col" class="text-danger">Model</td>
+                                 <td scope="col" class="text-danger">Make</td>
+                                 <td scope="col" class="text-danger">Reg. No.</td>
+                                 <td scope="col" class="text-danger">Reg. No. (Old)</td>
+                                 <td scope="col" class="text-danger">Car ID</td>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td>
+                                    <div class="form-check squareRadio d-flex justify-content-center">
+                                       <input class="form-check-input" name="windshield" type="checkbox" value="">
+                                    </div>
+                                 </td>
+                                 <td>Vios</td>
+                                 <td>Toyota</td>
+                                 <td>KA1489</td>
+                                 <td>KA1489</td>
+                                 <td>C027918</td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <div class="form-check squareRadio d-flex justify-content-center">
+                                       <input class="form-check-input" name="windshield" type="checkbox" value="">
+                                    </div>
+                                 </td>
+                                 <td>Jazz</td>
+                                 <td>Honda</td>
+                                 <td>KG124</td>
+                                 <td>KG124</td>
+                                 <td>C027918</td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <div class="form-check squareRadio d-flex justify-content-center">
+                                       <input class="form-check-input" name="windshield" type="checkbox" value="">
+                                    </div>
+                                 </td>
+                                 <td>Alto</td>
+                                 <td>Suzuki</td>
+                                 <td>KG124</td>
+                                 <td>KG124</td>
+                                 <td>C027918</td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <div class="form-check squareRadio d-flex justify-content-center">
+                                       <input class="form-check-input" name="windshield" type="checkbox" value="">
+                                    </div>
+                                 </td>
+                                 <td>CRV</td>
+                                 <td>Honda</td>
+                                 <td>KG124</td>
+                                 <td>KG124</td>
+                                 <td>C027918</td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <div class="form-check squareRadio d-flex justify-content-center">
+                                       <input class="form-check-input" name="windshield" type="checkbox" value="">
+                                    </div>
+                                 </td>
+                                 <td>Jeep</td>
+                                 <td>Suzuki</td>
+                                 <td>KG124</td>
+                                 <td>KG124</td>
+                                 <td>C027918</td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <div class="form-check squareRadio d-flex justify-content-center">
+                                       <input class="form-check-input" name="windshield" type="checkbox" value="">
+                                    </div>
+                                 </td>
+                                 <td>Civic</td>
+                                 <td>Honda</td>
+                                 <td>KG124</td>
+                                 <td>KG124</td>
+                                 <td>C027918</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+   <!-- all javascript load here -->
+   <script src="../asset/js/vendor/jquery-3.3.1.min.js"></script>
+   <script src="../asset/js/bootstrap.bundle.min.js"></script>
+   <script src="../asset/js/plugin/jquery.svginject.js"></script>
+   <script src="../asset/js/custom.js"></script>
+</body>
+
+</html>

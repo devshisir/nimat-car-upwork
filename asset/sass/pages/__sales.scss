@@ -30,3 +30,118 @@
         }
     }
 }
+
+.addbooking_popup_main {
+    .modal-dialog {
+        max-width: 1000px;
+    }
+
+    .topForm {
+        padding: 0px 30px 30px 30px;
+        border-bottom: 1px solid #e5e5e5;
+
+        .singleInfo {
+            margin-bottom: 5px;
+        }
+    }
+
+    .buyerDetails {
+        .topInfoBox {
+            h4 {
+                font-size: 15px;
+                display: flex;
+                align-items: center;
+                column-gap: 5px;
+            }
+
+            .btn {
+                height: auto !important;
+
+                i {
+                    margin-right: 5px;
+                }
+            }
+        }
+
+        padding: 10px 30px 0px 30px;
+        border-bottom: 1px solid #e5e5e5;
+
+        .formBox {
+            margin-top: 10px;
+        }
+
+        .singleInfo {
+            margin-bottom: 5px;
+        }
+
+        p {
+            font-family: mainfont_medium !important;
+            font-size: 15px;
+        }
+
+        .col-form-label {
+            min-width: 120px;
+            max-width: 120px;
+        }
+
+        .form-control {
+            width: 100%;
+        }
+    }
+
+    .buyerAccount {
+        padding: 10px 30px 30px 30px;
+
+        .singleInfo {
+            margin-bottom: 5px;
+        }
+
+        p {
+            font-family: mainfont_medium !important;
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+
+        .col-form-label {
+            min-width: 150px;
+            max-width: 150px;
+            font-size: 15px !important;
+        }
+
+        .input-group {
+            .input-group-text {
+                background-color: transparent;
+                border-right: none;
+                color: $titleColor;
+                font-size: 15px;
+
+                i {
+                    position: relative;
+                    top: 2px;
+                }
+            }
+
+            .form-control {
+                border-left: none;
+                padding-left: 0px;
+            }
+        }
+
+    }
+
+    .submitButton {
+        padding-bottom: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+
+        .btn {
+            min-width: 150px;
+        }
+    }
+}
+
+.addbooking_popup_main.medium {
+    .modal-dialog {
+        max-width: 700px;
+    }
+}
