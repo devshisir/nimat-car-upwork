@@ -1,0 +1,56 @@
+.dashboardPageWrapper {
+    .masterTable2 {
+        .topInfo {
+            padding: 0px 30px;
+
+            .col-form-label {
+                font-size: 15px !important;
+                margin-right: 20px;
+                font-family: mainfont_semi !important;
+            }
+
+            .form-select {
+                min-width: 200px;
+            }
+        }
+    }
+
+    .dashboardTable2 {
+        thead {
+            tr {
+                td {
+                    font-size: 13px;
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                td {
+                    p {
+                        font-family: mainfont_medium !important;
+                        font-size: 13px;
+                        margin-top: 2px;
+                    }
+
+                    .totalNumber {
+                        p {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+
+        thead,
+        tbody {
+            tr {
+                td {
+                    &:first-child {
+                        min-width: 290px;
+                    }
+                }
+            }
+        }
+    }
+}

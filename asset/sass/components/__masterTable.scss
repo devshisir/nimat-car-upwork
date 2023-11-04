@@ -1,4 +1,13 @@
 .masterTable {
+    .tableHeading {
+        margin-bottom: 20px;
+        padding: 0px 40px;
+
+        h5 {
+            font-size: 17px;
+        }
+    }
+
     .table {
         border-color: $boredrColor;
         margin: 0;
@@ -155,5 +164,87 @@
                 }
             }
         }
+    }
+}
+
+.masterTable2 {
+    .table {
+        min-width: max-content;
+        width: 100%;
+    }
+
+    .table-striped>tbody>tr:nth-of-type(odd)>* {
+        background-color: #d5d5d55e;
+    }
+
+    thead,
+    tbody {
+        tr {
+            td {
+                padding: 10px 5px;
+                color: #4F4F51;
+                font-size: 15px;
+                min-height: 50px;
+                min-width: 70px;
+
+                &:first-child {
+                    padding-left: 30px;
+                }
+
+                .totalNumber {
+
+                    width: max-content;
+                    margin: 0 auto;
+
+                    p {
+                        color: $brand;
+                        padding: 5px 8px;
+                        border: 1px solid $brand;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.masterTable3 {
+    .table {
+        thead {
+            tr {
+                td {
+                    background-color: $brand;
+                    border-right: 4px solid #fff;
+                    color: #fff;
+                    padding: 10px 10px;
+                    width: 100px;
+
+                    &:last-child {
+                        border: none;
+                    }
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                td {
+                    border-right: 4px solid #fff;
+                    padding: 13px 10px;
+                    width: 100px;
+                    font-size: 15px;
+
+                    &:last-child {
+                        border: none;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    .table>tbody>tr:nth-of-type(even)>* {
+        background-color: #d5d5d55e !important;
     }
 }
