@@ -25,7 +25,7 @@
 
         tr {
             &:first-child td {
-                padding-left: 20px;
+                padding-left: 13px;
             }
 
             &:last-child td {
@@ -33,11 +33,20 @@
             }
         }
 
+        tr.filter_row {
+            td {
+                padding-top: 0px;
+                padding-bottom: 20px;
+                border-bottom: 1px solid #e5e5e5;
+            }
+        }
+
         td {
             padding-top: 20px;
-            padding-bottom: 20px;
+            padding-bottom: 6px;
             font-size: 14px;
             color: $bodyColor;
+            border: none;
 
             span {
                 margin-bottom: 10px;
@@ -66,7 +75,7 @@
             padding-bottom: 12px;
             font-size: 14px;
             color: $bodyColor;
-            padding-left: 25px;
+            padding-left: 13px;
 
             .form-check {
                 .form-check-input {
@@ -246,5 +255,22 @@
 
     .table>tbody>tr:nth-of-type(even)>* {
         background-color: #d5d5d55e !important;
+    }
+}
+
+.dataTables_paginate {
+    margin-top: 30px;
+}
+
+td.dataTables_empty {
+    padding: 100px 0px !important;
+    text-align: center;
+    font-size: 17px !important;
+}
+
+.dataTables_wrapper {
+    .row* {
+        margin-right: 0px !important;
+        margin-left: 0px !important;
     }
 }

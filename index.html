@@ -402,36 +402,19 @@
                <div class="card-body">
                   <div class="masterTable">
                      <div class="table-responsive">
-                        <table class="table">
+                        <table class="table" id="carbodytypeTable">
                            <thead>
                               <tr>
                                  <td scope="col" style="width: 120px;">No.</td>
                                  <td scope="col" style="width: 120px;">
                                     <span>Type Code</span>
-                                    <input type="text" class="form-control" style="width: 120px;">
                                  </td>
                                  <td scope="col" style="width: 200px;">IMAGE</td>
                                  <td scope="col" style="width: 190px;">
                                     <span>Type</span>
-                                    <div class="selectBox">
-                                       <select class="form-select">
-                                          <option value="0">Select</option>
-                                          <option value="1">option 1</option>
-                                          <option value="2">option 2</option>
-                                          <option value="3">option 3</option>
-                                       </select>
-                                    </div>
                                  </td>
                                  <td scope="col" style="width: 190px;">
                                     <span>Status</span>
-                                    <div class="selectBox">
-                                       <select class="form-select">
-                                          <option value="0">Status</option>
-                                          <option value="1">option 1</option>
-                                          <option value="2">option 2</option>
-                                          <option value="3">option 3</option>
-                                       </select>
-                                    </div>
                                  </td>
                                  <td scope="col" class="text-center" style="width: 150px;">Action</td>
                               </tr>
@@ -440,13 +423,13 @@
                               <!-- single table row -->
                               <tr>
                                  <td>1</td>
-                                 <td>C081</td>
+                                 <td>xdsdsd</td>
                                  <td class="carImage">
                                     <img src="./asset/img/car/1.png" alt="">
                                  </td>
-                                 <td>Hatchback</td>
-                                 <td>
-                                    <span class="text-success">Active</span>
+                                 <td>Shisir Imran</td>
+                                 <td class="text-success">
+                                    Active
                                  </td>
                                  <!-- <td>Toyota</td>
                                  <td>Vios</td>
@@ -472,9 +455,9 @@
                                  <td class="carImage">
                                     <img src="./asset/img/car/2.png" alt="">
                                  </td>
-                                 <td>Sedan</td>
-                                 <td>
-                                    <span class="text-success">Active</span>
+                                 <td>Shisiraxas</td>
+                                 <td class="text-info">
+                                    Pending
                                  </td>
                                  <!-- <td>Toyota</td>
                                  <td>Vios</td>
@@ -501,8 +484,8 @@
                                     <img src="./asset/img/car/3.png" alt="">
                                  </td>
                                  <td>MPV</td>
-                                 <td>
-                                    <span class="text-success">Active</span>
+                                 <td class="text-success">
+                                    Active
                                  </td>
                                  <!-- <td>Toyota</td>
                                  <td>Vios</td>
@@ -529,8 +512,8 @@
                                     <img src="./asset/img/car/4.png" alt="">
                                  </td>
                                  <td>Coupe</td>
-                                 <td>
-                                    <span class="text-success">Active</span>
+                                 <td class="text-success">
+                                    Active
                                  </td>
                                  <!-- <td>Toyota</td>
                                  <td>Vios</td>
@@ -557,8 +540,8 @@
                                     <img src="./asset/img/car/5.png" alt="">
                                  </td>
                                  <td>Truck</td>
-                                 <td>
-                                    <span class="text-success">Active</span>
+                                 <td class="text-success">
+                                    Active
                                  </td>
                                  <!-- <td>Toyota</td>
                                  <td>Vios</td>
@@ -585,8 +568,8 @@
                                     <img src="./asset/img/car/6.png" alt="">
                                  </td>
                                  <td>Wagon</td>
-                                 <td>
-                                    <span class="text-success">Active</span>
+                                 <td class="text-success">
+                                    Active
                                  </td>
                                  <!-- <td>Toyota</td>
                                  <td>Vios</td>
@@ -613,8 +596,8 @@
                                     <img src="./asset/img/car/7.png" alt="">
                                  </td>
                                  <td>Convertible</td>
-                                 <td>
-                                    <span class="text-success">Active</span>
+                                 <td class="text-danger">
+                                    Rejected
                                  </td>
                                  <!-- <td>Toyota</td>
                                  <td>Vios</td>
@@ -641,8 +624,35 @@
                                     <img src="./asset/img/car/8.png" alt="">
                                  </td>
                                  <td>CROSSOVER</td>
+                                 <td class="text-success">
+                                    Active
+                                 </td>
+                                 <!-- <td>Toyota</td>
+                                 <td>Vios</td>
+                                 <td>8</td> -->
                                  <td>
-                                    <span class="text-success">Active</span>
+                                    <div class="tableActions">
+                                       <a title="View" href="#">
+                                          <img class="inject" src="./asset/img/icons/eye.svg" alt="">
+                                       </a>
+                                       <a title="Edit" href="#">
+                                          <img class="inject" src="./asset/img/icons/pencil.svg" alt="">
+                                       </a>
+                                       <a title="Delete" href="#">
+                                          <img class="inject" src="./asset/img/icons/trash.svg" alt="">
+                                       </a>
+                                    </div>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td scope="row">8</td>
+                                 <td>C081</td>
+                                 <td class="carImage">
+                                    <img src="./asset/img/car/8.png" alt="">
+                                 </td>
+                                 <td>DUMMY</td>
+                                 <td class="text-success">
+                                    Active
                                  </td>
                                  <!-- <td>Toyota</td>
                                  <td>Vios</td>
@@ -666,27 +676,6 @@
                      </div>
                   </div>
                </div>
-               <div class="card-footer">
-                  <div class="paginationstyle2 d-flex justify-content-center">
-                     <nav aria-label="Page navigation example">
-                        <ul class="pagination">
-                           <li class="page-item">
-                              <a class="page-link" href="#" aria-label="Previous">
-                              <span aria-hidden="true">&laquo;</span>
-                              </a>
-                           </li>
-                           <li class="page-item"><a class="page-link active" href="#">1</a></li>
-                           <li class="page-item"><a class="page-link" href="#">2</a></li>
-                           <li class="page-item"><a class="page-link" href="#">3</a></li>
-                           <li class="page-item">
-                              <a class="page-link" href="#" aria-label="Next">
-                              <span aria-hidden="true">&raquo;</span>
-                              </a>
-                           </li>
-                        </ul>
-                     </nav>
-                  </div>
-               </div>
             </div>
          </div>
       </div>
@@ -699,6 +688,9 @@
    <script src="asset/js/bootstrap.bundle.min.js"></script>
    <script src="asset/js/plugin/jquery.svginject.js"></script>
    <script src="asset/js/custom.js"></script>
+   <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+   <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+   <script src="./asset/js/datatable/Carbodytype.js"></script>
 </body>
 
 </html>

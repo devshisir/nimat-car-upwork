@@ -64,3 +64,33 @@
         border-color: #dee2e6;
     }
 }
+
+.dataTables_paginate {
+    .page-link {
+        outline: none;
+        box-shadow: none;
+        color: $titleColor;
+        font-family: mainfont_medium;
+        min-height: 39px;
+
+        &:hover {
+            background-color: $titleColor;
+            color: #fff;
+            border-color: $titleColor;
+        }
+    }
+
+    .page-item.active {
+        .page-link {
+            background-color: $titleColor;
+            border-color: $titleColor;
+            color: #fff;
+
+            &:hover {
+                background-color: $titleColor;
+                border-color: $titleColor;
+                color: #fff;
+            }
+        }
+    }
+}

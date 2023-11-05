@@ -37,6 +37,7 @@ function watch(){
 
     gulp.watch('./asset/css/*.css').on('change', browserSync.reload);
     gulp.watch('./asset/js/*.js').on('change', browserSync.reload);
+    gulp.watch('./asset/js/*/*.js').on('change', browserSync.reload);
 }
 
 
