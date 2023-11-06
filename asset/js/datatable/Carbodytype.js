@@ -1,10 +1,5 @@
 new DataTable('#carbodytypeTable',{
-    info: false,
-    bFilter: true,
     responsive: false,
-    ordering: false,
-    lengthChange: false,
-    pageLength: 5,
     language: {
         paginate: {
           next: '»', // or '→'
