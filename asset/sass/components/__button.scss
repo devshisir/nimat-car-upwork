@@ -156,6 +156,12 @@
     border-color: $titleColor !important;
 }
 
+.btn-outline-primary.active {
+    background-color: $titleColor !important;
+    color: #fff !important;
+    border-color: $titleColor !important;
+}
+
 .dropdown-toggle {
     &::after {
         transition: 0.4s;
@@ -167,3 +173,7 @@
         transform: rotate(180deg);
     }
 }
+
+
+
+// arrow button

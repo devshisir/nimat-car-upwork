@@ -1,0 +1,111 @@
+body {
+    /* just for this demo. */
+    padding: 30px;
+}
+
+.btn {
+    /* just for this demo. */
+    margin-top: 5px;
+    transition: all 0s;
+}
+
+.btn-arrow-right,
+.btn-arrow-left {
+    position: relative;
+    padding-left: 18px;
+    padding-right: 18px;
+    border-right: none !important;
+    border-radius: 0px;
+    min-width: 150px !important;
+}
+
+.btn-arrow-right {
+    padding-left: 36px !important;
+}
+
+.first {
+    border-radius: 30px 0px 0px 30px;
+
+    &::before {
+        display: none;
+    }
+}
+
+.last {
+    border-radius: 0px 30px 30px 0px;
+    border-right: 2px solid $titleColor;
+
+    &::after {
+        display: none;
+    }
+}
+
+button.btn.btn-outline-primary.btn-arrow-right.last {
+    border-right: 1px solid $titleColor !important;
+}
+
+.btn-arrow-left {
+    padding-right: 36px !important;
+}
+
+.btn-arrow-right:before,
+.btn-arrow-right:after,
+.btn-arrow-left:before,
+.btn-arrow-left:after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    background: inherit;
+    border: 1px solid $titleColor;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-radius: 0px 4px 0px 0px;
+    -webkit-border-radius: 0px 4px 0px 0px;
+    -moz-border-radius: 0px 4px 0px 0px;
+}
+
+.btn-arrow-right:before,
+.btn-arrow-right:after {
+    transform: rotate(45deg);
+    /* rotate right arrow squares 45 deg to point right */
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+}
+
+.btn-arrow-left:before,
+.btn-arrow-left:after {
+    transform: rotate(225deg);
+    /* rotate left arrow squares 225 deg to point left */
+    -webkit-transform: rotate(225deg);
+    -moz-transform: rotate(225deg);
+    -o-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+}
+
+.btn-arrow-right:before,
+.btn-arrow-left:before {
+    /* align the "before" square to the left */
+    left: -15px;
+}
+
+.btn-arrow-right:after,
+.btn-arrow-left:after {
+    /* align the "after" square to the right */
+    right: -15px;
+}
+
+.btn-arrow-right:after,
+.btn-arrow-left:before {
+    /* bring arrow pointers to front */
+    z-index: 1;
+}
+
+.btn-arrow-right:before,
+.btn-arrow-left:after {
+    /* hide arrow tails background */
+    background-color: white;
+}
